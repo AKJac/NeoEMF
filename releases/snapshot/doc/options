@@ -10,7 +10,7 @@
 '/home/travis/build/atlanmod/NeoEMF/src/main/javadoc:/home/travis/build/atlanmod/NeoEMF/target/distro-javadoc-sources/org.eclipse.emf.common-2.12.0-sources:/home/travis/build/atlanmod/NeoEMF/target/distro-javadoc-sources/org.eclipse.emf.ecore-2.12.0-sources:/home/travis/build/atlanmod/NeoEMF/target/distro-javadoc-sources/org.osgi.core-6.0.0-sources:/home/travis/build/atlanmod/NeoEMF/neoemf-core/src/main/java:/home/travis/build/atlanmod/NeoEMF/neoemf-core/src/main/javadoc:/home/travis/build/atlanmod/NeoEMF/neoemf-io/src/main/java:/home/travis/build/atlanmod/NeoEMF/neoemf-io/src/main/javadoc:/home/travis/build/atlanmod/NeoEMF/neoemf-data/blueprints/core/src/main/java:/home/travis/build/atlanmod/NeoEMF/neoemf-data/blueprints/core/src/main/javadoc:/home/travis/build/atlanmod/NeoEMF/neoemf-data/blueprints/neo4j/src/main/java:/home/travis/build/atlanmod/NeoEMF/neoemf-data/blueprints/neo4j/src/main/javadoc:/home/travis/build/atlanmod/NeoEMF/neoemf-data/map/core/src/main/java:/home/travis/build/atlanmod/NeoEMF/neoemf-data/map/berkeleydb/src/main/java:/home/travis/build/atlanmod/NeoEMF/neoemf-data/map/berkeleydb/src/main/javadoc:/home/travis/build/atlanmod/NeoEMF/neoemf-data/map/mapdb/src/main/java:/home/travis/build/atlanmod/NeoEMF/neoemf-data/map/mapdb/src/main/javadoc:/home/travis/build/atlanmod/NeoEMF/neoemf-data/hbase/src/main/java:/home/travis/build/atlanmod/NeoEMF/neoemf-data/hbase/src/main/javadoc:/home/travis/build/atlanmod/NeoEMF/neoemf-tests/src/main/java'
 -Xdoclint:none
 -bottom
-'Copyright &#169; 2013&#x2013;2017 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod INRIA LINA Mines Nantes</a>. All rights reserved.'
+'Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod INRIA LINA Mines Nantes</a>. All rights reserved.'
 -charset
 'UTF-8'
 -d
@@ -57,6 +57,8 @@
 'https://hbase.apache.org/1.2/apidocs'
 -link
 'https://hadoop.apache.org/docs/r2.7.3/api'
+-link
+'http://findbugs.sourceforge.net/apidocs'
 -linkoffline
 'http://docs.oracle.com/javase/8/docs/api' '/home/travis/build/atlanmod/NeoEMF/target/javadoc-bundle-options'
 -nosince
