@@ -43,8 +43,8 @@
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../fr/inria/atlanmod/neoemf/data/structure/package-summary.html">Prev&nbsp;Package</a></li>
-<li><a href="../../../../../fr/inria/atlanmod/neoemf/io/hash/package-summary.html">Next&nbsp;Package</a></li>
+<li><a href="../../../../../fr/inria/atlanmod/neoemf/data/store/adapter/package-summary.html">Prev&nbsp;Package</a></li>
+<li><a href="../../../../../fr/inria/atlanmod/neoemf/io/bean/package-summary.html">Next&nbsp;Package</a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?fr/inria/atlanmod/neoemf/io/package-summary.html" target="_top">Frames</a></li>
@@ -72,7 +72,7 @@
 <div class="header">
 <h1 title="Package" class="title">Package&nbsp;fr.inria.atlanmod.neoemf.io</h1>
 <div class="docSummary">
-<div class="block">Provides methods and classes for working with Java I/O, such as import/export features.</div>
+<div class="block">Provides methods and classes for working with I/O and security.</div>
 </div>
 <p>See:&nbsp;<a href="#package.description">Description</a></p>
 </div>
@@ -89,13 +89,13 @@
 <tr class="altColor">
 <td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a></td>
 <td class="colLast">
-<div class="block">A object that handles events notified by a <a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Notifier</code></a>.</div>
+<div class="block">A object that handles events received from a <a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Notifier</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io">Notifier</a>&lt;T extends <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</td>
+<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io">Notifier</a>&lt;H extends <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</td>
 <td class="colLast">
-<div class="block">An object that notifies registered <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a>s of events during an I/O process, such as import or export.</div>
+<div class="block">An object that notifies registered <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a>s of events during an I/O process.</div>
 </td>
 </tr>
 </tbody>
@@ -116,32 +116,16 @@
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Exporter.html" title="class in fr.inria.atlanmod.neoemf.io">Exporter</a></td>
+<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/io/DirectDataCopier.html" title="class in fr.inria.atlanmod.neoemf.io">DirectDataCopier</a></td>
 <td class="colLast">
-<div class="block">Static methods to export data from NeoEMF.</div>
+<div class="block">A <code>Copier</code> of <a href="../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping"><code>DataMapper</code></a>
+ instances using the direct import/export.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Importer.html" title="class in fr.inria.atlanmod.neoemf.io">Importer</a></td>
+<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="class in fr.inria.atlanmod.neoemf.io">Migrator</a>&lt;T&gt;</td>
 <td class="colLast">
-<div class="block">Static methods to import data into NeoEMF.</div>
-</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li class="blockList">
-<table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Exception Summary table, listing exceptions, and an explanation">
-<caption><span>Exception Summary</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Exception</th>
-<th class="colLast" scope="col">Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/io/AlreadyExistingIdException.html" title="class in fr.inria.atlanmod.neoemf.io">AlreadyExistingIdException</a></td>
-<td class="colLast">
-<div class="block">Exception thrown when an <a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a> is already defined in a datastore.</div>
+<div class="block">The builder that creates <a href="../../../../../fr/inria/atlanmod/neoemf/io/reader/Reader.html" title="interface in fr.inria.atlanmod.neoemf.io.reader"><code>Reader</code></a> and <a href="../../../../../fr/inria/atlanmod/neoemf/io/writer/Writer.html" title="interface in fr.inria.atlanmod.neoemf.io.writer"><code>Writer</code></a> instances.</div>
 </td>
 </tr>
 </tbody>
@@ -152,7 +136,7 @@
 <!--   -->
 </a>
 <h2 title="Package fr.inria.atlanmod.neoemf.io Description">Package fr.inria.atlanmod.neoemf.io Description</h2>
-<div class="block">Provides methods and classes for working with Java I/O, such as import/export features.</div>
+<div class="block">Provides methods and classes for working with I/O and security.</div>
 </div>
 <!-- ======= START OF BOTTOM NAVBAR ====== -->
 <div class="bottomNav"><a name="navbar.bottom">
@@ -175,8 +159,8 @@
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../fr/inria/atlanmod/neoemf/data/structure/package-summary.html">Prev&nbsp;Package</a></li>
-<li><a href="../../../../../fr/inria/atlanmod/neoemf/io/hash/package-summary.html">Next&nbsp;Package</a></li>
+<li><a href="../../../../../fr/inria/atlanmod/neoemf/data/store/adapter/package-summary.html">Prev&nbsp;Package</a></li>
+<li><a href="../../../../../fr/inria/atlanmod/neoemf/io/bean/package-summary.html">Next&nbsp;Package</a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?fr/inria/atlanmod/neoemf/io/package-summary.html" target="_top">Frames</a></li>
@@ -201,6 +185,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod INRIA LINA Mines Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>

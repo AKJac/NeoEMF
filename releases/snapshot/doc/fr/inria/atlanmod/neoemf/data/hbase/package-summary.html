@@ -44,7 +44,7 @@
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/util/package-summary.html">Prev&nbsp;Package</a></li>
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/option/package-summary.html">Next&nbsp;Package</a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/config/package-summary.html">Next&nbsp;Package</a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/inria/atlanmod/neoemf/data/hbase/package-summary.html" target="_top">Frames</a></li>
@@ -79,6 +79,23 @@
 <div class="contentContainer">
 <ul class="blockList">
 <li class="blockList">
+<table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Interface Summary table, listing interfaces, and an explanation">
+<caption><span>Interface Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Interface</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBaseBackend.html" title="interface in fr.inria.atlanmod.neoemf.data.hbase">HBaseBackend</a></td>
+<td class="colLast">
+<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/data/Backend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>Backend</code></a> that is responsible of low-level access to a HBase database.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
 <table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Class Summary table, listing classes, and an explanation">
 <caption><span>Class Summary</span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
@@ -87,15 +104,9 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.hbase">HBasePersistenceBackend</a></td>
+<td class="colFirst"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBaseBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.hbase">HBaseBackendFactory</a></td>
 <td class="colLast">
-<div class="block">Mock <a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackend</code></a> implementation for HBase to fit core architecture.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.hbase">HBasePersistenceBackendFactory</a></td>
-<td class="colLast">
-<div class="block">A factory that creates instances of <a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.hbase"><code>HBasePersistenceBackend</code></a>.</div>
+<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>BackendFactory</code></a> that creates <a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBaseBackend.html" title="interface in fr.inria.atlanmod.neoemf.data.hbase"><code>HBaseBackend</code></a> instances.</div>
 </td>
 </tr>
 </tbody>
@@ -108,12 +119,12 @@
 <h2 title="Package fr.inria.atlanmod.neoemf.data.hbase Description">Package fr.inria.atlanmod.neoemf.data.hbase Description</h2>
 <div class="block">Provides classes related to data management specific to a HBase implementation.
  <p>
- This package provides <a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.hbase"><code>HBasePersistenceBackend</code></a> and <a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.hbase"><code>HBasePersistenceBackendFactory</code></a> classes, that correspond to HBase specific
- implementations of <a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackend</code></a> and <a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactoryRegistry</code></a>.
+ This package provides <a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBaseBackend.html" title="interface in fr.inria.atlanmod.neoemf.data.hbase"><code>HBaseBackend</code></a> and <a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBaseBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.hbase"><code>HBaseBackendFactory</code></a> classes, that correspond to HBase specific implementations
+ of <a href="../../../../../../fr/inria/atlanmod/neoemf/data/Backend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>Backend</code></a> and <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data"><code>BackendFactoryRegistry</code></a>.
  <p>
- The <a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.hbase"><code>HBasePersistenceBackendFactory</code></a> has to be registered to enable <a href="../../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource"><code>PersistentResource</code></a> creation with a HBase storage:
+ The <a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBaseBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.hbase"><code>HBaseBackendFactory</code></a> has to be registered to enable <a href="../../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource"><code>PersistentResource</code></a> creation with a HBase storage:
  <pre><code>
- PersistenceBackendFactoryRegistry.register(HBasePersistenceBackendFactory.getInstance());
+ BackendFactoryRegistry.register(HBaseBackendFactory.getInstance());
  </code></pre></div>
 </div>
 <!-- ======= START OF BOTTOM NAVBAR ====== -->
@@ -138,7 +149,7 @@
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/util/package-summary.html">Prev&nbsp;Package</a></li>
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/option/package-summary.html">Next&nbsp;Package</a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/config/package-summary.html">Next&nbsp;Package</a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/inria/atlanmod/neoemf/data/hbase/package-summary.html" target="_top">Frames</a></li>
@@ -163,6 +174,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod INRIA LINA Mines Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>

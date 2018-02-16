@@ -18,12 +18,6 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
-var altColor = "altColor";
-var rowColor = "rowColor";
-var tableTab = "tableTab";
-var activeTableTab = "activeTableTab";
 </script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -49,8 +43,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractXmiWriter.html" title="class in fr.inria.atlanmod.neoemf.io.writer"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/XmiStAXCursorWriter.html" title="class in fr.inria.atlanmod.neoemf.io.writer"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/DefaultMapperWriter.html" title="class in fr.inria.atlanmod.neoemf.io.writer"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/XmiStreamWriter.html" title="class in fr.inria.atlanmod.neoemf.io.writer"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/inria/atlanmod/neoemf/io/writer/Writer.html" target="_top">Frames</a></li>
@@ -77,13 +71,13 @@ var activeTableTab = "activeTableTab";
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#method.summary">Method</a></li>
+<li>Method</li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#method.detail">Method</a></li>
+<li>Method</li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -105,17 +99,14 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractWriter.html" title="class in fr.inria.atlanmod.neoemf.io.writer">AbstractWriter</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractXmiWriter.html" title="class in fr.inria.atlanmod.neoemf.io.writer">AbstractXmiWriter</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/XmiStAXCursorWriter.html" title="class in fr.inria.atlanmod.neoemf.io.writer">XmiStAXCursorWriter</a></dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractStreamWriter.html" title="class in fr.inria.atlanmod.neoemf.io.writer">AbstractStreamWriter</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractWriter.html" title="class in fr.inria.atlanmod.neoemf.io.writer">AbstractWriter</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractXmiStreamWriter.html" title="class in fr.inria.atlanmod.neoemf.io.writer">AbstractXmiStreamWriter</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/DefaultMapperWriter.html" title="class in fr.inria.atlanmod.neoemf.io.writer">DefaultMapperWriter</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/XmiStreamWriter.html" title="class in fr.inria.atlanmod.neoemf.io.writer">XmiStreamWriter</a></dd>
 </dl>
 <hr>
 <br>
-<pre>public interface <span class="typeNameLabel">Writer</span>
+<pre>@ParametersAreNonnullByDefault
+public interface <span class="typeNameLabel">Writer</span>
 extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a></pre>
-<div class="block">An <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> that writes data into a file.</div>
-<dl>
-<dt><span class="simpleTagLabel">Note:</span></dt>
-<dd>It correspond to the tail of the parsing process in case of an export.</dd>
-</dl>
+<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> that converts received notifications in write operations.</div>
 </li>
 </ul>
 </div>
@@ -128,56 +119,12 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" tit
 <!--   -->
 </a>
 <h3>Method Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/Writer.html#write-java.io.OutputStream-">write</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;stream)</code>
-<div class="block">Writes in a stream based on received notifications.</div>
-</td>
-</tr>
-</table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.neoemf.io.Handler">
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;fr.inria.atlanmod.neoemf.io.<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a></h3>
-<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#handleAttribute-fr.inria.atlanmod.neoemf.io.structure.Attribute-">handleAttribute</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#handleCharacters-java.lang.String-">handleCharacters</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#handleEndDocument--">handleEndDocument</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#handleEndElement--">handleEndElement</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#handleReference-fr.inria.atlanmod.neoemf.io.structure.Reference-">handleReference</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#handleStartDocument--">handleStartDocument</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#handleStartElement-fr.inria.atlanmod.neoemf.io.structure.Element-">handleStartElement</a></code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="details">
-<ul class="blockList">
-<li class="blockList">
-<!-- ============ METHOD DETAIL ========== -->
-<ul class="blockList">
-<li class="blockList"><a name="method.detail">
-<!--   -->
-</a>
-<h3>Method Detail</h3>
-<a name="write-java.io.OutputStream-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>write</h4>
-<pre>void&nbsp;write(<a href="http://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;stream)
-    throws <a href="http://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
-<div class="block">Writes in a stream based on received notifications.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>stream</code> - the stream where to write</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if an error occurred during the I/O process</dd>
-</dl>
-</li>
+<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onAttribute-fr.inria.atlanmod.neoemf.io.bean.BasicAttribute-">onAttribute</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onCharacters-java.lang.String-">onCharacters</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onComplete--">onComplete</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onEndElement--">onEndElement</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onInitialize--">onInitialize</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">onReference</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">onStartElement</a></code></li>
 </ul>
 </li>
 </ul>
@@ -207,8 +154,8 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" tit
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractXmiWriter.html" title="class in fr.inria.atlanmod.neoemf.io.writer"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/XmiStAXCursorWriter.html" title="class in fr.inria.atlanmod.neoemf.io.writer"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/DefaultMapperWriter.html" title="class in fr.inria.atlanmod.neoemf.io.writer"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/XmiStreamWriter.html" title="class in fr.inria.atlanmod.neoemf.io.writer"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/inria/atlanmod/neoemf/io/writer/Writer.html" target="_top">Frames</a></li>
@@ -235,19 +182,19 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" tit
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#method.summary">Method</a></li>
+<li>Method</li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#method.detail">Method</a></li>
+<li>Method</li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod INRIA LINA Mines Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>

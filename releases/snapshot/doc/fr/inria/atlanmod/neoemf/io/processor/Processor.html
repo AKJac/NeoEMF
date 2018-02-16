@@ -43,8 +43,8 @@
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/PersistenceProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/TimerProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/NoopProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/ProgressProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/inria/atlanmod/neoemf/io/processor/Processor.html" target="_top">Frames</a></li>
@@ -95,19 +95,23 @@
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io">Notifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a></dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">AbstractProcessor</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/CounterProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">CounterProcessor</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/EcoreProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">EcoreProcessor</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/LoggingProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">LoggingProcessor</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/PersistenceProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">PersistenceProcessor</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/TimerProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">TimerProcessor</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/XPathProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">XPathProcessor</a></dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">AbstractProcessor</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/CounterProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">CounterProcessor</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/EcoreProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">EcoreProcessor</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/LoggingProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">LoggingProcessor</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/NoopProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">NoopProcessor</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/ProgressProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">ProgressProcessor</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/TimerProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">TimerProcessor</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/XPathResolver.html" title="class in fr.inria.atlanmod.neoemf.io.processor">XPathResolver</a></dd>
 </dl>
 <hr>
 <br>
-<pre>public interface <span class="typeNameLabel">Processor</span>
-extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io">Notifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</pre>
-<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> that pre-processes and post-processes received events, before notifying the next <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a>.
+<pre>@ParametersAreNonnullByDefault
+public interface <span class="typeNameLabel">Processor</span>
+extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a></pre>
+<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> that pre-processes and post-processes received events, before notifying
+ the next <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a>.
  <p>
- It can add validation, redirection, cancellation, or data enhancement capabilities.</div>
+ It can add validation, redirection, cancellation, or data enhancement capabilities.
+ <p>
+ <b>NOTE:</b> Because of the stream-based architecture, all <code>Processor</code>s are stateful.</div>
 </li>
 </ul>
 </div>
@@ -125,14 +129,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" tit
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;fr.inria.atlanmod.neoemf.io.<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a></h3>
-<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#handleAttribute-fr.inria.atlanmod.neoemf.io.structure.Attribute-">handleAttribute</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#handleCharacters-java.lang.String-">handleCharacters</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#handleEndDocument--">handleEndDocument</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#handleEndElement--">handleEndElement</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#handleReference-fr.inria.atlanmod.neoemf.io.structure.Reference-">handleReference</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#handleStartDocument--">handleStartDocument</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#handleStartElement-fr.inria.atlanmod.neoemf.io.structure.Element-">handleStartElement</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.neoemf.io.Notifier">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;fr.inria.atlanmod.neoemf.io.<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io">Notifier</a></h3>
-<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#next--">next</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyAttribute-fr.inria.atlanmod.neoemf.io.structure.Attribute-">notifyAttribute</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyCharacters-java.lang.String-">notifyCharacters</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyEndDocument--">notifyEndDocument</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyEndElement--">notifyEndElement</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyReference-fr.inria.atlanmod.neoemf.io.structure.Reference-">notifyReference</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyStartDocument--">notifyStartDocument</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyStartElement-fr.inria.atlanmod.neoemf.io.structure.Element-">notifyStartElement</a></code></li>
+<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onAttribute-fr.inria.atlanmod.neoemf.io.bean.BasicAttribute-">onAttribute</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onCharacters-java.lang.String-">onCharacters</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onComplete--">onComplete</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onEndElement--">onEndElement</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onInitialize--">onInitialize</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">onReference</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">onStartElement</a></code></li>
 </ul>
 </li>
 </ul>
@@ -162,8 +159,8 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" tit
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/PersistenceProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/TimerProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/NoopProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/ProgressProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/inria/atlanmod/neoemf/io/processor/Processor.html" target="_top">Frames</a></li>
@@ -203,6 +200,6 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" tit
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod INRIA LINA Mines Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>

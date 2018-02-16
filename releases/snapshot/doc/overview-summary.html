@@ -74,7 +74,7 @@
 </div>
 <div class="header">
 <div class="subTitle">
-<div class="block">NeoEMF : A Multi-database Model Persistence Framework.</div>
+<div class="block">NeoEMF : A Multi-Database Model Persistence Framework.</div>
 </div>
 <p>See: <a href="#overview.description">Description</a></p>
 </div>
@@ -87,9 +87,21 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/annotations/package-summary.html">fr.inria.atlanmod.neoemf.annotations</a></td>
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/package-summary.html">fr.inria.atlanmod.neoemf</a></td>
 <td class="colLast">
-<div class="block">Provides common annotation types.</div>
+<div class="block">The base package of all NeoEMF features.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/bind/package-summary.html">fr.inria.atlanmod.neoemf.bind</a></td>
+<td class="colLast">
+<div class="block">Provides classes related to the binding engine and classpath analysis.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/config/package-summary.html">fr.inria.atlanmod.neoemf.config</a></td>
+<td class="colLast">
+<div class="block">Provides utility classes to provide modeling and persistence-level configuration.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -99,57 +111,70 @@
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/core/internal/package-summary.html">fr.inria.atlanmod.neoemf.core.internal</a></td>
+<td class="colLast">
+<div class="block">Provides helper classes for the base classes, such as lazy collections.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/package-summary.html">fr.inria.atlanmod.neoemf.data</a></td>
 <td class="colLast">
 <div class="block">Provides generic classes representing data management operations.</div>
 </td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/map/core/package-summary.html">fr.inria.atlanmod.neoemf.data.map.core</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr class="altColor">
-<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/map/core/store/package-summary.html">fr.inria.atlanmod.neoemf.data.map.core.store</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/store/package-summary.html">fr.inria.atlanmod.neoemf.data.store</a></td>
-<td class="colLast">
-<div class="block">Provides classes to map model-level operations into persistence-level operations.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/structure/package-summary.html">fr.inria.atlanmod.neoemf.data.structure</a></td>
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/bean/package-summary.html">fr.inria.atlanmod.neoemf.data.bean</a></td>
 <td class="colLast">
 <div class="block">Provides simple representations of objects used to translate model-level operations in persistence calls.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/option/package-summary.html">fr.inria.atlanmod.neoemf.option</a></td>
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/bean/serializer/package-summary.html">fr.inria.atlanmod.neoemf.data.bean.serializer</a></td>
 <td class="colLast">
-<div class="block">Provides utility classes to provide modeling and persistence level options to NeoEMF.</div>
+<div class="block">Provides classes related to bean serialization.</div>
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/mapping/package-summary.html">fr.inria.atlanmod.neoemf.data.mapping</a></td>
+<td class="colLast">
+<div class="block">Provides interfaces for data mapping.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/store/package-summary.html">fr.inria.atlanmod.neoemf.data.store</a></td>
+<td class="colLast">
+<div class="block">Provides classes that adds preprocessing and postprocessing functionalities during persistence operations.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/store/adapter/package-summary.html">fr.inria.atlanmod.neoemf.data.store.adapter</a></td>
+<td class="colLast">
+<div class="block">Provides classes to map model-level operations into persistence-level operations.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="fr/inria/atlanmod/neoemf/resource/package-summary.html">fr.inria.atlanmod.neoemf.resource</a></td>
 <td class="colLast">
 <div class="block">Provides classes extending EMF resource management to support lazy-loading and database delegation.</div>
 </td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/resource/internal/package-summary.html">fr.inria.atlanmod.neoemf.resource.internal</a></td>
+<td class="colLast">
+<div class="block">Provides helper classes for base classes related to <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a>s.</div>
+</td>
+</tr>
 <tr class="rowColor">
 <td class="colFirst"><a href="fr/inria/atlanmod/neoemf/util/package-summary.html">fr.inria.atlanmod.neoemf.util</a></td>
 <td class="colLast">
-<div class="block">Provides utility classes to ease URI management or containment list computation.</div>
+<div class="block">Provides miscellaneous utility classes, such as <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>s management or models
+ comparison.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/util/emf/compare/package-summary.html">fr.inria.atlanmod.neoemf.util.emf.compare</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/util/logging/package-summary.html">fr.inria.atlanmod.neoemf.util.logging</a></td>
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/util/compare/package-summary.html">fr.inria.atlanmod.neoemf.util.compare</a></td>
 <td class="colLast">
-<div class="block">Provides classes for logging information and events.</div>
+<div class="block">Provides EMF Compare specific implementation classes that allow model comparison involving <a href="fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a>s.</div>
 </td>
 </tr>
 </tbody>
@@ -166,37 +191,25 @@
 <tr class="altColor">
 <td class="colFirst"><a href="fr/inria/atlanmod/neoemf/io/package-summary.html">fr.inria.atlanmod.neoemf.io</a></td>
 <td class="colLast">
-<div class="block">Provides methods and classes for working with Java I/O, such as import/export features.</div>
+<div class="block">Provides methods and classes for working with I/O and security.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/io/hash/package-summary.html">fr.inria.atlanmod.neoemf.io.hash</a></td>
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/io/bean/package-summary.html">fr.inria.atlanmod.neoemf.io.bean</a></td>
 <td class="colLast">
-<div class="block">Provides hash functions and related structures.</div>
+<div class="block">Provides simple representations of objects used during import/export.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/io/persistence/package-summary.html">fr.inria.atlanmod.neoemf.io.persistence</a></td>
-<td class="colLast">
-<div class="block">Provides classes linking I/O features to persistence features.</div>
-</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><a href="fr/inria/atlanmod/neoemf/io/processor/package-summary.html">fr.inria.atlanmod.neoemf.io.processor</a></td>
 <td class="colLast">
 <div class="block">Provides classes that adds preprocessing and postprocessing functionalities during an I/O process.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="fr/inria/atlanmod/neoemf/io/reader/package-summary.html">fr.inria.atlanmod.neoemf.io.reader</a></td>
 <td class="colLast">
 <div class="block">Provides classes related to data reading.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/io/structure/package-summary.html">fr.inria.atlanmod.neoemf.io.structure</a></td>
-<td class="colLast">
-<div class="block">Provides simple representations of objects used during import/export.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -209,6 +222,35 @@
 <td class="colFirst"><a href="fr/inria/atlanmod/neoemf/io/writer/package-summary.html">fr.inria.atlanmod.neoemf.io.writer</a></td>
 <td class="colLast">
 <div class="block">Provides classes related to data writing.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="contentContainer">
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="In-memory (default) table, listing packages, and an explanation">
+<caption><span>In-memory (default)</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Package</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/im/package-summary.html">fr.inria.atlanmod.neoemf.data.im</a></td>
+<td class="colLast">
+<div class="block">Provides classes related to data management specific to the default in-memory implementation.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/im/config/package-summary.html">fr.inria.atlanmod.neoemf.data.im.config</a></td>
+<td class="colLast">
+<div class="block">Provides configuration classes to define specific behaviors of the default in-memory database.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/im/util/package-summary.html">fr.inria.atlanmod.neoemf.data.im.util</a></td>
+<td class="colLast">
+<div class="block">Provides utility classes related to the default in-memory database.</div>
 </td>
 </tr>
 </tbody>
@@ -229,40 +271,27 @@
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/blueprints/configuration/package-summary.html">fr.inria.atlanmod.neoemf.data.blueprints.configuration</a></td>
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/blueprints/config/package-summary.html">fr.inria.atlanmod.neoemf.data.blueprints.config</a></td>
 <td class="colLast">
-<div class="block">Provides utility configuration classes that are dynamically called to setup Blueprints databases.</div>
+<div class="block">Provides configuration classes to define specific behaviors of Blueprints data persistence.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/blueprints/io/package-summary.html">fr.inria.atlanmod.neoemf.data.blueprints.io</a></td>
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/blueprints/graph/package-summary.html">fr.inria.atlanmod.neoemf.data.blueprints.graph</a></td>
 <td class="colLast">
-<div class="block">Provides Blueprints' specific readers and writers used in the <code>io</code> module to save and persist models from
- external sources.</div>
+<div class="block">TODO</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/blueprints/option/package-summary.html">fr.inria.atlanmod.neoemf.data.blueprints.option</a></td>
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/blueprints/graph/wrapper/package-summary.html">fr.inria.atlanmod.neoemf.data.blueprints.graph.wrapper</a></td>
 <td class="colLast">
-<div class="block">Provides utility classes to define specific behaviors of Blueprints data persistence.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/blueprints/store/package-summary.html">fr.inria.atlanmod.neoemf.data.blueprints.store</a></td>
-<td class="colLast">
-<div class="block">Provides specific classes to map model-level operations into Blueprints-level operations.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/blueprints/tg/configuration/package-summary.html">fr.inria.atlanmod.neoemf.data.blueprints.tg.configuration</a></td>
-<td class="colLast">
-<div class="block">Provides utility configuration classes that are dynamically called to setup TinkerGraph Blueprints implementation.</div>
+<div class="block">TODO</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/blueprints/util/package-summary.html">fr.inria.atlanmod.neoemf.data.blueprints.util</a></td>
 <td class="colLast">
-<div class="block">Provides utility classes to create Blueprints specific URIs.</div>
+<div class="block">Provides utility classes related to Blueprints.</div>
 </td>
 </tr>
 </tbody>
@@ -277,15 +306,15 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/blueprints/neo4j/configuration/package-summary.html">fr.inria.atlanmod.neoemf.data.blueprints.neo4j.configuration</a></td>
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/blueprints/neo4j/package-summary.html">fr.inria.atlanmod.neoemf.data.blueprints.neo4j</a></td>
 <td class="colLast">
-<div class="block">Provides utility configuration classes that are dynamically called to setup Neo4j Blueprints implementation.</div>
+<div class="block">Provides classes related to data management specific to a Neo4j implementation, under Blueprints.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/package-summary.html">fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option</a></td>
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/blueprints/neo4j/config/package-summary.html">fr.inria.atlanmod.neoemf.data.blueprints.neo4j.config</a></td>
 <td class="colLast">
-<div class="block">Provides utility classes to define specific behaviors of Neo4j data persistence.</div>
+<div class="block">Provides configuration classes to define specific behaviors of Neo4j data persistence.</div>
 </td>
 </tr>
 </tbody>
@@ -306,21 +335,44 @@
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/mapdb/option/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb.option</a></td>
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/mapdb/config/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb.config</a></td>
 <td class="colLast">
-<div class="block">Provides utility classes to define specific behaviors of MapDB data persistence.</div>
+<div class="block">Provides configuration classes to define specific behaviors of MapDB data persistence.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/mapdb/serializer/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb.serializer</a></td>
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/mapdb/util/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb.util</a></td>
 <td class="colLast">
-<div class="block">Provides serializers that allows to persist model-level elements into MapDB collections.</div>
+<div class="block">Provides utility classes related to MapDB.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="contentContainer">
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="BerkeleyDB table, listing packages, and an explanation">
+<caption><span>BerkeleyDB</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Package</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/berkeleydb/package-summary.html">fr.inria.atlanmod.neoemf.data.berkeleydb</a></td>
+<td class="colLast">
+<div class="block">Provides classes related to data management specific to a BerkeleyDB implementation.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/mapdb/util/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb.util</a></td>
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/berkeleydb/config/package-summary.html">fr.inria.atlanmod.neoemf.data.berkeleydb.config</a></td>
 <td class="colLast">
-<div class="block">Provides utility classes to create MapDB specific URIs.</div>
+<div class="block">Provides configuration classes to define specific behaviors of BerkeleyDB data persistence.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/berkeleydb/util/package-summary.html">fr.inria.atlanmod.neoemf.data.berkeleydb.util</a></td>
+<td class="colLast">
+<div class="block">Provides utility classes related to BerkeleyDB.</div>
 </td>
 </tr>
 </tbody>
@@ -341,28 +393,15 @@
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/hbase/option/package-summary.html">fr.inria.atlanmod.neoemf.data.hbase.option</a></td>
+<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/hbase/config/package-summary.html">fr.inria.atlanmod.neoemf.data.hbase.config</a></td>
 <td class="colLast">
-<div class="block">Provides utility classes to define specific behaviors of HBase data persistence.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/hbase/store/package-summary.html">fr.inria.atlanmod.neoemf.data.hbase.store</a></td>
-<td class="colLast">
-<div class="block">Provides specific classes to map model-level operations into HBase-level operations.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/hbase/structure/package-summary.html">fr.inria.atlanmod.neoemf.data.hbase.structure</a></td>
-<td class="colLast">
-<div class="block">Specific classes allowing to store model-level elements in HBase efficiently.</div>
+<div class="block">Provides configuration classes to define specific behaviors of HBase data persistence.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><a href="fr/inria/atlanmod/neoemf/data/hbase/util/package-summary.html">fr.inria.atlanmod.neoemf.data.hbase.util</a></td>
 <td class="colLast">
-<div class="block">Provides utility classes to create HBase specific URIs, serialize and deserialize HBase records, and manage HBase
- resource life-cycle.</div>
+<div class="block">Provides utility classes related to HBase.</div>
 </td>
 </tr>
 </tbody>
@@ -371,44 +410,74 @@
 <div class="contentContainer"><a name="overview.description">
 <!--   -->
 </a>
-<div class="block"><h1>NeoEMF : A Multi-database Model Persistence Framework.</h1>
-
-<p>The figure below describes the integration of NeoEMF in the Eclipse-based EMF ecosystem,
-    the most popular modeling framework nowadays. Modelers typically access a model using
-    <i>Model-based Tools</i>, which provide high-level modeling features such as a graphical
-    interface, interactive console, or query editor. These features internally rely on EMF's
-    <i>Model Access API</i> to navigate models, perform CRUD operations, check constraints, etc.
-    At its core, EMF delegates the operations to a persistence manager using its
-    <i>Persistence API</i>, which is in charge of the (de)serialization of the model.
-    The NeoEMF <i>core</i> component is defined at this level, and can be registered as a
-    persistence manager for EMF, replacing, for instance, the default XMI persistence manager.
-    This design makes NeoEMF both transparent to the client-application and EMF itself,
-    that simply delegates the calls without taking care of the actual storage.</p>
-
-<p>Once the NeoEMF <i>core</i> component has received the request of the modeling operation
-    to perform, it forwards the operation to the appropriate database driver (<i>MapDB</i>, <i>Blueprints</i>,
-    or <i>HBase</i>), which is in charge of handling the low-level representation of the model.
-    These connectors translate modeling operations into <i>Backend API</i> calls, store the results,
-    and reify database records into EMF <i>EObjects</i> when needed. NeoEMF also embeds a set of
-    default caching strategies that are used to improve performance of client applications, and can
-    be configured transparently at the EMF API level.</p>
-
-<div style="text-align: center;"><img src="doc-files/overview.png" alt="NeoEMF Architecture Overview"></div>
-
+<div class="block"><h1>NeoEMF : A Multi-Database Model Persistence Framework.</h1>
 <div>
-    <p>Each backend is provided in a dedicated Eclipse plugin. you can navigate through the documentation
-        to have a complete overview of backend-specific classes and how they interact with the <i>core</i> component.
-        NeoEMF provides 4 database adapters for now:</p>
+    <p>
+        The figure below describes the integration of NeoEMF in the <a href="https://eclipse.org/modeling/emf/">Eclipse
+        Modeling Framework (EMF)</a> ecosystem, the most popular modeling framework nowadays.
+    </p>
+    <div style="text-align: center;">
+        <img src="http://www.neoemf.com/static/img/doc/overview.png" alt="NeoEMF Architecture Overview">
+    </div>
+</div>
+<div>
+    <h3>EMF Behavior</h3>
+    <p>
+        Modelers typically access a model using <i>Model-based Tools</i>, which provide high-level modeling features
+        such as a graphical interface, interactive console, or query editor.
+
+        These features internally rely on EMF's <i>Model Access API</i> to navigate models, perform CRUD operations,
+        check constraints, etc.
+    </p>
+    <p>
+        At its core, EMF delegates the operations to a persistence manager using its <i>Persistence API</i>, which is in
+        charge of the (de)serialization of the model.
+    </p>
+
+    <h3>NeoEMF Behavior</h3>
+    <p>
+        The NeoEMF <i>core</i> component is defined at this level, and can be registered as a persistence manager for
+        EMF, replacing, for instance, the default XMI persistence manager.
+        This design makes NeoEMF both transparent to the client-application and EMF itself, that simply delegates the
+        calls without taking care of the actual storage.
+    </p>
+    <p>
+        Once the NeoEMF <i>core</i> component has received the request of the modeling operation to perform, it forwards
+        the operation to the appropriate database driver (<i>MapDB</i>, <i>Blueprints</i>, or <i>HBase</i>), which is in
+        charge of handling the low-level representation of the model.
+        These connectors translate modeling operations into <i>Backend API</i> calls, store the results, and reify
+        database records into EMF <i>EObjects</i> when needed.
+    </p>
+    <p>
+        NeoEMF also embeds a set of default caching strategies that are used to improve performance of client
+        applications, and can be configured transparently at the EMF API level.
+    </p>
+    <p>
+        Each backend is provided in a dedicated Eclipse plugin. you can navigate through the documentation to have a
+        complete overview of backend-specific classes and how they interact with the <i>core</i> component.
+    </p>
+
+    <h4>Provided Adapters</h4>
+    <p>
+        NeoEMF provides 5 database adapters for now:
+    </p>
     <ul>
-        <li>Blueprints - TinkerGraph: the default graph database embedded in Blueprints</li>
-        <li>Blueprints - Neo4j: Neo4j graph database under the Blueprints API</li>
-        <li>MapDB: an in-memory/on-disk Map database</li>
-        <li>HBase: a distributed Column database</li>
+        <li>
+            Blueprints
+            <ul>
+                <li><b>TinkerGraph</b>: The default graph database</li>
+                <li><b>Neo4j</b>: A graph-based database</li>
+            </ul>
+        </li>
+        <li><b>BerkeleyDB</b>: A map-based database</li>
+        <li><b>MapDB</b>: Another map-based database</li>
+        <li><b>HBase</b>: A distributed column-based database</li>
     </ul>
 </div>
-
-<p>Sources are available on <a href="https://github.com/atlanmod/NeoEMF">GitHub</a>. Further informations
-    can be found on <a href="http://www.neoemf.com">NeoEMF</a> website.</p></div>
+<p>
+    Sources are available on <a href="https://github.com/atlanmod/NeoEMF">GitHub</a>.
+    Further informations can be found on <a href="http://www.neoemf.com">NeoEMF</a> website.
+</p></div>
 </div>
 <!-- ======= START OF BOTTOM NAVBAR ====== -->
 <div class="bottomNav"><a name="navbar.bottom">
@@ -457,6 +526,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod INRIA LINA Mines Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>

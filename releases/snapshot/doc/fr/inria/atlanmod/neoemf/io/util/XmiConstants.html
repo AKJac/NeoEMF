@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":17};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],16:["t5","Default Methods"]};
+var methods = {"i0":9};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmlConstants.html" title="interface in fr.inria.atlanmod.neoemf.io.util"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XPathConstants.html" title="class in fr.inria.atlanmod.neoemf.io.util"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/inria/atlanmod/neoemf/io/util/XmiConstants.html" target="_top">Frames</a></li>
@@ -93,20 +93,25 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">fr.inria.atlanmod.neoemf.io.util</div>
-<h2 title="Interface XmiConstants" class="title">Interface XmiConstants</h2>
+<h2 title="Class XmiConstants" class="title">Class XmiConstants</h2>
 </div>
 <div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li>fr.inria.atlanmod.neoemf.io.util.XmiConstants</li>
+</ul>
+</li>
+</ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Superinterfaces:</dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmlConstants.html" title="interface in fr.inria.atlanmod.neoemf.io.util">XmlConstants</a></dd>
-</dl>
 <hr>
 <br>
-<pre>public interface <span class="typeNameLabel">XmiConstants</span>
-extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmlConstants.html" title="interface in fr.inria.atlanmod.neoemf.io.util">XmlConstants</a></pre>
+<pre>@ParametersAreNonnullByDefault
+public final class <span class="typeNameLabel">XmiConstants</span>
+extends java.lang.Object</pre>
 <div class="block">A utility class that contains all the constants used in an XMI file.</div>
 </li>
 </ul>
@@ -127,55 +132,84 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmlConstants
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmiConstants.html#NAME">NAME</a></span></code>
-<div class="block">The attribute key representing a name of an element.</div>
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmiConstants.html#ENCODING">ENCODING</a></span></code>
+<div class="block">The default encoding of XML files.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmiConstants.html#HREF">HREF</a></span></code>
+<div class="block">The attribute key representing a link to another document.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmiConstants.html#TYPE">TYPE</a></span></code>
+<div class="block">The attribute key representing a <code>null</code> element.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmiConstants.html#VERSION">VERSION</a></span></code>
+<div class="block">The default version of XML files.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmiConstants.html#XMI_ID">XMI_ID</a></span></code>
 <div class="block">The attribute key representing the identifier of an element.</div>
 </td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmiConstants.html#XMI_IDREF">XMI_IDREF</a></span></code>
 <div class="block">The attribute key representing a reference to an identified element.</div>
 </td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmiConstants.html#XMI_NS">XMI_NS</a></span></code>
 <div class="block">The namespace prefix of XMI.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmiConstants.html#XMI_TYPE">XMI_TYPE</a></span></code>
+<div class="block">The default attribute key representing the meta-class of an element.</div>
+</td>
+</tr>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colFirst"><code>static java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmiConstants.html#XMI_URI">XMI_URI</a></span></code>
 <div class="block">The namespace URI of XMI.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmiConstants.html#XMI_VERSION">XMI_VERSION</a></span></code>
+<div class="block">The default XMI version.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmiConstants.html#XMI_VERSION_ATTR">XMI_VERSION_ATTR</a></span></code>
 <div class="block">The attribute key representing the version of the parsed XMI file.</div>
 </td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmiConstants.html#XMI_XSI_TYPE">XMI_XSI_TYPE</a></span></code>
-<div class="block">The attribute key representing the metaclass of an element.</div>
+<div class="block">The attribute key representing the meta-class of an element.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmiConstants.html#XSI_NS">XSI_NS</a></span></code>
+<div class="block">The namespace prefix of XSI.</div>
 </td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.fr.inria.atlanmod.neoemf.io.util.XmlConstants">
-<!--   -->
-</a>
-<h3>Fields inherited from interface&nbsp;fr.inria.atlanmod.neoemf.io.util.<a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmlConstants.html" title="interface in fr.inria.atlanmod.neoemf.io.util">XmlConstants</a></h3>
-<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmlConstants.html#HREF">HREF</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmlConstants.html#NIL">NIL</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmlConstants.html#TYPE">TYPE</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmlConstants.html#XML_NS">XML_NS</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmlConstants.html#XML_URI">XML_URI</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmlConstants.html#XSI_NS">XSI_NS</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmlConstants.html#XSI_URI">XSI_URI</a></code></li>
-</ul>
 </li>
 </ul>
 <!-- ========== METHOD SUMMARY =========== -->
@@ -185,19 +219,26 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmlConstants
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmiConstants.html#format-java.lang.String-java.lang.String-">format</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;prefix,
-      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</code>
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmiConstants.html#format-java.lang.String-java.lang.String-">format</a></span>(java.lang.String&nbsp;prefix,
+      java.lang.String&nbsp;value)</code>
 <div class="block">Formats a prefixed value as <code>"prefix:value"</code>.</div>
 </td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -212,13 +253,83 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmlConstants
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a name="ENCODING">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ENCODING</h4>
+<pre>public static final&nbsp;java.lang.String ENCODING</pre>
+<div class="block">The default encoding of XML files.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../constant-values.html#fr.inria.atlanmod.neoemf.io.util.XmiConstants.ENCODING">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="VERSION">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>VERSION</h4>
+<pre>public static final&nbsp;java.lang.String VERSION</pre>
+<div class="block">The default version of XML files.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../constant-values.html#fr.inria.atlanmod.neoemf.io.util.XmiConstants.VERSION">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="XSI_NS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>XSI_NS</h4>
+<pre>public static final&nbsp;java.lang.String XSI_NS</pre>
+<div class="block">The namespace prefix of XSI.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../constant-values.html#fr.inria.atlanmod.neoemf.io.util.XmiConstants.XSI_NS">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="TYPE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TYPE</h4>
+<pre>public static final&nbsp;java.lang.String TYPE</pre>
+<div class="block">The attribute key representing a <code>null</code> element.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../constant-values.html#fr.inria.atlanmod.neoemf.io.util.XmiConstants.TYPE">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="HREF">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>HREF</h4>
+<pre>public static final&nbsp;java.lang.String HREF</pre>
+<div class="block">The attribute key representing a link to another document.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../constant-values.html#fr.inria.atlanmod.neoemf.io.util.XmiConstants.HREF">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
 <a name="XMI_NS">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>XMI_NS</h4>
-<pre>static final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> XMI_NS</pre>
+<pre>public static final&nbsp;java.lang.String XMI_NS</pre>
 <div class="block">The namespace prefix of XMI.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -232,7 +343,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmlConstants
 <ul class="blockList">
 <li class="blockList">
 <h4>XMI_URI</h4>
-<pre>static final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> XMI_URI</pre>
+<pre>public static final&nbsp;java.lang.String XMI_URI</pre>
 <div class="block">The namespace URI of XMI.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -246,7 +357,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmlConstants
 <ul class="blockList">
 <li class="blockList">
 <h4>XMI_ID</h4>
-<pre>static final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> XMI_ID</pre>
+<pre>public static final&nbsp;java.lang.String XMI_ID</pre>
 <div class="block">The attribute key representing the identifier of an element.</div>
 </li>
 </ul>
@@ -256,12 +367,22 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmlConstants
 <ul class="blockList">
 <li class="blockList">
 <h4>XMI_IDREF</h4>
-<pre>static final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> XMI_IDREF</pre>
+<pre>public static final&nbsp;java.lang.String XMI_IDREF</pre>
 <div class="block">The attribute key representing a reference to an identified element.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmiConstants.html#XMI_ID"><code>XMI_ID</code></a></dd>
 </dl>
+</li>
+</ul>
+<a name="XMI_TYPE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>XMI_TYPE</h4>
+<pre>public static final&nbsp;java.lang.String XMI_TYPE</pre>
+<div class="block">The default attribute key representing the meta-class of an element.</div>
 </li>
 </ul>
 <a name="XMI_XSI_TYPE">
@@ -270,8 +391,8 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmlConstants
 <ul class="blockList">
 <li class="blockList">
 <h4>XMI_XSI_TYPE</h4>
-<pre>static final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> XMI_XSI_TYPE</pre>
-<div class="block">The attribute key representing the metaclass of an element.</div>
+<pre>public static final&nbsp;java.lang.String XMI_XSI_TYPE</pre>
+<div class="block">The attribute key representing the meta-class of an element.</div>
 </li>
 </ul>
 <a name="XMI_VERSION_ATTR">
@@ -280,21 +401,21 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmlConstants
 <ul class="blockList">
 <li class="blockList">
 <h4>XMI_VERSION_ATTR</h4>
-<pre>static final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> XMI_VERSION_ATTR</pre>
+<pre>public static final&nbsp;java.lang.String XMI_VERSION_ATTR</pre>
 <div class="block">The attribute key representing the version of the parsed XMI file.</div>
 </li>
 </ul>
-<a name="NAME">
+<a name="XMI_VERSION">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>NAME</h4>
-<pre>static final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> NAME</pre>
-<div class="block">The attribute key representing a name of an element.</div>
+<h4>XMI_VERSION</h4>
+<pre>public static final&nbsp;java.lang.String XMI_VERSION</pre>
+<div class="block">The default XMI version.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../constant-values.html#fr.inria.atlanmod.neoemf.io.util.XmiConstants.NAME">Constant Field Values</a></dd>
+<dd><a href="../../../../../../constant-values.html#fr.inria.atlanmod.neoemf.io.util.XmiConstants.XMI_VERSION">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -312,11 +433,10 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmlConstants
 <ul class="blockListLast">
 <li class="blockList">
 <h4>format</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                              <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;prefix,
-                              <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-                              <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</pre>
+<pre>@Nonnull
+public static&nbsp;java.lang.String&nbsp;format(@Nullable
+                                               java.lang.String&nbsp;prefix,
+                                               java.lang.String&nbsp;value)</pre>
 <div class="block">Formats a prefixed value as <code>"prefix:value"</code>. If the <code>prefix</code> is <code>null</code>, the returned value
  only contains the <code>value</code>.</div>
 <dl>
@@ -357,7 +477,7 @@ static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.h
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XmlConstants.html" title="interface in fr.inria.atlanmod.neoemf.io.util"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/util/XPathConstants.html" title="class in fr.inria.atlanmod.neoemf.io.util"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/inria/atlanmod/neoemf/io/util/XmiConstants.html" target="_top">Frames</a></li>
@@ -397,6 +517,6 @@ static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.h
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod INRIA LINA Mines Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>

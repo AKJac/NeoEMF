@@ -43,8 +43,8 @@
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../fr/inria/atlanmod/neoemf/annotations/package-summary.html">Prev&nbsp;Package</a></li>
-<li><a href="../../../../../fr/inria/atlanmod/neoemf/data/package-summary.html">Next&nbsp;Package</a></li>
+<li><a href="../../../../../fr/inria/atlanmod/neoemf/config/package-summary.html">Prev&nbsp;Package</a></li>
+<li><a href="../../../../../fr/inria/atlanmod/neoemf/core/internal/package-summary.html">Next&nbsp;Package</a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?fr/inria/atlanmod/neoemf/core/package-summary.html" target="_top">Frames</a></li>
@@ -93,9 +93,15 @@
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/core/IdProvider.html" title="interface in fr.inria.atlanmod.neoemf.core">IdProvider</a></td>
+<td class="colLast">
+<div class="block">A provider of <a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a> instances.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a></td>
 <td class="colLast">
-<div class="block">An <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a> identified by a unique <a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>, able to persist in datastores.</div>
+<div class="block">An <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a> identified by a unique <a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>, able to persist in <a href="../../../../../fr/inria/atlanmod/neoemf/data/Backend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>Backend</code></a>.</div>
 </td>
 </tr>
 </tbody>
@@ -110,21 +116,33 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/core/AbstractIdProvider.html" title="class in fr.inria.atlanmod.neoemf.core">AbstractIdProvider</a></td>
+<td class="colLast">
+<div class="block">An abstract <a href="../../../../../fr/inria/atlanmod/neoemf/core/IdProvider.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>IdProvider</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html" title="class in fr.inria.atlanmod.neoemf.core">DefaultPersistentEObject</a></td>
 <td class="colLast">
 <div class="block">The default implementation of a <a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistenceFactory.html" title="class in fr.inria.atlanmod.neoemf.core">PersistenceFactory</a></td>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/core/IdConverters.html" title="class in fr.inria.atlanmod.neoemf.core">IdConverters</a></td>
 <td class="colLast">
-<div class="block">The factory that creates <a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a>s from <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a>es.</div>
+<div class="block">A static factory that creates <code>Converter</code> instances related to <a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>s.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/core/LongIdProvider.html" title="class in fr.inria.atlanmod.neoemf.core">LongIdProvider</a></td>
+<td class="colLast">
+<div class="block">An <a href="../../../../../fr/inria/atlanmod/neoemf/core/IdProvider.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>IdProvider</code></a> that provides <a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a> with a long representation.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/core/StringId.html" title="class in fr.inria.atlanmod.neoemf.core">StringId</a></td>
+<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistenceFactory.html" title="class in fr.inria.atlanmod.neoemf.core">PersistenceFactory</a></td>
 <td class="colLast">
-<div class="block">An <a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a> with a <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> representation.</div>
+<div class="block">The factory that creates <a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a> instances from <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a>es.</div>
 </td>
 </tr>
 </tbody>
@@ -166,8 +184,8 @@
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../fr/inria/atlanmod/neoemf/annotations/package-summary.html">Prev&nbsp;Package</a></li>
-<li><a href="../../../../../fr/inria/atlanmod/neoemf/data/package-summary.html">Next&nbsp;Package</a></li>
+<li><a href="../../../../../fr/inria/atlanmod/neoemf/config/package-summary.html">Prev&nbsp;Package</a></li>
+<li><a href="../../../../../fr/inria/atlanmod/neoemf/core/internal/package-summary.html">Next&nbsp;Package</a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?fr/inria/atlanmod/neoemf/core/package-summary.html" target="_top">Frames</a></li>
@@ -192,6 +210,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod INRIA LINA Mines Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>

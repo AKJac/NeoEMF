@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -75,13 +75,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li><a href="#nested.classes.inherited.from.class.org.eclipse.emf.ecore.resource.impl.ResourceImpl">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.org.eclipse.emf.ecore.resource.impl.ResourceImpl">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -97,7 +97,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
 <li><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/impl/BasicNotifierImpl.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify.impl">org.eclipse.emf.common.notify.impl.BasicNotifierImpl</a></li>
@@ -124,17 +124,22 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource">PersistentResource</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io">Closeable</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang">AutoCloseable</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Notifier.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Notifier</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource">Resource</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.Internal.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource">Resource.Internal</a></dd>
+<dd><a href="../../../../../fr/inria/atlanmod/neoemf/data/store/Storable.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Storable</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource">PersistentResource</a>, java.io.Closeable, java.lang.AutoCloseable, java.lang.Iterable&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&gt;, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Notifier.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Notifier</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource">Resource</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.Internal.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource">Resource.Internal</a></dd>
 </dl>
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">DefaultPersistentResource</span>
+<pre>@ParametersAreNonnullByDefault
+public class <span class="typeNameLabel">DefaultPersistentResource</span>
 extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource.impl">ResourceImpl</a>
 implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource">PersistentResource</a></pre>
 <div class="block">The default implementation of a <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource"><code>PersistentResource</code></a> that contains <a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a>.
  <p>
- <a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html" title="class in fr.inria.atlanmod.neoemf.resource"><code>DefaultPersistentResource</code></a>s is backend-agnostic and only delegates model element operations
- to its internal <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> which is responsible of database access.</div>
+ <code>DefaultPersistentResource</code>s are backend-agnostic and only delegate model element operations to their internal
+ <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>Store</code></a> which is responsible of database access.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../fr/inria/atlanmod/neoemf/data/store/adapter/PersistentStoreAdapter.html" title="class in fr.inria.atlanmod.neoemf.data.store.adapter"><code>PersistentStoreAdapter</code></a></dd>
+</dl>
 </li>
 </ul>
 </div>
@@ -152,14 +157,14 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentR
 <!--   -->
 </a>
 <h3>Nested classes/interfaces inherited from class&nbsp;org.eclipse.emf.ecore.resource.impl.<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource.impl">ResourceImpl</a></h3>
-<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.ContentsEList.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource.impl">ResourceImpl.ContentsEList</a>&lt;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.ContentsEList.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource.impl">E</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> &amp; <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>&gt;, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.ModificationTrackingAdapter.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource.impl">ResourceImpl.ModificationTrackingAdapter</a></code></li>
+<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.ContentsEList.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource.impl">ResourceImpl.ContentsEList</a>&lt;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.ContentsEList.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource.impl">E</a> extends java.lang.Object &amp; <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>&gt;, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.ModificationTrackingAdapter.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource.impl">ResourceImpl.ModificationTrackingAdapter</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="nested.classes.inherited.from.class.org.eclipse.emf.common.notify.impl.BasicNotifierImpl">
 <!--   -->
 </a>
 <h3>Nested classes/interfaces inherited from class&nbsp;org.eclipse.emf.common.notify.impl.<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/impl/BasicNotifierImpl.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify.impl">BasicNotifierImpl</a></h3>
-<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/impl/BasicNotifierImpl.EAdapterList.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify.impl">BasicNotifierImpl.EAdapterList</a>&lt;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/impl/BasicNotifierImpl.EAdapterList.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify.impl">E</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> &amp; <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Adapter.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Adapter</a>&gt;, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/impl/BasicNotifierImpl.EObservableAdapterList.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify.impl">BasicNotifierImpl.EObservableAdapterList</a></code></li>
+<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/impl/BasicNotifierImpl.EAdapterList.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify.impl">BasicNotifierImpl.EAdapterList</a>&lt;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/impl/BasicNotifierImpl.EAdapterList.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify.impl">E</a> extends java.lang.Object &amp; <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Adapter.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Adapter</a>&gt;, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/impl/BasicNotifierImpl.EObservableAdapterList.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify.impl">BasicNotifierImpl.EObservableAdapterList</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="nested.classes.inherited.from.class.org.eclipse.emf.ecore.resource.Resource">
@@ -176,25 +181,6 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentR
 <!--   -->
 </a>
 <h3>Field Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackend</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#backend">backend</a></span></code>
-<div class="block">The underlying <a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackend</code></a> that stores the data.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#store">store</a></span></code>
-<div class="block">The <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> responsible of the database serialization.</div>
-</td>
-</tr>
-</table>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.org.eclipse.emf.ecore.resource.impl.ResourceImpl">
 <!--   -->
@@ -208,6 +194,13 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentR
 </a>
 <h3>Fields inherited from class&nbsp;org.eclipse.emf.common.notify.impl.<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/impl/NotifierImpl.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify.impl">NotifierImpl</a></h3>
 <code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/impl/NotifierImpl.html?is-external=true#eAdapters" title="class or interface in org.eclipse.emf.common.notify.impl">eAdapters</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/impl/NotifierImpl.html?is-external=true#EDELIVER" title="class or interface in org.eclipse.emf.common.notify.impl">EDELIVER</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/impl/NotifierImpl.html?is-external=true#eFlags" title="class or interface in org.eclipse.emf.common.notify.impl">eFlags</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/impl/NotifierImpl.html?is-external=true#ELAST_NOTIFIER_FLAG" title="class or interface in org.eclipse.emf.common.notify.impl">ELAST_NOTIFIER_FLAG</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.fr.inria.atlanmod.neoemf.resource.PersistentResource">
+<!--   -->
+</a>
+<h3>Fields inherited from interface&nbsp;fr.inria.atlanmod.neoemf.resource.<a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource">PersistentResource</a></h3>
+<code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html#ROOT_ID">ROOT_ID</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html#ROOT_REFERENCE_ID">ROOT_REFERENCE_ID</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html#ROOT_REFERENCE_NAME">ROOT_REFERENCE_NAME</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.org.eclipse.emf.ecore.resource.Resource">
@@ -250,80 +243,88 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentR
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>&lt;T extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>&gt;<br>java.lang.Iterable&lt;T&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#allInstancesOf-org.eclipse.emf.ecore.EClass-boolean-">allInstancesOf</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a>&nbsp;eClass,
+              boolean&nbsp;strict)</code>
+<div class="block">Computes the set of instances of the given <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a>.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#close--">close</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#doUnload--">doUnload</a></span>()</code>
 <div class="block">Does all the work of unloading the resource.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject.EStore</a></code></td>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/data/store/adapter/StoreAdapter.html" title="interface in fr.inria.atlanmod.neoemf.data.store.adapter">StoreAdapter</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#eStore--">eStore</a></span>()</code>
-<div class="block">Returns the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>InternalEObject.EStore</code></a> used to store the model.</div>
+<div class="block">Returns the store used to store the model.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#finalize--">finalize</a></span>()</code>&nbsp;</td>
-</tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#getAllInstances-org.eclipse.emf.ecore.EClass-">getAllInstances</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a>&nbsp;eClass)</code>
-<div class="block">Computes the set of instances of the given <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a> (including its sub-types).</div>
+<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/TreeIterator.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">TreeIterator</a>&lt;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#getAllContents--">getAllContents</a></span>()</code>
+<div class="block">Returns a tree iterator that iterates over all the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#getContents--" title="class or interface in org.eclipse.emf.ecore.resource"><code>direct contents</code></a> and indirect contents of this resource.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#getAllInstances-org.eclipse.emf.ecore.EClass-boolean-">getAllInstances</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a>&nbsp;eClass,
-               boolean&nbsp;strict)</code>
-<div class="block">Computes the set of instances of the given <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a>.</div>
-</td>
-</tr>
-<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#getContents--">getContents</a></span>()</code>
 <div class="block">Returns the list of the direct content objects;
  each is of type <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a>.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#getEObject-java.lang.String-">getEObject</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uriFragment)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#getEObject-java.lang.String-">getEObject</a></span>(java.lang.String&nbsp;uriFragment)</code>
 <div class="block">Returns the resolved object for the given URI <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true#fragment--" title="class or interface in org.eclipse.emf.common.util"><code>fragment</code></a>.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#getFile--">getFile</a></span>()</code>
-<div class="block">Returns the database file.</div>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>protected java.util.List&lt;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#getUnloadingContents--">getUnloadingContents</a></span>()</code>
+<div class="block">This implementation returns a copy of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getContents--" title="class or interface in org.eclipse.emf.ecore.resource.impl"><code>contents</code></a>.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#getURIFragment-org.eclipse.emf.ecore.EObject-">getURIFragment</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>&nbsp;eObject)</code>
 <div class="block">Returns the URI <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true#fragment--" title="class or interface in org.eclipse.emf.common.util"><code>fragment</code></a> that,
  when passed to <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#getEObject-java.lang.String-" title="class or interface in org.eclipse.emf.ecore.resource"><code>getEObject</code></a> will return the given object.</div>
 </td>
 </tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#load-fr.inria.atlanmod.neoemf.config.ImmutableConfig-">load</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html" title="interface in fr.inria.atlanmod.neoemf.config">ImmutableConfig</a>&nbsp;config)</code>
+<div class="block">Loads the resource using the specified configuration.</div>
+</td>
+</tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#isDistributed--">isDistributed</a></span>()</code>
-<div class="block">Returns <code>true</code> if the resource is distributed, <code>false</code> otherwise.</div>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#load-java.util.Map-">load</a></span>(java.util.Map&lt;?,?&gt;&nbsp;options)</code>
+<div class="block">Loads the resource using the specified options.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#load-java.util.Map-">load</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;?,?&gt;&nbsp;options)</code>
-<div class="block">Loads the resource using the specified options.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#save-fr.inria.atlanmod.neoemf.config.ImmutableConfig-">save</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html" title="interface in fr.inria.atlanmod.neoemf.config">ImmutableConfig</a>&nbsp;config)</code>
+<div class="block">Saves the resource using the specified configuration.</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#save-java.util.Map-">save</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;?,?&gt;&nbsp;options)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#save-java.util.Map-">save</a></span>(java.util.Map&lt;?,?&gt;&nbsp;options)</code>
 <div class="block">Saves the resource using the specified options.</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Notification.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Notification</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#setLoaded-boolean-">setLoaded</a></span>(boolean&nbsp;isLoaded)</code>
+<div class="block">Sets the load state as indicated, and returns a notification, if <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/impl/BasicNotifierImpl.html?is-external=true#eNotificationRequired--" title="class or interface in org.eclipse.emf.common.notify.impl"><code>required</code></a>.</div>
 </td>
 </tr>
 </table>
@@ -332,7 +333,7 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentR
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;org.eclipse.emf.ecore.resource.impl.<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource.impl">ResourceImpl</a></h3>
-<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#addModificationTrackingAdapters-org.eclipse.emf.ecore.EObject-" title="class or interface in org.eclipse.emf.ecore.resource.impl">addModificationTrackingAdapters</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#attached-org.eclipse.emf.ecore.EObject-" title="class or interface in org.eclipse.emf.ecore.resource.impl">attached</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#attachedHelper-org.eclipse.emf.ecore.EObject-" title="class or interface in org.eclipse.emf.ecore.resource.impl">attachedHelper</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#basicSetResourceSet-org.eclipse.emf.ecore.resource.ResourceSet-org.eclipse.emf.common.notify.NotificationChain-" title="class or interface in org.eclipse.emf.ecore.resource.impl">basicSetResourceSet</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#createModificationTrackingAdapter--" title="class or interface in org.eclipse.emf.ecore.resource.impl">createModificationTrackingAdapter</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#delete-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource.impl">delete</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#detached-org.eclipse.emf.ecore.EObject-" title="class or interface in org.eclipse.emf.ecore.resource.impl">detached</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#detachedHelper-org.eclipse.emf.ecore.EObject-" title="class or interface in org.eclipse.emf.ecore.resource.impl">detachedHelper</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#doLoad-java.io.InputStream-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource.impl">doLoad</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#doSave-java.io.OutputStream-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource.impl">doSave</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getAllContents--" title="class or interface in org.eclipse.emf.ecore.resource.impl">getAllContents</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getAllProperContents-org.eclipse.emf.ecore.EObject-" title="class or interface in org.eclipse.emf.ecore.resource.impl">getAllProperContents</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getAllProperContents-java.util.List-" title="class or interface in org.eclipse.emf.ecore.resource.impl">getAllProperContents</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getDefaultURIConverter--" title="class or interface in org.eclipse.emf.ecore.resource.impl">getDefaultURIConverter</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getEObject-java.util.List-" title="class or interface in org.eclipse.emf.ecore.resource.impl">getEObject</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getEObjectByID-java.lang.String-" title="class or interface in org.eclipse.emf.ecore.resource.impl">getEObjectByID</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getEObjectForURIFragmentRootSegment-java.lang.String-" title="class or interface in org.eclipse.emf.ecore.resource.impl">getEObjectForURIFragmentRootSegment</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getErrors--" title="class or interface in org.eclipse.emf.ecore.resource.impl">getErrors</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getIntrinsicIDToEObjectMap--" title="class or interface in org.eclipse.emf.ecore.resource.impl">getIntrinsicIDToEObjectMap</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getResourceSet--" title="class or interface in org.eclipse.emf.ecore.resource.impl">getResourceSet</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getTimeStamp--" title="class or interface in org.eclipse.emf.ecore.resource.impl">getTimeStamp</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getUnloadingContents--" title="class or interface in org.eclipse.emf.ecore.resource.impl">getUnloadingContents</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getURI--" title="class or interface in org.eclipse.emf.ecore.resource.impl">getURI</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getURIConverter--" title="class or interface in org.eclipse.emf.ecore.resource.impl">getURIConverter</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getURIFragmentRootSegment-org.eclipse.emf.ecore.EObject-" title="class or interface in org.eclipse.emf.ecore.resource.impl">getURIFragmentRootSegment</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getWarnings--" title="class or interface in org.eclipse.emf.ecore.resource.impl">getWarnings</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#handleLoadResponse-java.util.Map-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource.impl">handleLoadResponse</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#handleSaveResponse-java.util.Map-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource.impl">handleSaveResponse</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#isAttachedDetachedHelperRequired--" title="class or interface in org.eclipse.emf.ecore.resource.impl">isAttachedDetachedHelperRequired</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#isContentZipEntry-java.util.zip.ZipEntry-" title="class or interface in org.eclipse.emf.ecore.resource.impl">isContentZipEntry</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#isLoaded--" title="class or interface in org.eclipse.emf.ecore.resource.impl">isLoaded</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#isLoading--" title="class or interface in org.eclipse.emf.ecore.resource.impl">isLoading</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#isModified--" title="class or interface in org.eclipse.emf.ecore.resource.impl">isModified</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#isTrackingModification--" title="class or interface in org.eclipse.emf.ecore.resource.impl">isTrackingModification</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#load-java.io.InputStream-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource.impl">load</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#mergeMaps-java.util.Map-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource.impl">mergeMaps</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#newContentZipEntry--" title="class or interface in org.eclipse.emf.ecore.resource.impl">newContentZipEntry</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#removeModificationTrackingAdapters-org.eclipse.emf.ecore.EObject-" title="class or interface in org.eclipse.emf.ecore.resource.impl">removeModificationTrackingAdapters</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#save-java.io.OutputStream-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource.impl">save</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#saveOnlyIfChangedWithFileBuffer-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource.impl">saveOnlyIfChangedWithFileBuffer</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#saveOnlyIfChangedWithMemoryBuffer-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource.impl">saveOnlyIfChangedWithMemoryBuffer</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#setIntrinsicIDToEObjectMap-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource.impl">setIntrinsicIDToEObjectMap</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#setLoaded-boolean-" title="class or interface in org.eclipse.emf.ecore.resource.impl">setLoaded</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#setModified-boolean-" title="class or interface in org.eclipse.emf.ecore.resource.impl">setModified</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#setTimeStamp-long-" title="class or interface in org.eclipse.emf.ecore.resource.impl">setTimeStamp</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#setTrackingModification-boolean-" title="class or interface in org.eclipse.emf.ecore.resource.impl">setTrackingModification</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#setURI-org.eclipse.emf.common.util.URI-" title="class or interface in org.eclipse.emf.ecore.resource.impl">setURI</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#toKeyString--" title="class or interface in org.eclipse.emf.ecore.resource.impl">toKeyString</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#toString--" title="class or interface in org.eclipse.emf.ecore.resource.impl">toString</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#unload--" title="class or interface in org.eclipse.emf.ecore.resource.impl">unload</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#unloaded-org.eclipse.emf.ecore.InternalEObject-" title="class or interface in org.eclipse.emf.ecore.resource.impl">unloaded</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#useZip--" title="class or interface in org.eclipse.emf.ecore.resource.impl">useZip</a></code></li>
+<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#addModificationTrackingAdapters-org.eclipse.emf.ecore.EObject-" title="class or interface in org.eclipse.emf.ecore.resource.impl">addModificationTrackingAdapters</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#attached-org.eclipse.emf.ecore.EObject-" title="class or interface in org.eclipse.emf.ecore.resource.impl">attached</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#attachedHelper-org.eclipse.emf.ecore.EObject-" title="class or interface in org.eclipse.emf.ecore.resource.impl">attachedHelper</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#basicSetResourceSet-org.eclipse.emf.ecore.resource.ResourceSet-org.eclipse.emf.common.notify.NotificationChain-" title="class or interface in org.eclipse.emf.ecore.resource.impl">basicSetResourceSet</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#createModificationTrackingAdapter--" title="class or interface in org.eclipse.emf.ecore.resource.impl">createModificationTrackingAdapter</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#delete-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource.impl">delete</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#detached-org.eclipse.emf.ecore.EObject-" title="class or interface in org.eclipse.emf.ecore.resource.impl">detached</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#detachedHelper-org.eclipse.emf.ecore.EObject-" title="class or interface in org.eclipse.emf.ecore.resource.impl">detachedHelper</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#doLoad-java.io.InputStream-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource.impl">doLoad</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#doSave-java.io.OutputStream-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource.impl">doSave</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getAllProperContents-org.eclipse.emf.ecore.EObject-" title="class or interface in org.eclipse.emf.ecore.resource.impl">getAllProperContents</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getAllProperContents-java.util.List-" title="class or interface in org.eclipse.emf.ecore.resource.impl">getAllProperContents</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getDefaultURIConverter--" title="class or interface in org.eclipse.emf.ecore.resource.impl">getDefaultURIConverter</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getEObject-java.util.List-" title="class or interface in org.eclipse.emf.ecore.resource.impl">getEObject</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getEObjectByID-java.lang.String-" title="class or interface in org.eclipse.emf.ecore.resource.impl">getEObjectByID</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getEObjectForURIFragmentRootSegment-java.lang.String-" title="class or interface in org.eclipse.emf.ecore.resource.impl">getEObjectForURIFragmentRootSegment</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getErrors--" title="class or interface in org.eclipse.emf.ecore.resource.impl">getErrors</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getIntrinsicIDToEObjectMap--" title="class or interface in org.eclipse.emf.ecore.resource.impl">getIntrinsicIDToEObjectMap</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getResourceSet--" title="class or interface in org.eclipse.emf.ecore.resource.impl">getResourceSet</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getTimeStamp--" title="class or interface in org.eclipse.emf.ecore.resource.impl">getTimeStamp</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getURI--" title="class or interface in org.eclipse.emf.ecore.resource.impl">getURI</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getURIConverter--" title="class or interface in org.eclipse.emf.ecore.resource.impl">getURIConverter</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getURIFragmentRootSegment-org.eclipse.emf.ecore.EObject-" title="class or interface in org.eclipse.emf.ecore.resource.impl">getURIFragmentRootSegment</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getWarnings--" title="class or interface in org.eclipse.emf.ecore.resource.impl">getWarnings</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#handleLoadResponse-java.util.Map-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource.impl">handleLoadResponse</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#handleSaveResponse-java.util.Map-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource.impl">handleSaveResponse</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#isAttachedDetachedHelperRequired--" title="class or interface in org.eclipse.emf.ecore.resource.impl">isAttachedDetachedHelperRequired</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#isContentZipEntry-java.util.zip.ZipEntry-" title="class or interface in org.eclipse.emf.ecore.resource.impl">isContentZipEntry</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#isLoaded--" title="class or interface in org.eclipse.emf.ecore.resource.impl">isLoaded</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#isLoading--" title="class or interface in org.eclipse.emf.ecore.resource.impl">isLoading</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#isModified--" title="class or interface in org.eclipse.emf.ecore.resource.impl">isModified</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#isTrackingModification--" title="class or interface in org.eclipse.emf.ecore.resource.impl">isTrackingModification</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#load-java.io.InputStream-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource.impl">load</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#mergeMaps-java.util.Map-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource.impl">mergeMaps</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#newContentZipEntry--" title="class or interface in org.eclipse.emf.ecore.resource.impl">newContentZipEntry</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#removeModificationTrackingAdapters-org.eclipse.emf.ecore.EObject-" title="class or interface in org.eclipse.emf.ecore.resource.impl">removeModificationTrackingAdapters</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#save-java.io.OutputStream-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource.impl">save</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#saveOnlyIfChangedWithFileBuffer-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource.impl">saveOnlyIfChangedWithFileBuffer</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#saveOnlyIfChangedWithMemoryBuffer-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource.impl">saveOnlyIfChangedWithMemoryBuffer</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#setIntrinsicIDToEObjectMap-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource.impl">setIntrinsicIDToEObjectMap</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#setModified-boolean-" title="class or interface in org.eclipse.emf.ecore.resource.impl">setModified</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#setTimeStamp-long-" title="class or interface in org.eclipse.emf.ecore.resource.impl">setTimeStamp</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#setTrackingModification-boolean-" title="class or interface in org.eclipse.emf.ecore.resource.impl">setTrackingModification</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#setURI-org.eclipse.emf.common.util.URI-" title="class or interface in org.eclipse.emf.ecore.resource.impl">setURI</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#toKeyString--" title="class or interface in org.eclipse.emf.ecore.resource.impl">toKeyString</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#toString--" title="class or interface in org.eclipse.emf.ecore.resource.impl">toString</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#unload--" title="class or interface in org.eclipse.emf.ecore.resource.impl">unload</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#unloaded-org.eclipse.emf.ecore.InternalEObject-" title="class or interface in org.eclipse.emf.ecore.resource.impl">unloaded</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#useZip--" title="class or interface in org.eclipse.emf.ecore.resource.impl">useZip</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.eclipse.emf.common.notify.impl.NotifierImpl">
@@ -352,8 +353,15 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentR
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.neoemf.resource.PersistentResource">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;fr.inria.atlanmod.neoemf.resource.<a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource">PersistentResource</a></h3>
+<code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html#allInstancesOf-org.eclipse.emf.ecore.EClass-">allInstancesOf</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html#isPersistent-org.eclipse.emf.ecore.resource.Resource-">isPersistent</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html#iterator--">iterator</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.eclipse.emf.ecore.resource.Resource.Internal">
@@ -367,7 +375,7 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentR
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;org.eclipse.emf.ecore.resource.<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource">Resource</a></h3>
-<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#delete-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource">delete</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#getAllContents--" title="class or interface in org.eclipse.emf.ecore.resource">getAllContents</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#getErrors--" title="class or interface in org.eclipse.emf.ecore.resource">getErrors</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#getResourceSet--" title="class or interface in org.eclipse.emf.ecore.resource">getResourceSet</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#getTimeStamp--" title="class or interface in org.eclipse.emf.ecore.resource">getTimeStamp</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#getURI--" title="class or interface in org.eclipse.emf.ecore.resource">getURI</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#getWarnings--" title="class or interface in org.eclipse.emf.ecore.resource">getWarnings</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#isLoaded--" title="class or interface in org.eclipse.emf.ecore.resource">isLoaded</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#isModified--" title="class or interface in org.eclipse.emf.ecore.resource">isModified</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#isTrackingModification--" title="class or interface in org.eclipse.emf.ecore.resource">isTrackingModification</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#load-java.io.InputStream-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource">load</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#save-java.io.OutputStream-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource">save</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#setModified-boolean-" title="class or interface in org.eclipse.emf.ecore.resource">setModified</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#setTimeStamp-long-" title="class or interface in org.eclipse.emf.ecore.resource">setTimeStamp</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#setTrackingModification-boolean-" title="class or interface in org.eclipse.emf.ecore.resource">setTrackingModification</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#setURI-org.eclipse.emf.common.util.URI-" title="class or interface in org.eclipse.emf.ecore.resource">setURI</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#unload--" title="class or interface in org.eclipse.emf.ecore.resource">unload</a></code></li>
+<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#delete-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource">delete</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#getErrors--" title="class or interface in org.eclipse.emf.ecore.resource">getErrors</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#getResourceSet--" title="class or interface in org.eclipse.emf.ecore.resource">getResourceSet</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#getTimeStamp--" title="class or interface in org.eclipse.emf.ecore.resource">getTimeStamp</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#getURI--" title="class or interface in org.eclipse.emf.ecore.resource">getURI</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#getWarnings--" title="class or interface in org.eclipse.emf.ecore.resource">getWarnings</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#isLoaded--" title="class or interface in org.eclipse.emf.ecore.resource">isLoaded</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#isModified--" title="class or interface in org.eclipse.emf.ecore.resource">isModified</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#isTrackingModification--" title="class or interface in org.eclipse.emf.ecore.resource">isTrackingModification</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#load-java.io.InputStream-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource">load</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#save-java.io.OutputStream-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource">save</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#setModified-boolean-" title="class or interface in org.eclipse.emf.ecore.resource">setModified</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#setTimeStamp-long-" title="class or interface in org.eclipse.emf.ecore.resource">setTimeStamp</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#setTrackingModification-boolean-" title="class or interface in org.eclipse.emf.ecore.resource">setTrackingModification</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#setURI-org.eclipse.emf.common.util.URI-" title="class or interface in org.eclipse.emf.ecore.resource">setURI</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#unload--" title="class or interface in org.eclipse.emf.ecore.resource">unload</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.eclipse.emf.common.notify.Notifier">
@@ -375,6 +383,13 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentR
 </a>
 <h3>Methods inherited from interface&nbsp;org.eclipse.emf.common.notify.<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Notifier.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Notifier</a></h3>
 <code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Notifier.html?is-external=true#eAdapters--" title="class or interface in org.eclipse.emf.common.notify">eAdapters</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Notifier.html?is-external=true#eDeliver--" title="class or interface in org.eclipse.emf.common.notify">eDeliver</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Notifier.html?is-external=true#eNotify-org.eclipse.emf.common.notify.Notification-" title="class or interface in org.eclipse.emf.common.notify">eNotify</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Notifier.html?is-external=true#eSetDeliver-boolean-" title="class or interface in org.eclipse.emf.common.notify">eSetDeliver</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.lang.Iterable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;java.lang.Iterable</h3>
+<code>forEach, spliterator</code></li>
 </ul>
 </li>
 </ul>
@@ -384,34 +399,6 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentR
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a name="store">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>store</h4>
-<pre>protected&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a> store</pre>
-<div class="block">The <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> responsible of the database serialization.</div>
-</li>
-</ul>
-<a name="backend">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>backend</h4>
-<pre>protected&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackend</a> backend</pre>
-<div class="block">The underlying <a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackend</code></a> that stores the data.</div>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -428,7 +415,7 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentR
 <div class="block">Constructs a new <code>DefaultPersistentResource</code> with the given <code>uri</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>uri</code> - the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> of the resource</dd>
+<dd><code>uri</code> - the URI of the resource</dd>
 </dl>
 </li>
 </ul>
@@ -440,27 +427,14 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentR
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getFile--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getFile</h4>
-<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;getFile()</pre>
-<div class="block">Returns the database file.</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the database file</dd>
-</dl>
-</li>
-</ul>
 <a name="getContents--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getContents</h4>
-<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>&gt;&nbsp;getContents()</pre>
+<pre>@Nonnull
+public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>&gt;&nbsp;getContents()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#getContents--" title="class or interface in org.eclipse.emf.ecore.resource">org.eclipse.emf.ecore.resource.Resource</a></code></span></div>
 <div class="block">Returns the list of the direct content objects;
  each is of type <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a>.
@@ -482,13 +456,38 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentR
 </dl>
 </li>
 </ul>
+<a name="getAllContents--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAllContents</h4>
+<pre>@Nonnull
+public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/TreeIterator.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">TreeIterator</a>&lt;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>&gt;&nbsp;getAllContents()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#getAllContents--" title="class or interface in org.eclipse.emf.ecore.resource">org.eclipse.emf.ecore.resource.Resource</a></code></span></div>
+<div class="block">Returns a tree iterator that iterates over all the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#getContents--" title="class or interface in org.eclipse.emf.ecore.resource"><code>direct contents</code></a> and indirect contents of this resource.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#getAllContents--" title="class or interface in org.eclipse.emf.ecore.resource">getAllContents</a></code>&nbsp;in interface&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource">Resource</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getAllContents--" title="class or interface in org.eclipse.emf.ecore.resource.impl">getAllContents</a></code>&nbsp;in class&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource.impl">ResourceImpl</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a tree iterator that iterates over all contents.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true#eAllContents--" title="class or interface in org.eclipse.emf.ecore"><code>EObject.eAllContents()</code></a>, 
+<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/ResourceSet.html?is-external=true#getAllContents--" title="class or interface in org.eclipse.emf.ecore.resource"><code>ResourceSet.getAllContents()</code></a>, 
+<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/util/EcoreUtil.html?is-external=true#getAllContents-org.eclipse.emf.ecore.resource.Resource-boolean-" title="class or interface in org.eclipse.emf.ecore.util"><code>EcoreUtil.getAllContents(Resource, boolean)</code></a></dd>
+</dl>
+</li>
+</ul>
 <a name="getURIFragment-org.eclipse.emf.ecore.EObject-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getURIFragment</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getURIFragment(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>&nbsp;eObject)</pre>
+<pre>@Nonnull
+public&nbsp;java.lang.String&nbsp;getURIFragment(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>&nbsp;eObject)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#getURIFragment-org.eclipse.emf.ecore.EObject-" title="class or interface in org.eclipse.emf.ecore.resource">org.eclipse.emf.ecore.resource.Resource</a></code></span></div>
 <div class="block">Returns the URI <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true#fragment--" title="class or interface in org.eclipse.emf.common.util"><code>fragment</code></a> that,
  when passed to <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#getEObject-java.lang.String-" title="class or interface in org.eclipse.emf.ecore.resource"><code>getEObject</code></a> will return the given object.
@@ -524,7 +523,7 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentR
 <ul class="blockList">
 <li class="blockList">
 <h4>getEObject</h4>
-<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>&nbsp;getEObject(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uriFragment)</pre>
+<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>&nbsp;getEObject(java.lang.String&nbsp;uriFragment)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#getEObject-java.lang.String-" title="class or interface in org.eclipse.emf.ecore.resource">org.eclipse.emf.ecore.resource.Resource</a></code></span></div>
 <div class="block">Returns the resolved object for the given URI <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true#fragment--" title="class or interface in org.eclipse.emf.common.util"><code>fragment</code></a>.
  <p>
@@ -553,8 +552,7 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentR
 <ul class="blockList">
 <li class="blockList">
 <h4>save</h4>
-<pre>public&nbsp;void&nbsp;save(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;?,?&gt;&nbsp;options)
-          throws <a href="http://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<pre>public&nbsp;void&nbsp;save(java.util.Map&lt;?,?&gt;&nbsp;options)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#save-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource">org.eclipse.emf.ecore.resource.Resource</a></code></span></div>
 <div class="block">Saves the resource using the specified options.
  <p>
@@ -575,8 +573,6 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentR
 <dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#save-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource.impl">save</a></code>&nbsp;in class&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource.impl">ResourceImpl</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>options</code> - the save options.</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#save-java.io.OutputStream-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource.save(OutputStream, Map)</code></a></dd>
 </dl>
@@ -588,8 +584,8 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentR
 <ul class="blockList">
 <li class="blockList">
 <h4>load</h4>
-<pre>public&nbsp;void&nbsp;load(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;?,?&gt;&nbsp;options)
-          throws <a href="http://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<pre>public&nbsp;void&nbsp;load(java.util.Map&lt;?,?&gt;&nbsp;options)
+          throws java.io.IOException</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#load-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource">org.eclipse.emf.ecore.resource.Resource</a></code></span></div>
 <div class="block">Loads the resource using the specified options.
  <p>
@@ -616,9 +612,48 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentR
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>options</code> - the load options.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code>java.io.IOException</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#load-java.io.InputStream-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource.load(InputStream, Map)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="setLoaded-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setLoaded</h4>
+<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Notification.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Notification</a>&nbsp;setLoaded(boolean&nbsp;isLoaded)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#setLoaded-boolean-" title="class or interface in org.eclipse.emf.ecore.resource.impl">org.eclipse.emf.ecore.resource.impl.ResourceImpl</a></code></span></div>
+<div class="block">Sets the load state as indicated, and returns a notification, if <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/impl/BasicNotifierImpl.html?is-external=true#eNotificationRequired--" title="class or interface in org.eclipse.emf.common.notify.impl"><code>required</code></a>.
+ Clients are <b>not</b> expected to call this directly; it is managed by the implementation.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#setLoaded-boolean-" title="class or interface in org.eclipse.emf.ecore.resource.impl">setLoaded</a></code>&nbsp;in class&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource.impl">ResourceImpl</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>isLoaded</code> - whether the resource is loaded.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a notification.</dd>
+</dl>
+</li>
+</ul>
+<a name="getUnloadingContents--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getUnloadingContents</h4>
+<pre>protected&nbsp;java.util.List&lt;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>&gt;&nbsp;getUnloadingContents()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getUnloadingContents--" title="class or interface in org.eclipse.emf.ecore.resource.impl">org.eclipse.emf.ecore.resource.impl.ResourceImpl</a></code></span></div>
+<div class="block">This implementation returns a copy of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getContents--" title="class or interface in org.eclipse.emf.ecore.resource.impl"><code>contents</code></a>.
+ It is called by <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#unload--" title="class or interface in org.eclipse.emf.ecore.resource.impl"><code>ResourceImpl.unload()</code></a> to initialize the value of <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#unloadingContents" title="class or interface in org.eclipse.emf.ecore.resource.impl"><code>ResourceImpl.unloadingContents</code></a>.
+ Clients populating the resource's contents on-demand
+ can override this implementation to return an empty list
+ when the resource's contents have not been accessed before the request to unload.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true#getUnloadingContents--" title="class or interface in org.eclipse.emf.ecore.resource.impl">getUnloadingContents</a></code>&nbsp;in class&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/impl/ResourceImpl.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource.impl">ResourceImpl</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -650,102 +685,91 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentR
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html#close--">close</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource">PersistentResource</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true#close--" title="class or interface in java.io">close</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io">Closeable</a></code></dd>
+<dd><code>close</code>&nbsp;in interface&nbsp;<code>java.io.Closeable</code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true#close--" title="class or interface in java.lang">close</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang">AutoCloseable</a></code></dd>
+<dd><code>close</code>&nbsp;in interface&nbsp;<code>java.lang.AutoCloseable</code></dd>
 </dl>
 </li>
 </ul>
-<a name="eStore--">
+<a name="save-fr.inria.atlanmod.neoemf.config.ImmutableConfig-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>eStore</h4>
-<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject.EStore</a>&nbsp;eStore()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html#eStore--">PersistentResource</a></code></span></div>
-<div class="block">Returns the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>InternalEObject.EStore</code></a> used to store the model.</div>
+<h4>save</h4>
+<pre>public&nbsp;void&nbsp;save(<a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html" title="interface in fr.inria.atlanmod.neoemf.config">ImmutableConfig</a>&nbsp;config)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html#save-fr.inria.atlanmod.neoemf.config.ImmutableConfig-">PersistentResource</a></code></span></div>
+<div class="block">Saves the resource using the specified configuration.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html#eStore--">eStore</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource">PersistentResource</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>InternalEObject.EStore</code></a></dd>
-</dl>
-</li>
-</ul>
-<a name="isDistributed--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>isDistributed</h4>
-<pre>public&nbsp;boolean&nbsp;isDistributed()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html#isDistributed--">PersistentResource</a></code></span></div>
-<div class="block">Returns <code>true</code> if the resource is distributed, <code>false</code> otherwise.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html#isDistributed--">isDistributed</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource">PersistentResource</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd><code>true</code> if the resource is distributed, <code>false</code> otherwise.</dd>
-</dl>
-</li>
-</ul>
-<a name="getAllInstances-org.eclipse.emf.ecore.EClass-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getAllInstances</h4>
-<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>&gt;&nbsp;getAllInstances(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a>&nbsp;eClass)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html#getAllInstances-org.eclipse.emf.ecore.EClass-">PersistentResource</a></code></span></div>
-<div class="block">Computes the set of instances of the given <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a> (including its sub-types).
- <p>
- This method is similar to <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html#getAllInstances-org.eclipse.emf.ecore.EClass-boolean-"><code>PersistentResource.getAllInstances(EClass, boolean)</code></a> with <code>strict=false</code>.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html#getAllInstances-org.eclipse.emf.ecore.EClass-">getAllInstances</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource">PersistentResource</a></code></dd>
+<dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html#save-fr.inria.atlanmod.neoemf.config.ImmutableConfig-">save</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource">PersistentResource</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>eClass</code> - the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a> for which look for instances</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>all the instances of the given <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a> from the resource</dd>
+<dd><code>config</code> - the save configuration</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#save-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource.save(Map)</code></a></dd>
 </dl>
 </li>
 </ul>
-<a name="getAllInstances-org.eclipse.emf.ecore.EClass-boolean-">
+<a name="load-fr.inria.atlanmod.neoemf.config.ImmutableConfig-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getAllInstances</h4>
-<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>&gt;&nbsp;getAllInstances(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a>&nbsp;eClass,
-                                      boolean&nbsp;strict)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html#getAllInstances-org.eclipse.emf.ecore.EClass-boolean-">PersistentResource</a></code></span></div>
+<h4>load</h4>
+<pre>public&nbsp;void&nbsp;load(<a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html" title="interface in fr.inria.atlanmod.neoemf.config">ImmutableConfig</a>&nbsp;config)
+          throws java.io.IOException</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html#load-fr.inria.atlanmod.neoemf.config.ImmutableConfig-">PersistentResource</a></code></span></div>
+<div class="block">Loads the resource using the specified configuration.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html#load-fr.inria.atlanmod.neoemf.config.ImmutableConfig-">load</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource">PersistentResource</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>config</code> - the load configuration</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code> - if an I/O error occurs during loading</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#load-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource.load(Map)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="allInstancesOf-org.eclipse.emf.ecore.EClass-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>allInstancesOf</h4>
+<pre>@Nonnull
+public&nbsp;&lt;T extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>&gt;&nbsp;java.lang.Iterable&lt;T&gt;&nbsp;allInstancesOf(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a>&nbsp;eClass,
+                                                                         boolean&nbsp;strict)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html#allInstancesOf-org.eclipse.emf.ecore.EClass-boolean-">PersistentResource</a></code></span></div>
 <div class="block">Computes the set of instances of the given <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html#getAllInstances-org.eclipse.emf.ecore.EClass-boolean-">getAllInstances</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource">PersistentResource</a></code></dd>
+<dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html#allInstancesOf-org.eclipse.emf.ecore.EClass-boolean-">allInstancesOf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource">PersistentResource</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>eClass</code> - the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a> for which look for instances</dd>
-<dd><code>strict</code> - true if the lookup searches for strict instances</dd>
+<dd><code>strict</code> - <code>true</code> if the lookup searches for strict instances</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>if <code>true</code> then the method returns only the strict instances of the given <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a>, otherwise
  it also returns the instances of the sub-types of <code>eClass</code>.</dd>
 </dl>
 </li>
 </ul>
-<a name="finalize--">
+<a name="eStore--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>finalize</h4>
-<pre>protected&nbsp;void&nbsp;finalize()
-                 throws <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a></pre>
+<h4>eStore</h4>
+<pre>@Nonnull
+public&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/data/store/adapter/StoreAdapter.html" title="interface in fr.inria.atlanmod.neoemf.data.store.adapter">StoreAdapter</a>&nbsp;eStore()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/data/store/Storable.html#eStore--">Storable</a></code></span></div>
+<div class="block">Returns the store used to store the model.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/data/store/Storable.html#eStore--">eStore</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/data/store/Storable.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Storable</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the store</dd>
 </dl>
 </li>
 </ul>
@@ -803,13 +827,13 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentR
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li><a href="#nested.classes.inherited.from.class.org.eclipse.emf.ecore.resource.impl.ResourceImpl">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.org.eclipse.emf.ecore.resource.impl.ResourceImpl">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -818,6 +842,6 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentR
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod INRIA LINA Mines Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>

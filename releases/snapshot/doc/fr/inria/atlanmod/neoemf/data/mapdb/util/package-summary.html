@@ -43,8 +43,8 @@
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serializer/package-summary.html">Prev&nbsp;Package</a></li>
-<li><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/package-summary.html">Next&nbsp;Package</a></li>
+<li><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/config/package-summary.html">Prev&nbsp;Package</a></li>
+<li><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapping/package-summary.html">Next&nbsp;Package</a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../../index.html?fr/inria/atlanmod/neoemf/data/mapdb/util/package-summary.html" target="_top">Frames</a></li>
@@ -72,7 +72,7 @@
 <div class="header">
 <h1 title="Package" class="title">Package&nbsp;fr.inria.atlanmod.neoemf.data.mapdb.util</h1>
 <div class="docSummary">
-<div class="block">Provides utility classes to create MapDB specific URIs.</div>
+<div class="block">Provides utility classes related to MapDB.</div>
 </div>
 <p>See:&nbsp;<a href="#package.description">Description</a></p>
 </div>
@@ -87,10 +87,9 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util">MapDbURI</a></td>
+<td class="colFirst"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbUri.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util">MapDbUri</a></td>
 <td class="colLast">
-<div class="block">A specific <a href="../../../../../../../fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util"><code>PersistenceURI</code></a> that creates MapDB specific resource <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>s from a <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> descriptor or
- an existing <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>.</div>
+<div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/util/UriBuilder.html" title="interface in fr.inria.atlanmod.neoemf.util"><code>UriBuilder</code></a> that creates MapDB specific resource URIs.</div>
 </td>
 </tr>
 </tbody>
@@ -101,12 +100,12 @@
 <!--   -->
 </a>
 <h2 title="Package fr.inria.atlanmod.neoemf.data.mapdb.util Description">Package fr.inria.atlanmod.neoemf.data.mapdb.util Description</h2>
-<div class="block">Provides utility classes to create MapDB specific URIs.
+<div class="block">Provides utility classes related to MapDB.
  <p>
- This package defines the <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util"><code>MapDbURI</code></a> class, that extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util"><code>PersistenceURI</code></a> to create MapDB specific URIs. <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util"><code>MapDbURI</code></a>s are convenience wrappers of EMF <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>s that set a dedicated protocol that is parsed by NeoEMF to create the appropriate
- database.
+ This package defines the <code>fr.inria.atlanmod.neoemf.data.mapdb.util.MapDbURI</code> class, that extends <code>fr.inria.atlanmod.neoemf.util.URIBuilder</code> to create MapDB specific URIs. <code>fr.inria.atlanmod.neoemf.data.mapdb.util.MapDbURI</code>s are convenience wrappers of EMF URIs that set a dedicated
+ protocol that is parsed by NeoEMF to create the appropriate database.
  <p>
- <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util"><code>MapDbURI</code></a>s are created using the following code:
+ <code>fr.inria.atlanmod.neoemf.data.mapdb.util.MapDbURI</code>s are created using the following code:
  <pre><code>
  URI mapDBURI = MapDBURI.createFileURI(new File("model_path"));
 
@@ -138,8 +137,8 @@
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serializer/package-summary.html">Prev&nbsp;Package</a></li>
-<li><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/package-summary.html">Next&nbsp;Package</a></li>
+<li><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/config/package-summary.html">Prev&nbsp;Package</a></li>
+<li><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapping/package-summary.html">Next&nbsp;Package</a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../../index.html?fr/inria/atlanmod/neoemf/data/mapdb/util/package-summary.html" target="_top">Frames</a></li>
@@ -164,6 +163,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod INRIA LINA Mines Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>

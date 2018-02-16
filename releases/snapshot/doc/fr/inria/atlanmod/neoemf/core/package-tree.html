@@ -43,8 +43,8 @@
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../fr/inria/atlanmod/neoemf/annotations/package-tree.html">Prev</a></li>
-<li><a href="../../../../../fr/inria/atlanmod/neoemf/data/package-tree.html">Next</a></li>
+<li><a href="../../../../../fr/inria/atlanmod/neoemf/config/package-tree.html">Prev</a></li>
+<li><a href="../../../../../fr/inria/atlanmod/neoemf/core/internal/package-tree.html">Next</a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?fr/inria/atlanmod/neoemf/core/package-tree.html" target="_top">Frames</a></li>
@@ -79,8 +79,13 @@
 <div class="contentContainer">
 <h2 title="Class Hierarchy">Class Hierarchy</h2>
 <ul>
-<li type="circle">java.lang.<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><span class="typeNameLink">Object</span></a>
+<li type="circle">java.lang.Object
 <ul>
+<li type="circle">fr.inria.atlanmod.neoemf.core.<a href="../../../../../fr/inria/atlanmod/neoemf/core/AbstractIdProvider.html" title="class in fr.inria.atlanmod.neoemf.core"><span class="typeNameLink">AbstractIdProvider</span></a> (implements fr.inria.atlanmod.neoemf.core.<a href="../../../../../fr/inria/atlanmod/neoemf/core/IdProvider.html" title="interface in fr.inria.atlanmod.neoemf.core">IdProvider</a>)
+<ul>
+<li type="circle">fr.inria.atlanmod.neoemf.core.<a href="../../../../../fr/inria/atlanmod/neoemf/core/LongIdProvider.html" title="class in fr.inria.atlanmod.neoemf.core"><span class="typeNameLink">LongIdProvider</span></a></li>
+</ul>
+</li>
 <li type="circle">org.eclipse.emf.common.notify.impl.<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/impl/BasicNotifierImpl.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify.impl"><span class="typeNameLink">BasicNotifierImpl</span></a> (implements org.eclipse.emf.common.notify.<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Notifier.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Notifier</a>)
 <ul>
 <li type="circle">org.eclipse.emf.ecore.impl.<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/BasicEObjectImpl.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.impl"><span class="typeNameLink">BasicEObjectImpl</span></a> (implements org.eclipse.emf.ecore.<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>, org.eclipse.emf.ecore.<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject</a>)
@@ -111,15 +116,21 @@
 </li>
 </ul>
 </li>
-<li type="circle">fr.inria.atlanmod.neoemf.core.<a href="../../../../../fr/inria/atlanmod/neoemf/core/StringId.html" title="class in fr.inria.atlanmod.neoemf.core"><span class="typeNameLink">StringId</span></a> (implements fr.inria.atlanmod.neoemf.core.<a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>)</li>
+<li type="circle">fr.inria.atlanmod.neoemf.core.<a href="../../../../../fr/inria/atlanmod/neoemf/core/IdConverters.html" title="class in fr.inria.atlanmod.neoemf.core"><span class="typeNameLink">IdConverters</span></a></li>
 </ul>
 </li>
 </ul>
 <h2 title="Interface Hierarchy">Interface Hierarchy</h2>
 <ul>
-<li type="circle">java.lang.<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang"><span class="typeNameLink">Comparable</span></a>&lt;T&gt;
+<li type="circle">java.lang.Comparable&lt;T&gt;
 <ul>
-<li type="circle">fr.inria.atlanmod.neoemf.core.<a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><span class="typeNameLink">Id</span></a> (also extends java.io.<a href="http://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>)</li>
+<li type="circle">fr.inria.atlanmod.neoemf.core.<a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><span class="typeNameLink">Id</span></a> (also extends java.io.Serializable)</li>
+</ul>
+</li>
+<li type="circle">fr.inria.atlanmod.neoemf.core.<a href="../../../../../fr/inria/atlanmod/neoemf/core/IdProvider.html" title="interface in fr.inria.atlanmod.neoemf.core"><span class="typeNameLink">IdProvider</span></a></li>
+<li type="circle">java.lang.Iterable&lt;T&gt;
+<ul>
+<li type="circle">fr.inria.atlanmod.neoemf.core.<a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><span class="typeNameLink">PersistentEObject</span></a> (also extends org.eclipse.emf.ecore.<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject</a>, fr.inria.atlanmod.neoemf.data.store.<a href="../../../../../fr/inria/atlanmod/neoemf/data/store/Storable.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Storable</a>)</li>
 </ul>
 </li>
 <li type="circle">org.eclipse.emf.common.notify.<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Notifier.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify"><span class="typeNameLink">Notifier</span></a>
@@ -128,16 +139,21 @@
 <ul>
 <li type="circle">org.eclipse.emf.ecore.<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><span class="typeNameLink">InternalEObject</span></a>
 <ul>
-<li type="circle">fr.inria.atlanmod.neoemf.core.<a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><span class="typeNameLink">PersistentEObject</span></a></li>
+<li type="circle">fr.inria.atlanmod.neoemf.core.<a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><span class="typeNameLink">PersistentEObject</span></a> (also extends java.lang.Iterable&lt;T&gt;, fr.inria.atlanmod.neoemf.data.store.<a href="../../../../../fr/inria/atlanmod/neoemf/data/store/Storable.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Storable</a>)</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li type="circle">java.io.<a href="http://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io"><span class="typeNameLink">Serializable</span></a>
+<li type="circle">java.io.Serializable
 <ul>
-<li type="circle">fr.inria.atlanmod.neoemf.core.<a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><span class="typeNameLink">Id</span></a> (also extends java.lang.<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;T&gt;)</li>
+<li type="circle">fr.inria.atlanmod.neoemf.core.<a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><span class="typeNameLink">Id</span></a> (also extends java.lang.Comparable&lt;T&gt;)</li>
+</ul>
+</li>
+<li type="circle">fr.inria.atlanmod.neoemf.data.store.<a href="../../../../../fr/inria/atlanmod/neoemf/data/store/Storable.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">Storable</span></a>
+<ul>
+<li type="circle">fr.inria.atlanmod.neoemf.core.<a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><span class="typeNameLink">PersistentEObject</span></a> (also extends org.eclipse.emf.ecore.<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject</a>, java.lang.Iterable&lt;T&gt;)</li>
 </ul>
 </li>
 </ul>
@@ -163,8 +179,8 @@
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../fr/inria/atlanmod/neoemf/annotations/package-tree.html">Prev</a></li>
-<li><a href="../../../../../fr/inria/atlanmod/neoemf/data/package-tree.html">Next</a></li>
+<li><a href="../../../../../fr/inria/atlanmod/neoemf/config/package-tree.html">Prev</a></li>
+<li><a href="../../../../../fr/inria/atlanmod/neoemf/core/internal/package-tree.html">Next</a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?fr/inria/atlanmod/neoemf/core/package-tree.html" target="_top">Frames</a></li>
@@ -189,6 +205,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod INRIA LINA Mines Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>

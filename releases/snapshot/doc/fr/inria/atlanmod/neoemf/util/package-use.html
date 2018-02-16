@@ -83,28 +83,62 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a href="#fr.inria.atlanmod.neoemf.data.blueprints.util">fr.inria.atlanmod.neoemf.data.blueprints.util</a></td>
+<td class="colFirst"><a href="#fr.inria.atlanmod.neoemf.data.berkeleydb.util">fr.inria.atlanmod.neoemf.data.berkeleydb.util</a></td>
 <td class="colLast">
-<div class="block">Provides utility classes to create Blueprints specific URIs.</div>
+<div class="block">Provides utility classes related to BerkeleyDB.</div>
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="#fr.inria.atlanmod.neoemf.data.blueprints.util">fr.inria.atlanmod.neoemf.data.blueprints.util</a></td>
+<td class="colLast">
+<div class="block">Provides utility classes related to Blueprints.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="#fr.inria.atlanmod.neoemf.data.hbase.util">fr.inria.atlanmod.neoemf.data.hbase.util</a></td>
 <td class="colLast">
-<div class="block">Provides utility classes to create HBase specific URIs, serialize and deserialize HBase records, and manage HBase
- resource life-cycle.</div>
+<div class="block">Provides utility classes related to HBase.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#fr.inria.atlanmod.neoemf.data.im.util">fr.inria.atlanmod.neoemf.data.im.util</a></td>
+<td class="colLast">
+<div class="block">Provides utility classes related to the default in-memory database.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><a href="#fr.inria.atlanmod.neoemf.data.mapdb.util">fr.inria.atlanmod.neoemf.data.mapdb.util</a></td>
 <td class="colLast">
-<div class="block">Provides utility classes to create MapDB specific URIs.</div>
+<div class="block">Provides utility classes related to MapDB.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><a href="#fr.inria.atlanmod.neoemf.util">fr.inria.atlanmod.neoemf.util</a></td>
 <td class="colLast">
-<div class="block">Provides utility classes to ease URI management or containment list computation.</div>
+<div class="block">Provides miscellaneous utility classes, such as <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>s management or models
+ comparison.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="fr.inria.atlanmod.neoemf.data.berkeleydb.util">
+<!--   -->
+</a>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../fr/inria/atlanmod/neoemf/util/package-summary.html">fr.inria.atlanmod.neoemf.util</a> used by <a href="../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/util/package-summary.html">fr.inria.atlanmod.neoemf.data.berkeleydb.util</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colOne"><a href="../../../../../fr/inria/atlanmod/neoemf/util/class-use/AbstractUriBuilder.html#fr.inria.atlanmod.neoemf.data.berkeleydb.util">AbstractUriBuilder</a>
+<div class="block">An abstract <a href="../../../../../fr/inria/atlanmod/neoemf/util/UriBuilder.html" title="interface in fr.inria.atlanmod.neoemf.util"><code>UriBuilder</code></a> that manages the assembly and the construction of <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>s.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="../../../../../fr/inria/atlanmod/neoemf/util/class-use/UriBuilder.html#fr.inria.atlanmod.neoemf.data.berkeleydb.util">UriBuilder</a>
+<div class="block">A builder of <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>s.</div>
 </td>
 </tr>
 </tbody>
@@ -120,9 +154,13 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colOne"><a href="../../../../../fr/inria/atlanmod/neoemf/util/class-use/PersistenceURI.html#fr.inria.atlanmod.neoemf.data.blueprints.util">PersistenceURI</a>
-<div class="block">A <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> wrapper that creates specific resource <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>s from a <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> descriptor or an existing
- <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>.</div>
+<td class="colOne"><a href="../../../../../fr/inria/atlanmod/neoemf/util/class-use/AbstractUriBuilder.html#fr.inria.atlanmod.neoemf.data.blueprints.util">AbstractUriBuilder</a>
+<div class="block">An abstract <a href="../../../../../fr/inria/atlanmod/neoemf/util/UriBuilder.html" title="interface in fr.inria.atlanmod.neoemf.util"><code>UriBuilder</code></a> that manages the assembly and the construction of <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>s.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="../../../../../fr/inria/atlanmod/neoemf/util/class-use/UriBuilder.html#fr.inria.atlanmod.neoemf.data.blueprints.util">UriBuilder</a>
+<div class="block">A builder of <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>s.</div>
 </td>
 </tr>
 </tbody>
@@ -138,9 +176,35 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colOne"><a href="../../../../../fr/inria/atlanmod/neoemf/util/class-use/PersistenceURI.html#fr.inria.atlanmod.neoemf.data.hbase.util">PersistenceURI</a>
-<div class="block">A <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> wrapper that creates specific resource <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>s from a <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> descriptor or an existing
- <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>.</div>
+<td class="colOne"><a href="../../../../../fr/inria/atlanmod/neoemf/util/class-use/AbstractUriBuilder.html#fr.inria.atlanmod.neoemf.data.hbase.util">AbstractUriBuilder</a>
+<div class="block">An abstract <a href="../../../../../fr/inria/atlanmod/neoemf/util/UriBuilder.html" title="interface in fr.inria.atlanmod.neoemf.util"><code>UriBuilder</code></a> that manages the assembly and the construction of <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>s.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="../../../../../fr/inria/atlanmod/neoemf/util/class-use/UriBuilder.html#fr.inria.atlanmod.neoemf.data.hbase.util">UriBuilder</a>
+<div class="block">A builder of <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>s.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="fr.inria.atlanmod.neoemf.data.im.util">
+<!--   -->
+</a>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../fr/inria/atlanmod/neoemf/util/package-summary.html">fr.inria.atlanmod.neoemf.util</a> used by <a href="../../../../../fr/inria/atlanmod/neoemf/data/im/util/package-summary.html">fr.inria.atlanmod.neoemf.data.im.util</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colOne"><a href="../../../../../fr/inria/atlanmod/neoemf/util/class-use/AbstractUriBuilder.html#fr.inria.atlanmod.neoemf.data.im.util">AbstractUriBuilder</a>
+<div class="block">An abstract <a href="../../../../../fr/inria/atlanmod/neoemf/util/UriBuilder.html" title="interface in fr.inria.atlanmod.neoemf.util"><code>UriBuilder</code></a> that manages the assembly and the construction of <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>s.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="../../../../../fr/inria/atlanmod/neoemf/util/class-use/UriBuilder.html#fr.inria.atlanmod.neoemf.data.im.util">UriBuilder</a>
+<div class="block">A builder of <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>s.</div>
 </td>
 </tr>
 </tbody>
@@ -156,9 +220,13 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colOne"><a href="../../../../../fr/inria/atlanmod/neoemf/util/class-use/PersistenceURI.html#fr.inria.atlanmod.neoemf.data.mapdb.util">PersistenceURI</a>
-<div class="block">A <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> wrapper that creates specific resource <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>s from a <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> descriptor or an existing
- <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>.</div>
+<td class="colOne"><a href="../../../../../fr/inria/atlanmod/neoemf/util/class-use/AbstractUriBuilder.html#fr.inria.atlanmod.neoemf.data.mapdb.util">AbstractUriBuilder</a>
+<div class="block">An abstract <a href="../../../../../fr/inria/atlanmod/neoemf/util/UriBuilder.html" title="interface in fr.inria.atlanmod.neoemf.util"><code>UriBuilder</code></a> that manages the assembly and the construction of <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>s.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="../../../../../fr/inria/atlanmod/neoemf/util/class-use/UriBuilder.html#fr.inria.atlanmod.neoemf.data.mapdb.util">UriBuilder</a>
+<div class="block">A builder of <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>s.</div>
 </td>
 </tr>
 </tbody>
@@ -174,9 +242,8 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colOne"><a href="../../../../../fr/inria/atlanmod/neoemf/util/class-use/NeoEContentsEList.html#fr.inria.atlanmod.neoemf.util">NeoEContentsEList</a>
-<div class="block">An <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/util/EContentsEList.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.util"><code>EContentsEList</code></a> implementation that delegates its operations to the associated
- <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a>.</div>
+<td class="colOne"><a href="../../../../../fr/inria/atlanmod/neoemf/util/class-use/UriBuilder.html#fr.inria.atlanmod.neoemf.util">UriBuilder</a>
+<div class="block">A builder of <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>s.</div>
 </td>
 </tr>
 </tbody>
@@ -231,6 +298,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod INRIA LINA Mines Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>

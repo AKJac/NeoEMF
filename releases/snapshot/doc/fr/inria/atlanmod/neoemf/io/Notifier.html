@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../fr/inria/atlanmod/neoemf/io/Importer.html" title="class in fr.inria.atlanmod.neoemf.io"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="class in fr.inria.atlanmod.neoemf.io"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
@@ -93,7 +93,7 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">fr.inria.atlanmod.neoemf.io</div>
-<h2 title="Interface Notifier" class="title">Interface Notifier&lt;T extends <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</h2>
+<h2 title="Interface Notifier" class="title">Interface Notifier&lt;H extends <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</h2>
 </div>
 <div class="contentContainer">
 <div class="description">
@@ -101,20 +101,21 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>T</code> - the type of handlers</dd>
+<dd><code>H</code> - the type of handlers</dd>
 </dl>
 <dl>
 <dt>All Known Subinterfaces:</dt>
-<dd><a href="../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/reader/Reader.html" title="interface in fr.inria.atlanmod.neoemf.io.reader">Reader</a></dd>
+<dd><a href="../../../../../fr/inria/atlanmod/neoemf/io/reader/Reader.html" title="interface in fr.inria.atlanmod.neoemf.io.reader">Reader</a>&lt;T&gt;</dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html" title="class in fr.inria.atlanmod.neoemf.io">AbstractNotifier</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">AbstractProcessor</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">AbstractReader</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">AbstractXmiReader</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/processor/CounterProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">CounterProcessor</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/processor/EcoreProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">EcoreProcessor</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/processor/LoggingProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">LoggingProcessor</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/processor/PersistenceProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">PersistenceProcessor</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/processor/TimerProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">TimerProcessor</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/reader/XmiSAXReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">XmiSAXReader</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/reader/XmiStAXCursorReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">XmiStAXCursorReader</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/reader/XmiStAXIteratorReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">XmiStAXIteratorReader</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/processor/XPathProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">XPathProcessor</a></dd>
+<dd><a href="../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html" title="class in fr.inria.atlanmod.neoemf.io">AbstractNotifier</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">AbstractProcessor</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">AbstractReader</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractStreamReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">AbstractStreamReader</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiStreamReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">AbstractXmiStreamReader</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/processor/CounterProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">CounterProcessor</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/reader/DefaultMapperReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">DefaultMapperReader</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/processor/EcoreProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">EcoreProcessor</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/processor/LoggingProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">LoggingProcessor</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/processor/NoopProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">NoopProcessor</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/processor/ProgressProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">ProgressProcessor</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/processor/TimerProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">TimerProcessor</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/reader/XmiStreamReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">XmiStreamReader</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/io/processor/XPathResolver.html" title="class in fr.inria.atlanmod.neoemf.io.processor">XPathResolver</a></dd>
 </dl>
 <hr>
 <br>
-<pre>public interface <span class="typeNameLabel">Notifier&lt;T extends <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</span></pre>
-<div class="block">An object that notifies registered <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a>s of events during an I/O process, such as import or export.</div>
+<pre>@ParametersAreNonnullByDefault
+public interface <span class="typeNameLabel">Notifier&lt;H extends <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</span></pre>
+<div class="block">An object that notifies registered <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a>s of events during an I/O process.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a></dd>
@@ -138,27 +139,27 @@ var activeTableTab = "activeTableTab";
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="type parameter in Notifier">T</a>&gt;</code></td>
+<td class="colFirst"><code>java.lang.Iterable&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="type parameter in Notifier">H</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#next--">next</a></span>()</code>
-<div class="block">Returns the <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> that will be notified by this <code>Notifier</code>.</div>
+<div class="block">Returns the <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a>s that will be notified by this <code>Notifier</code>.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyAttribute-fr.inria.atlanmod.neoemf.io.structure.Attribute-">notifyAttribute</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/io/structure/Attribute.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Attribute</a>&nbsp;attribute)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyAttribute-fr.inria.atlanmod.neoemf.io.bean.BasicAttribute-">notifyAttribute</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicAttribute.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicAttribute</a>&nbsp;attribute)</code>
 <div class="block">Notifies all registered handlers of a new attribute.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>default void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyCharacters-java.lang.String-">notifyCharacters</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;characters)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyCharacters-java.lang.String-">notifyCharacters</a></span>(java.lang.String&nbsp;characters)</code>
 <div class="block">Notifies all registered handlers of a new set of characters.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyEndDocument--">notifyEndDocument</a></span>()</code>
-<div class="block">Notifies all registered handlers of the end of the current document.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyComplete--">notifyComplete</a></span>()</code>
+<div class="block">Notifies all registered handlers of the end of the current task.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
@@ -169,19 +170,19 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyReference-fr.inria.atlanmod.neoemf.io.structure.Reference-">notifyReference</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Reference</a>&nbsp;reference)</code>
-<div class="block">Notifies all registered handlers of a new reference.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyInitialize--">notifyInitialize</a></span>()</code>
+<div class="block">Notifies all registered handlers of the start of a task.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>default void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyStartDocument--">notifyStartDocument</a></span>()</code>
-<div class="block">Notifies all registered handlers of the start of a document.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">notifyReference</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;reference)</code>
+<div class="block">Notifies all registered handlers of a new reference.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyStartElement-fr.inria.atlanmod.neoemf.io.structure.Element-">notifyStartElement</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/io/structure/Element.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Element</a>&nbsp;element)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">notifyStartElement</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>&nbsp;element)</code>
 <div class="block">Notifies all registered handlers of the start of a new element.</div>
 </td>
 </tr>
@@ -206,75 +207,76 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>next</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="type parameter in Notifier">T</a>&gt;&nbsp;next()</pre>
-<div class="block">Returns the <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> that will be notified by this <code>Notifier</code>.</div>
+<pre>@Nonnull
+java.lang.Iterable&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="type parameter in Notifier">H</a>&gt;&nbsp;next()</pre>
+<div class="block">Returns the <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a>s that will be notified by this <code>Notifier</code>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the handler to notify</dd>
 </dl>
 </li>
 </ul>
-<a name="notifyStartDocument--">
+<a name="notifyInitialize--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>notifyStartDocument</h4>
-<pre>default&nbsp;void&nbsp;notifyStartDocument()</pre>
-<div class="block">Notifies all registered handlers of the start of a document.</div>
+<h4>notifyInitialize</h4>
+<pre>default&nbsp;void&nbsp;notifyInitialize()</pre>
+<div class="block">Notifies all registered handlers of the start of a task.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyEndDocument--"><code>notifyEndDocument()</code></a>, 
-<a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#handleStartDocument--"><code>Handler.handleStartDocument()</code></a></dd>
+<dd><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyComplete--"><code>notifyComplete()</code></a>, 
+<a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onInitialize--"><code>Handler.onInitialize()</code></a></dd>
 </dl>
 </li>
 </ul>
-<a name="notifyStartElement-fr.inria.atlanmod.neoemf.io.structure.Element-">
+<a name="notifyStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>notifyStartElement</h4>
-<pre>default&nbsp;void&nbsp;notifyStartElement(<a href="../../../../../fr/inria/atlanmod/neoemf/io/structure/Element.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Element</a>&nbsp;element)</pre>
+<pre>default&nbsp;void&nbsp;notifyStartElement(<a href="../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>&nbsp;element)</pre>
 <div class="block">Notifies all registered handlers of the start of a new element.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>element</code> - the element of the new element</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyEndElement--"><code>notifyEndElement()</code></a>, 
-<a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#handleStartElement-fr.inria.atlanmod.neoemf.io.structure.Element-"><code>Handler.handleStartElement(Element)</code></a></dd>
+<a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-"><code>Handler.onStartElement(BasicElement)</code></a></dd>
 </dl>
 </li>
 </ul>
-<a name="notifyAttribute-fr.inria.atlanmod.neoemf.io.structure.Attribute-">
+<a name="notifyAttribute-fr.inria.atlanmod.neoemf.io.bean.BasicAttribute-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>notifyAttribute</h4>
-<pre>default&nbsp;void&nbsp;notifyAttribute(<a href="../../../../../fr/inria/atlanmod/neoemf/io/structure/Attribute.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Attribute</a>&nbsp;attribute)</pre>
+<pre>default&nbsp;void&nbsp;notifyAttribute(<a href="../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicAttribute.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicAttribute</a>&nbsp;attribute)</pre>
 <div class="block">Notifies all registered handlers of a new attribute.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>attribute</code> - the new attribute</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#handleAttribute-fr.inria.atlanmod.neoemf.io.structure.Attribute-"><code>Handler.handleAttribute(Attribute)</code></a></dd>
+<dd><a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onAttribute-fr.inria.atlanmod.neoemf.io.bean.BasicAttribute-"><code>Handler.onAttribute(BasicAttribute)</code></a></dd>
 </dl>
 </li>
 </ul>
-<a name="notifyReference-fr.inria.atlanmod.neoemf.io.structure.Reference-">
+<a name="notifyReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>notifyReference</h4>
-<pre>default&nbsp;void&nbsp;notifyReference(<a href="../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Reference</a>&nbsp;reference)</pre>
+<pre>default&nbsp;void&nbsp;notifyReference(<a href="../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;reference)</pre>
 <div class="block">Notifies all registered handlers of a new reference.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>reference</code> - the new reference</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#handleReference-fr.inria.atlanmod.neoemf.io.structure.Reference-"><code>Handler.handleReference(Reference)</code></a></dd>
+<dd><a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-"><code>Handler.onReference(BasicReference)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -284,13 +286,13 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>notifyCharacters</h4>
-<pre>default&nbsp;void&nbsp;notifyCharacters(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;characters)</pre>
+<pre>default&nbsp;void&nbsp;notifyCharacters(java.lang.String&nbsp;characters)</pre>
 <div class="block">Notifies all registered handlers of a new set of characters.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>characters</code> - the new characters</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#handleCharacters-java.lang.String-"><code>Handler.handleCharacters(String)</code></a></dd>
+<dd><a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onCharacters-java.lang.String-"><code>Handler.onCharacters(String)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -304,23 +306,23 @@ var activeTableTab = "activeTableTab";
 <div class="block">Notifies all registered handlers of the end of the current element.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyStartElement-fr.inria.atlanmod.neoemf.io.structure.Element-"><code>notifyStartElement(Element)</code></a>, 
-<a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#handleEndElement--"><code>Handler.handleEndElement()</code></a></dd>
+<dd><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-"><code>notifyStartElement(BasicElement)</code></a>, 
+<a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onEndElement--"><code>Handler.onEndElement()</code></a></dd>
 </dl>
 </li>
 </ul>
-<a name="notifyEndDocument--">
+<a name="notifyComplete--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>notifyEndDocument</h4>
-<pre>default&nbsp;void&nbsp;notifyEndDocument()</pre>
-<div class="block">Notifies all registered handlers of the end of the current document.</div>
+<h4>notifyComplete</h4>
+<pre>default&nbsp;void&nbsp;notifyComplete()</pre>
+<div class="block">Notifies all registered handlers of the end of the current task.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyStartDocument--"><code>notifyStartDocument()</code></a>, 
-<a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#handleEndDocument--"><code>Handler.handleEndDocument()</code></a></dd>
+<dd><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyInitialize--"><code>notifyInitialize()</code></a>, 
+<a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onComplete--"><code>Handler.onComplete()</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -352,7 +354,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../fr/inria/atlanmod/neoemf/io/Importer.html" title="class in fr.inria.atlanmod.neoemf.io"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="class in fr.inria.atlanmod.neoemf.io"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
@@ -393,6 +395,6 @@ var activeTableTab = "activeTableTab";
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod INRIA LINA Mines Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>
