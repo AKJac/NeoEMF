@@ -1,0 +1,45 @@
+<script>
+    const baseUrl = "../../../updatesite/";
+
+    document.title = "NeoEMF: Update-site";
+
+    // Define the CSS and the favicon
+    $("#bootstrap-css").attr("href", "https://bootswatch.com/4/slate/bootstrap.min.css");
+    $("#favicon").attr("type", "image/png").attr("href", baseUrl + "img/favicon.png");
+
+    $("body").css("background-color", "#212D39");
+
+    // Relativize URLs
+    $("img").each(function () {
+        $(this).attr("src", baseUrl + $(this).attr("src"))
+    });
+
+    // Retrieve the version the release related to this update-site
+    $.getJSON("version.json", function (data) {
+        $("#version").html(data["version"].trim());
+        if (data["date"].trim()) {
+            $("#date").html("<i>(Release on " + data["date"].trim() + ")</i>");
+        }
+    });
+
+    $(document).ready(function () {
+        $("body").show();
+    })
+</script>
+<div class="container-fluid">
+    <header class="row justify-content-center mt-4">
+        <div class="col-auto">
+            <a href="http://www.neoemf.com"><img id="logo" src="img/neoemf.svg" alt="Logo" width="80"/></a>
+        </div>
+        <div class="col-auto">
+            <h1 class="text-light">NeoEMF&nbsp;<small class="text-muted">Update-site</small></h1>
+            <p>Version: <span id="version"></span>&nbsp;<span id="date"></span></p>
+        </div>
+    </header>
+    <hr/>
+    <div class="row justify-content-center">
+        <p>This URL is an Eclipse software repository, you must use it in Eclipse (<a href="http://help.eclipse.org/neon/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-127.htm">see how</a>)</p>
+        <span class="w-100"></span>
+        <img id="eclipse-update" class="my-4" src="img/eclipse-update.png" style="box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.20);" alt="Install in Eclipse"/>
+    </div>
+</div>
