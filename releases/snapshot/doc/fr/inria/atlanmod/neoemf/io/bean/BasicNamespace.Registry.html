@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":9,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -142,37 +142,43 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicNamespace.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicNamespace</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicNamespace.Registry.html#get-org.eclipse.emf.ecore.EPackage-">get</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EPackage.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EPackage</a>&nbsp;ePackage)</code>
+<div class="block">Returns a <a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicNamespace.html" title="class in fr.inria.atlanmod.neoemf.io.bean"><code>BasicNamespace</code></a> from the specified <code>ePackage</code>.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicNamespace.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicNamespace</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicNamespace.Registry.html#getByPrefix-java.lang.String-">getByPrefix</a></span>(java.lang.String&nbsp;prefix)</code>
 <div class="block">Returns a <a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicNamespace.html" title="class in fr.inria.atlanmod.neoemf.io.bean"><code>BasicNamespace</code></a> identified by the given <code>prefix</code>, or <code>null</code> if no namespace is
  registered with this <code>prefix</code>.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicNamespace.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicNamespace</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicNamespace.Registry.html#getByUri-java.lang.String-">getByUri</a></span>(java.lang.String&nbsp;uri)</code>
 <div class="block">Returns a <a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicNamespace.html" title="class in fr.inria.atlanmod.neoemf.io.bean"><code>BasicNamespace</code></a> identified by the given <code>uri</code>, or <code>null</code> if no namespace is
  registered with this <code>uri</code>.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicNamespace.Registry.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicNamespace.Registry</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicNamespace.Registry.html#getInstance--">getInstance</a></span>()</code>
 <div class="block">Returns the instance of this class.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.Iterable&lt;java.lang.String&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicNamespace.Registry.html#getPrefixes--">getPrefixes</a></span>()</code>
 <div class="block">Returns all registered namespace prefixes.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicNamespace.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicNamespace</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicNamespace.Registry.html#register-org.eclipse.emf.ecore.EPackage-">register</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EPackage.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EPackage</a>&nbsp;ePackage)</code>
 <div class="block">Registers a new <a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicNamespace.html" title="class in fr.inria.atlanmod.neoemf.io.bean"><code>BasicNamespace</code></a> from the given <code>ePackage</code>.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicNamespace.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicNamespace</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicNamespace.Registry.html#register-java.lang.String-java.lang.String-">register</a></span>(java.lang.String&nbsp;prefix,
         java.lang.String&nbsp;uri)</code>
@@ -231,6 +237,23 @@ public&nbsp;java.lang.Iterable&lt;java.lang.String&gt;&nbsp;getPrefixes()</pre>
 </dl>
 </li>
 </ul>
+<a name="get-org.eclipse.emf.ecore.EPackage-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>get</h4>
+<pre>@Nonnull
+public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicNamespace.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicNamespace</a>&nbsp;get(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EPackage.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EPackage</a>&nbsp;ePackage)</pre>
+<div class="block">Returns a <a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicNamespace.html" title="class in fr.inria.atlanmod.neoemf.io.bean"><code>BasicNamespace</code></a> from the specified <code>ePackage</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ePackage</code> - the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EPackage.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EPackage</code></a> associated with the namespace</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the namespace</dd>
+</dl>
+</li>
+</ul>
 <a name="getByPrefix-java.lang.String-">
 <!--   -->
 </a>
@@ -245,8 +268,8 @@ public&nbsp;java.lang.Iterable&lt;java.lang.String&gt;&nbsp;getPrefixes()</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>prefix</code> - the prefix of the desired namespace</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a <code>BasicNamespace</code> identified by the given <code>prefix</code>, or <code>null</code> if no namespace is
- registered with this <code>prefix</code></dd>
+<dd>a namespace identified by the given <code>prefix</code>, or <code>null</code> if no namespace is registered
+ with this <code>prefix</code></dd>
 </dl>
 </li>
 </ul>
@@ -264,8 +287,8 @@ public&nbsp;java.lang.Iterable&lt;java.lang.String&gt;&nbsp;getPrefixes()</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>uri</code> - the URI of the desired namespace</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a <code>BasicNamespace</code> identified by the given <code>uri</code>, or <code>null</code> if no namespace is
- registered with this <code>uri</code>.</dd>
+<dd>a namespace identified by the given <code>uri</code>, or <code>null</code> if no namespace is registered with
+ this <code>uri</code>.</dd>
 </dl>
 </li>
 </ul>
@@ -282,7 +305,7 @@ public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicNam
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>ePackage</code> - the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EPackage.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EPackage</code></a> associated with the namespace</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the new <a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicNamespace.html" title="class in fr.inria.atlanmod.neoemf.io.bean"><code>BasicNamespace</code></a></dd>
+<dd>the new namespace</dd>
 </dl>
 </li>
 </ul>
@@ -301,7 +324,7 @@ public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicNam
 <dd><code>prefix</code> - the prefix of the new namespace</dd>
 <dd><code>uri</code> - the URI associated with the prefix</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the new <a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicNamespace.html" title="class in fr.inria.atlanmod.neoemf.io.bean"><code>BasicNamespace</code></a></dd>
+<dd>the new namespace</dd>
 </dl>
 </li>
 </ul>
