@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -100,10 +100,10 @@ var activeTableTab = "activeTableTab";
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html" title="class in fr.inria.atlanmod.neoemf.io">fr.inria.atlanmod.neoemf.io.AbstractNotifier</a>&lt;H&gt;</li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html" title="class in fr.inria.atlanmod.neoemf.io">fr.inria.atlanmod.neoemf.io.AbstractNotifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&gt;</li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">fr.inria.atlanmod.neoemf.io.processor.AbstractProcessor</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">fr.inria.atlanmod.neoemf.io.processor.AbstractProcessor</a></li>
 <li>
 <ul class="inheritance">
 <li>fr.inria.atlanmod.neoemf.io.processor.XPathResolver</li>
@@ -119,13 +119,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io">Notifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a></dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io">Notifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&gt;, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a></dd>
 </dl>
 <hr>
 <br>
 <pre>@ParametersAreNonnullByDefault
 public class <span class="typeNameLabel">XPathResolver</span>
-extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">AbstractProcessor</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</pre>
+extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">AbstractProcessor</a></pre>
 <div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that analyses XPath references and transforms them in <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>.</div>
 </li>
 </ul>
@@ -145,8 +145,8 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Abstrac
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/XPathResolver.html#XPathResolver-fr.inria.atlanmod.neoemf.io.Handler-">XPathResolver</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&nbsp;handler)</code>
-<div class="block">Constructs a new <code>XPathResolver</code> with the given <code>handler</code>.</div>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/XPathResolver.html#XPathResolver-fr.inria.atlanmod.neoemf.io.processor.Processor-">XPathResolver</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&nbsp;processor)</code>
+<div class="block">Constructs a new <code>XPathResolver</code>.</div>
 </td>
 </tr>
 </table>
@@ -166,29 +166,23 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Abstrac
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/XPathResolver.html#onComplete--">onComplete</a></span>()</code>
-<div class="block">Handles the end of the current task.</div>
-</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/XPathResolver.html#onEndElement--">onEndElement</a></span>()</code>
 <div class="block">Handles the end of the current element.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/XPathResolver.html#onInitialize--">onInitialize</a></span>()</code>
 <div class="block">Handles the start of a task.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/XPathResolver.html#onReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">onReference</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;reference)</code>
 <div class="block">Handles a reference from the current element to another.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/XPathResolver.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">onStartElement</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>&nbsp;element)</code>
 <div class="block">Handles the start of an element.</div>
@@ -200,7 +194,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Abstrac
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;fr.inria.atlanmod.neoemf.io.processor.<a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">AbstractProcessor</a></h3>
-<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#onAttribute-fr.inria.atlanmod.neoemf.io.bean.BasicAttribute-">onAttribute</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#onCharacters-java.lang.String-">onCharacters</a></code></li>
+<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#onAttribute-fr.inria.atlanmod.neoemf.io.bean.BasicAttribute-">onAttribute</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#onCharacters-java.lang.String-">onCharacters</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#onComplete--">onComplete</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.neoemf.io.AbstractNotifier">
@@ -237,17 +231,17 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Abstrac
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="XPathResolver-fr.inria.atlanmod.neoemf.io.Handler-">
+<a name="XPathResolver-fr.inria.atlanmod.neoemf.io.processor.Processor-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>XPathResolver</h4>
-<pre>public&nbsp;XPathResolver(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&nbsp;handler)</pre>
-<div class="block">Constructs a new <code>XPathResolver</code> with the given <code>handler</code>.</div>
+<pre>public&nbsp;XPathResolver(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&nbsp;processor)</pre>
+<div class="block">Constructs a new <code>XPathResolver</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>handler</code> - the handler to notify</dd>
+<dd><code>processor</code> - the next processor</dd>
 </dl>
 </li>
 </ul>
@@ -272,7 +266,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Abstrac
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onInitialize--">onInitialize</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#onInitialize--">onInitialize</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">AbstractProcessor</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</code></dd>
+<dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#onInitialize--">onInitialize</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">AbstractProcessor</a></code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onComplete--"><code>Handler.onComplete()</code></a>, 
 <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyInitialize--"><code>Notifier.notifyInitialize()</code></a></dd>
@@ -292,7 +286,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Abstrac
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">onStartElement</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">onStartElement</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">AbstractProcessor</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</code></dd>
+<dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">onStartElement</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">AbstractProcessor</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>element</code> - the element of the new element</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -314,7 +308,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Abstrac
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">onReference</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#onReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">onReference</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">AbstractProcessor</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</code></dd>
+<dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#onReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">onReference</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">AbstractProcessor</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>reference</code> - the new reference</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -326,7 +320,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Abstrac
 <a name="onEndElement--">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>onEndElement</h4>
 <pre>public&nbsp;void&nbsp;onEndElement()</pre>
@@ -336,30 +330,10 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Abstrac
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onEndElement--">onEndElement</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#onEndElement--">onEndElement</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">AbstractProcessor</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</code></dd>
+<dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#onEndElement--">onEndElement</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">AbstractProcessor</a></code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-"><code>Handler.onStartElement(BasicElement)</code></a>, 
 <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyEndElement--"><code>Notifier.notifyEndElement()</code></a></dd>
-</dl>
-</li>
-</ul>
-<a name="onComplete--">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>onComplete</h4>
-<pre>public&nbsp;void&nbsp;onComplete()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onComplete--">Handler</a></code></span></div>
-<div class="block">Handles the end of the current task.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onComplete--">onComplete</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#onComplete--">onComplete</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">AbstractProcessor</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</code></dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onInitialize--"><code>Handler.onInitialize()</code></a>, 
-<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyComplete--"><code>Notifier.notifyComplete()</code></a></dd>
 </dl>
 </li>
 </ul>

@@ -28,8 +28,10 @@ fr.inria.atlanmod.neoemf.data.mapdb.util
 fr.inria.atlanmod.neoemf.data.mapping
 fr.inria.atlanmod.neoemf.data.store
 fr.inria.atlanmod.neoemf.data.store.adapter
+fr.inria.atlanmod.neoemf.data.store.listener
 fr.inria.atlanmod.neoemf.io
 fr.inria.atlanmod.neoemf.io.bean
+fr.inria.atlanmod.neoemf.io.listener
 fr.inria.atlanmod.neoemf.io.processor
 fr.inria.atlanmod.neoemf.io.reader
 fr.inria.atlanmod.neoemf.io.util

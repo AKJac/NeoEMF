@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -188,20 +188,38 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="class in fr.inria.atlanmod.neoemf.io">Migrator</a>&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="type parameter in Migrator">T</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html#withCounter--">withCounter</a></span>()</code>
-<div class="block">Adds the <code>event-counting</code> feature.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html#with-fr.inria.atlanmod.neoemf.io.listener.Listener-">with</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/io/listener/Listener.html" title="interface in fr.inria.atlanmod.neoemf.io.listener">Listener</a>&nbsp;listener)</code>
+<div class="block">Adds a pre/post-processing feature.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="class in fr.inria.atlanmod.neoemf.io">Migrator</a>&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="type parameter in Migrator">T</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html#withLogger--">withLogger</a></span>()</code>
-<div class="block">Adds the <code>logging</code> feature.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html#withCounter--">withCounter</a></span>()</code>
+<div class="block">Counts the number of processed events (elements, attributes, references).</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="class in fr.inria.atlanmod.neoemf.io">Migrator</a>&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="type parameter in Migrator">T</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html#withLogger--">withLogger</a></span>()</code>
+<div class="block">Logs each event when they occur.</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="class in fr.inria.atlanmod.neoemf.io">Migrator</a>&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="type parameter in Migrator">T</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html#withLogger-fr.inria.atlanmod.commons.log.Level-">withLogger</a></span>(fr.inria.atlanmod.commons.log.Level&nbsp;level)</code>
+<div class="block">Logs each event when they occur.</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="class in fr.inria.atlanmod.neoemf.io">Migrator</a>&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="type parameter in Migrator">T</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html#withProgress--">withProgress</a></span>()</code>
+<div class="block">Displays the progress of the migration at regular intervals.</div>
+</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="class in fr.inria.atlanmod.neoemf.io">Migrator</a>&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="type parameter in Migrator">T</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html#withTimer--">withTimer</a></span>()</code>
-<div class="block">Adds the <code>timing</code> feature.</div>
+<div class="block">Displays the amount of time spent during the migration.</div>
 </td>
 </tr>
 </table>
@@ -382,6 +400,23 @@ public&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" t
 </dl>
 </li>
 </ul>
+<a name="with-fr.inria.atlanmod.neoemf.io.listener.Listener-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>with</h4>
+<pre>@Nonnull
+public&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="class in fr.inria.atlanmod.neoemf.io">Migrator</a>&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="type parameter in Migrator">T</a>&gt;&nbsp;with(<a href="../../../../../fr/inria/atlanmod/neoemf/io/listener/Listener.html" title="interface in fr.inria.atlanmod.neoemf.io.listener">Listener</a>&nbsp;listener)</pre>
+<div class="block">Adds a pre/post-processing feature.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>listener</code> - the listener to add</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>this migrator (for chaining)</dd>
+</dl>
+</li>
+</ul>
 <a name="withLogger--">
 <!--   -->
 </a>
@@ -390,8 +425,25 @@ public&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" t
 <h4>withLogger</h4>
 <pre>@Nonnull
 public&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="class in fr.inria.atlanmod.neoemf.io">Migrator</a>&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="type parameter in Migrator">T</a>&gt;&nbsp;withLogger()</pre>
-<div class="block">Adds the <code>logging</code> feature.</div>
+<div class="block">Logs each event when they occur.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>this migrator (for chaining)</dd>
+</dl>
+</li>
+</ul>
+<a name="withLogger-fr.inria.atlanmod.commons.log.Level-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>withLogger</h4>
+<pre>@Nonnull
+public&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="class in fr.inria.atlanmod.neoemf.io">Migrator</a>&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="type parameter in Migrator">T</a>&gt;&nbsp;withLogger(fr.inria.atlanmod.commons.log.Level&nbsp;level)</pre>
+<div class="block">Logs each event when they occur.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>level</code> - the logging level to use</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this migrator (for chaining)</dd>
 </dl>
@@ -405,7 +457,7 @@ public&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" t
 <h4>withCounter</h4>
 <pre>@Nonnull
 public&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="class in fr.inria.atlanmod.neoemf.io">Migrator</a>&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="type parameter in Migrator">T</a>&gt;&nbsp;withCounter()</pre>
-<div class="block">Adds the <code>event-counting</code> feature.</div>
+<div class="block">Counts the number of processed events (elements, attributes, references).</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this migrator (for chaining)</dd>
@@ -420,7 +472,24 @@ public&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" t
 <h4>withTimer</h4>
 <pre>@Nonnull
 public&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="class in fr.inria.atlanmod.neoemf.io">Migrator</a>&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="type parameter in Migrator">T</a>&gt;&nbsp;withTimer()</pre>
-<div class="block">Adds the <code>timing</code> feature.</div>
+<div class="block">Displays the amount of time spent during the migration.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>this migrator (for chaining)</dd>
+</dl>
+</li>
+</ul>
+<a name="withProgress--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>withProgress</h4>
+<pre>@Nonnull
+public&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="class in fr.inria.atlanmod.neoemf.io">Migrator</a>&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="type parameter in Migrator">T</a>&gt;&nbsp;withProgress()</pre>
+<div class="block">Displays the progress of the migration at regular intervals.
+ <p>
+ <b>WARNING:</b> This feature can only be used when reading a file or a stream.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this migrator (for chaining)</dd>

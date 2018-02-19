@@ -88,6 +88,12 @@
 <div class="block">Provides classes that adds preprocessing and postprocessing functionalities during an I/O process.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#fr.inria.atlanmod.neoemf.io.reader">fr.inria.atlanmod.neoemf.io.reader</a></td>
+<td class="colLast">
+<div class="block">Provides classes related to data reading.</div>
+</td>
+</tr>
 </tbody>
 </table>
 </li>
@@ -102,18 +108,36 @@
 <tbody>
 <tr class="altColor">
 <td class="colOne"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/class-use/AbstractProcessor.html#fr.inria.atlanmod.neoemf.io.processor">AbstractProcessor</a>
-<div class="block">A abstract <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that delegates all methods to an internal <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a>.</div>
+<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that simply delegates all methods to the next <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/class-use/Processor.html#fr.inria.atlanmod.neoemf.io.processor">Processor</a>
 <div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> that pre-processes and post-processes received events, before notifying
- the next <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a>.</div>
+ the next <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a>.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/class-use/ValueConverter.html#fr.inria.atlanmod.neoemf.io.processor">ValueConverter</a>
 <div class="block">A <code>BiConverter</code> that transforms the value of <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EAttribute.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EAttribute</code></a> instances.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="fr.inria.atlanmod.neoemf.io.reader">
+<!--   -->
+</a>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/package-summary.html">fr.inria.atlanmod.neoemf.io.processor</a> used by <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/package-summary.html">fr.inria.atlanmod.neoemf.io.reader</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colOne"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/class-use/Processor.html#fr.inria.atlanmod.neoemf.io.reader">Processor</a>
+<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> that pre-processes and post-processes received events, before notifying
+ the next <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a>.</div>
 </td>
 </tr>
 </tbody>

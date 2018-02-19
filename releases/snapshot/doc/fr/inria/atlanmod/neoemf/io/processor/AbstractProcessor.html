@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/CounterProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/EcoreMapper.html" title="class in fr.inria.atlanmod.neoemf.io.processor"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" target="_top">Frames</a></li>
@@ -93,17 +93,17 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">fr.inria.atlanmod.neoemf.io.processor</div>
-<h2 title="Class AbstractProcessor" class="title">Class AbstractProcessor&lt;H extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</h2>
+<h2 title="Class AbstractProcessor" class="title">Class AbstractProcessor</h2>
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html" title="class in fr.inria.atlanmod.neoemf.io">fr.inria.atlanmod.neoemf.io.AbstractNotifier</a>&lt;H&gt;</li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html" title="class in fr.inria.atlanmod.neoemf.io">fr.inria.atlanmod.neoemf.io.AbstractNotifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&gt;</li>
 <li>
 <ul class="inheritance">
-<li>fr.inria.atlanmod.neoemf.io.processor.AbstractProcessor&lt;H&gt;</li>
+<li>fr.inria.atlanmod.neoemf.io.processor.AbstractProcessor</li>
 </ul>
 </li>
 </ul>
@@ -113,24 +113,20 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>H</code> - the type of notified <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a></dd>
-</dl>
-<dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io">Notifier</a>&lt;H&gt;, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a></dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io">Notifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&gt;, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/CounterProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">CounterProcessor</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/EcoreProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">EcoreProcessor</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/LoggingProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">LoggingProcessor</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/NoopProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">NoopProcessor</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/ProgressProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">ProgressProcessor</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/TimerProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">TimerProcessor</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/XPathResolver.html" title="class in fr.inria.atlanmod.neoemf.io.processor">XPathResolver</a></dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/EcoreMapper.html" title="class in fr.inria.atlanmod.neoemf.io.processor">EcoreMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/XPathResolver.html" title="class in fr.inria.atlanmod.neoemf.io.processor">XPathResolver</a></dd>
 </dl>
 <hr>
 <br>
 <pre>@ParametersAreNonnullByDefault
-public abstract class <span class="typeNameLabel">AbstractProcessor&lt;H extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</span>
-extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html" title="class in fr.inria.atlanmod.neoemf.io">AbstractNotifier</a>&lt;H&gt;
+public abstract class <span class="typeNameLabel">AbstractProcessor</span>
+extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html" title="class in fr.inria.atlanmod.neoemf.io">AbstractNotifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&gt;
 implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a></pre>
-<div class="block">A abstract <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that delegates all methods to an internal <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a>.</div>
+<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that simply delegates all methods to the next <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a>.</div>
 </li>
 </ul>
 </div>
@@ -149,8 +145,8 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Proc
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#AbstractProcessor-H...-">AbstractProcessor</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="type parameter in AbstractProcessor">H</a>...&nbsp;handlers)</code>
-<div class="block">Constructs a new <code>AbstractProcessor</code> with the given <code>handlers</code>.</div>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#AbstractProcessor-fr.inria.atlanmod.neoemf.io.processor.Processor-">AbstractProcessor</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&nbsp;processor)</code>
+<div class="block">Constructs a new <code>AbstractProcessor</code>.</div>
 </td>
 </tr>
 </table>
@@ -246,20 +242,17 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Proc
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="AbstractProcessor-fr.inria.atlanmod.neoemf.io.Handler:A-">
-<!--   -->
-</a><a name="AbstractProcessor-H...-">
+<a name="AbstractProcessor-fr.inria.atlanmod.neoemf.io.processor.Processor-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AbstractProcessor</h4>
-<pre>@SafeVarargs
-public&nbsp;AbstractProcessor(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="type parameter in AbstractProcessor">H</a>...&nbsp;handlers)</pre>
-<div class="block">Constructs a new <code>AbstractProcessor</code> with the given <code>handlers</code>.</div>
+<pre>public&nbsp;AbstractProcessor(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&nbsp;processor)</pre>
+<div class="block">Constructs a new <code>AbstractProcessor</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>handlers</code> - the handlers to notify</dd>
+<dd><code>processor</code> - the next processor</dd>
 </dl>
 </li>
 </ul>
@@ -434,7 +427,7 @@ public&nbsp;AbstractProcessor(<a href="../../../../../../fr/inria/atlanmod/neoem
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/CounterProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/EcoreMapper.html" title="class in fr.inria.atlanmod.neoemf.io.processor"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" target="_top">Frames</a></li>

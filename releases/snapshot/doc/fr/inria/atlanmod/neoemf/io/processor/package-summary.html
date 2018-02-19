@@ -43,7 +43,7 @@
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/package-summary.html">Prev&nbsp;Package</a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/listener/package-summary.html">Prev&nbsp;Package</a></li>
 <li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/package-summary.html">Next&nbsp;Package</a></li>
 </ul>
 <ul class="navList">
@@ -90,7 +90,7 @@
 <td class="colFirst"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a></td>
 <td class="colLast">
 <div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> that pre-processes and post-processes received events, before notifying
- the next <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a>.</div>
+ the next <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a>.</div>
 </td>
 </tr>
 </tbody>
@@ -105,27 +105,15 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">AbstractProcessor</a>&lt;H extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</td>
+<td class="colFirst"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">AbstractProcessor</a></td>
 <td class="colLast">
-<div class="block">A abstract <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that delegates all methods to an internal <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a>.</div>
+<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that simply delegates all methods to the next <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/CounterProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">CounterProcessor</a></td>
-<td class="colLast">
-<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that counts the number of different element.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/EcoreProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">EcoreProcessor</a></td>
+<td class="colFirst"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/EcoreMapper.html" title="class in fr.inria.atlanmod.neoemf.io.processor">EcoreMapper</a></td>
 <td class="colLast">
 <div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that transforms simple elements to an EMF structure.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/LoggingProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">LoggingProcessor</a></td>
-<td class="colLast">
-<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that logs every events.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -133,18 +121,6 @@
 <td class="colLast">
 <div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that simply notifies registered <a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/Writer.html" title="interface in fr.inria.atlanmod.neoemf.io.writer"><code>Writer</code></a> of events,
  without any additional operation.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/ProgressProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">ProgressProcessor</a></td>
-<td class="colLast">
-<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that logs the progress of a migration.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/TimerProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">TimerProcessor</a></td>
-<td class="colLast">
-<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that measures elapsed time between the start and the end of an I/O process.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -190,7 +166,7 @@
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/package-summary.html">Prev&nbsp;Package</a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/listener/package-summary.html">Prev&nbsp;Package</a></li>
 <li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/package-summary.html">Next&nbsp;Package</a></li>
 </ul>
 <ul class="navList">

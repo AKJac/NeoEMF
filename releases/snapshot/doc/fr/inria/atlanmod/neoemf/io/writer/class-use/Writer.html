@@ -89,12 +89,6 @@
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="#fr.inria.atlanmod.neoemf.io.processor">fr.inria.atlanmod.neoemf.io.processor</a></td>
-<td class="colLast">
-<div class="block">Provides classes that adds preprocessing and postprocessing functionalities during an I/O process.</div>
-</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><a href="#fr.inria.atlanmod.neoemf.io.writer">fr.inria.atlanmod.neoemf.io.writer</a></td>
 <td class="colLast">
 <div class="block">Provides classes related to data writing.</div>
@@ -120,24 +114,6 @@
 <td class="colFirst"><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="class in fr.inria.atlanmod.neoemf.io">Migrator</a>&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html" title="type parameter in Migrator">T</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">Migrator.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/Migrator.html#to-fr.inria.atlanmod.neoemf.io.writer.Writer-">to</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/writer/Writer.html" title="interface in fr.inria.atlanmod.neoemf.io.writer">Writer</a>&nbsp;writer)</code>
 <div class="block">Specifies the <code>writer</code> where to send the reading events.</div>
-</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li class="blockList"><a name="fr.inria.atlanmod.neoemf.io.processor">
-<!--   -->
-</a>
-<h3>Uses of <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/writer/Writer.html" title="interface in fr.inria.atlanmod.neoemf.io.writer">Writer</a> in <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/package-summary.html">fr.inria.atlanmod.neoemf.io.processor</a></h3>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
-<caption><span>Constructors in <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/package-summary.html">fr.inria.atlanmod.neoemf.io.processor</a> with parameters of type <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/writer/Writer.html" title="interface in fr.inria.atlanmod.neoemf.io.writer">Writer</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colOne" scope="col">Constructor and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/NoopProcessor.html#NoopProcessor-fr.inria.atlanmod.neoemf.io.writer.Writer...-">NoopProcessor</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/writer/Writer.html" title="interface in fr.inria.atlanmod.neoemf.io.writer">Writer</a>...&nbsp;writers)</code>
-<div class="block">Constructs a new <code>NoopProcessor</code> with the given <code>writers</code>.</div>
 </td>
 </tr>
 </tbody>
@@ -179,6 +155,12 @@
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/writer/IndentingXmiStreamWriter.html" title="class in fr.inria.atlanmod.neoemf.io.writer">IndentingXmiStreamWriter</a></span></code>
+<div class="block">An indenting <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/writer/XmiStreamWriter.html" title="class in fr.inria.atlanmod.neoemf.io.writer"><code>XmiStreamWriter</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/writer/XmiStreamWriter.html" title="class in fr.inria.atlanmod.neoemf.io.writer">XmiStreamWriter</a></span></code>
 <div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractXmiStreamWriter.html" title="class in fr.inria.atlanmod.neoemf.io.writer"><code>AbstractXmiStreamWriter</code></a> that uses a StAX implementation with cursors for writing XMI files.</div>

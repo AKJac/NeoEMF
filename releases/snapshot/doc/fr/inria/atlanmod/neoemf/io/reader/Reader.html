@@ -105,7 +105,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io">Notifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io">Notifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&gt;</dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
@@ -115,7 +115,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>@ParametersAreNonnullByDefault
 public interface <span class="typeNameLabel">Reader&lt;T&gt;</span>
-extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io">Notifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</pre>
+extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io">Notifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&gt;</pre>
 <div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Notifier</code></a> able to read data from an <code>Object</code>.</div>
 </li>
 </ul>
@@ -138,7 +138,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" ti
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/Reader.html#read-T-">read</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/Reader.html" title="type parameter in Reader">T</a>&nbsp;source)</code>
-<div class="block">Reads an <code>Object</code> and notifies registered <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a>.</div>
+<div class="block">Reads an <code>Object</code>.</div>
 </td>
 </tr>
 </table>
@@ -174,7 +174,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" ti
 <pre>void&nbsp;read(@WillNotClose
           <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/Reader.html" title="type parameter in Reader">T</a>&nbsp;source)
    throws java.io.IOException</pre>
-<div class="block">Reads an <code>Object</code> and notifies registered <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a>.</div>
+<div class="block">Reads an <code>Object</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>source</code> - the object to read</dd>
