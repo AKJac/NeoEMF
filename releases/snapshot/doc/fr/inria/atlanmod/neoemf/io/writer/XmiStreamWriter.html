@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -203,49 +203,43 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractXm
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/XmiStreamWriter.html#handleException-javax.xml.stream.XMLStreamException-">handleException</a></span>(javax.xml.stream.XMLStreamException&nbsp;e)</code>
-<div class="block">TODO</div>
-</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/XmiStreamWriter.html#writeAttribute-java.lang.String-java.lang.String-">writeAttribute</a></span>(java.lang.String&nbsp;name,
               java.lang.String&nbsp;value)</code>
 <div class="block">Writes an attribute of the current element.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/XmiStreamWriter.html#writeCharacters-java.lang.String-">writeCharacters</a></span>(java.lang.String&nbsp;characters)</code>
 <div class="block">Writes characters.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/XmiStreamWriter.html#writeEndDocument--">writeEndDocument</a></span>()</code>
 <div class="block">Writes the end of the document and finalizes the migration.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/XmiStreamWriter.html#writeEndElement--">writeEndElement</a></span>()</code>
 <div class="block">Writes the end of the current element.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/XmiStreamWriter.html#writeNamespace-java.lang.String-java.lang.String-">writeNamespace</a></span>(java.lang.String&nbsp;prefix,
               java.lang.String&nbsp;uri)</code>
 <div class="block">Writes a namespace.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/XmiStreamWriter.html#writeStartDocument--">writeStartDocument</a></span>()</code>
 <div class="block">Writes the start of a document, including the general header.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/XmiStreamWriter.html#writeStartElement-java.lang.String-">writeStartElement</a></span>(java.lang.String&nbsp;name)</code>
 <div class="block">Writes the start of an element <code>name</code></div>
@@ -461,7 +455,7 @@ protected final&nbsp;javax.xml.stream.XMLStreamWriter writer</pre>
 <a name="writeEndDocument--">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>writeEndDocument</h4>
 <pre>protected&nbsp;void&nbsp;writeEndDocument()
@@ -473,23 +467,6 @@ protected final&nbsp;javax.xml.stream.XMLStreamWriter writer</pre>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractXmiStreamWriter.html#writeEndDocument--">writeEndDocument</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractXmiStreamWriter.html" title="class in fr.inria.atlanmod.neoemf.io.writer">AbstractXmiStreamWriter</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.io.IOException</code> - if an I/O error occurs when writing</dd>
-</dl>
-</li>
-</ul>
-<a name="handleException-javax.xml.stream.XMLStreamException-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>handleException</h4>
-<pre>protected&nbsp;void&nbsp;handleException(javax.xml.stream.XMLStreamException&nbsp;e)
-                        throws java.io.IOException</pre>
-<div class="block">TODO</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>e</code> - the exception to handle</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
 </dl>
 </li>
 </ul>
