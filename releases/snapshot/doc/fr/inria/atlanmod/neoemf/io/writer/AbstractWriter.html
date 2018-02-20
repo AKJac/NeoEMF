@@ -318,7 +318,8 @@ protected final&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/writ
 <li class="blockList">
 <h4>onStartElement</h4>
 <pre>@OverridingMethodsMustInvokeSuper
-public&nbsp;void&nbsp;onStartElement(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>&nbsp;element)</pre>
+public&nbsp;void&nbsp;onStartElement(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>&nbsp;element)
+                                                      throws java.io.IOException</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">Handler</a></code></span></div>
 <div class="block">Handles the start of an element.</div>
 <dl>
@@ -326,6 +327,8 @@ public&nbsp;void&nbsp;onStartElement(<a href="../../../../../../fr/inria/atlanmo
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">onStartElement</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>element</code> - the element of the new element</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onEndElement--"><code>Handler.onEndElement()</code></a>, 
 <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-"><code>Notifier.notifyStartElement(BasicElement)</code></a></dd>
@@ -338,7 +341,8 @@ public&nbsp;void&nbsp;onStartElement(<a href="../../../../../../fr/inria/atlanmo
 <ul class="blockList">
 <li class="blockList">
 <h4>onAttribute</h4>
-<pre>public final&nbsp;void&nbsp;onAttribute(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicAttribute.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicAttribute</a>&nbsp;attribute)</pre>
+<pre>public final&nbsp;void&nbsp;onAttribute(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicAttribute.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicAttribute</a>&nbsp;attribute)
+                       throws java.io.IOException</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onAttribute-fr.inria.atlanmod.neoemf.io.bean.BasicAttribute-">Handler</a></code></span></div>
 <div class="block">Handles an attribute in the current element.</div>
 <dl>
@@ -346,6 +350,8 @@ public&nbsp;void&nbsp;onStartElement(<a href="../../../../../../fr/inria/atlanmo
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onAttribute-fr.inria.atlanmod.neoemf.io.bean.BasicAttribute-">onAttribute</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>attribute</code> - the new attribute</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-"><code>Handler.onStartElement(BasicElement)</code></a>, 
 <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyAttribute-fr.inria.atlanmod.neoemf.io.bean.BasicAttribute-"><code>Notifier.notifyAttribute(BasicAttribute)</code></a></dd>
@@ -358,7 +364,8 @@ public&nbsp;void&nbsp;onStartElement(<a href="../../../../../../fr/inria/atlanmo
 <ul class="blockList">
 <li class="blockList">
 <h4>onReference</h4>
-<pre>public final&nbsp;void&nbsp;onReference(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;reference)</pre>
+<pre>public final&nbsp;void&nbsp;onReference(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;reference)
+                       throws java.io.IOException</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">Handler</a></code></span></div>
 <div class="block">Handles a reference from the current element to another.</div>
 <dl>
@@ -366,6 +373,8 @@ public&nbsp;void&nbsp;onStartElement(<a href="../../../../../../fr/inria/atlanmo
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">onReference</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>reference</code> - the new reference</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-"><code>Handler.onStartElement(BasicElement)</code></a>, 
 <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-"><code>Notifier.notifyReference(BasicReference)</code></a></dd>
@@ -378,7 +387,8 @@ public&nbsp;void&nbsp;onStartElement(<a href="../../../../../../fr/inria/atlanmo
 <ul class="blockList">
 <li class="blockList">
 <h4>onCharacters</h4>
-<pre>public final&nbsp;void&nbsp;onCharacters(java.lang.String&nbsp;characters)</pre>
+<pre>public final&nbsp;void&nbsp;onCharacters(java.lang.String&nbsp;characters)
+                        throws java.io.IOException</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onCharacters-java.lang.String-">Handler</a></code></span></div>
 <div class="block">Handles a set of characters.</div>
 <dl>
@@ -386,6 +396,8 @@ public&nbsp;void&nbsp;onStartElement(<a href="../../../../../../fr/inria/atlanmo
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onCharacters-java.lang.String-">onCharacters</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>characters</code> - the new characters</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-"><code>Handler.onStartElement(BasicElement)</code></a>, 
 <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyCharacters-java.lang.String-"><code>Notifier.notifyCharacters(String)</code></a></dd>
@@ -399,12 +411,15 @@ public&nbsp;void&nbsp;onStartElement(<a href="../../../../../../fr/inria/atlanmo
 <li class="blockList">
 <h4>onEndElement</h4>
 <pre>@OverridingMethodsMustInvokeSuper
-public&nbsp;void&nbsp;onEndElement()</pre>
+public&nbsp;void&nbsp;onEndElement()
+                                                    throws java.io.IOException</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onEndElement--">Handler</a></code></span></div>
 <div class="block">Handles the end of the current element.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onEndElement--">onEndElement</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-"><code>Handler.onStartElement(BasicElement)</code></a>, 
 <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyEndElement--"><code>Notifier.notifyEndElement()</code></a></dd>
@@ -418,13 +433,16 @@ public&nbsp;void&nbsp;onEndElement()</pre>
 <li class="blockList">
 <h4>onAttribute</h4>
 <pre>public abstract&nbsp;void&nbsp;onAttribute(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicAttribute.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicAttribute</a>&nbsp;attribute,
-                                 java.util.List&lt;java.lang.Object&gt;&nbsp;values)</pre>
+                                 java.util.List&lt;java.lang.Object&gt;&nbsp;values)
+                          throws java.io.IOException</pre>
 <div class="block">Handles an attribute in the current element.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>attribute</code> - the new attribute, without its value</dd>
 <dd><code>values</code> - the ordered values of the attribute; when the <code>attribute</code> is single-valued, this parameter
                   is a <code>Collections.singletonList(Object)</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code></dd>
 </dl>
 </li>
 </ul>
@@ -435,13 +453,16 @@ public&nbsp;void&nbsp;onEndElement()</pre>
 <li class="blockList">
 <h4>onReference</h4>
 <pre>public abstract&nbsp;void&nbsp;onReference(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;reference,
-                                 java.util.List&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&gt;&nbsp;values)</pre>
+                                 java.util.List&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&gt;&nbsp;values)
+                          throws java.io.IOException</pre>
 <div class="block">Handles a reference in the current element.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>reference</code> - the new reference, without its value</dd>
 <dd><code>values</code> - the ordered values of the reference; when the <code>reference</code> is single-valued, this parameter
                   is a <code>Collections.singletonList(Object)</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code></dd>
 </dl>
 </li>
 </ul>

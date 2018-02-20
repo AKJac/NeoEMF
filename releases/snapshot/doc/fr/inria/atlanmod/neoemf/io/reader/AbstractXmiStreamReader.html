@@ -256,7 +256,8 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractSt
 <pre>protected final&nbsp;boolean&nbsp;isSpecialAttribute(@Nullable
                                            java.lang.String&nbsp;prefix,
                                            java.lang.String&nbsp;name,
-                                           java.lang.String&nbsp;value)</pre>
+                                           java.lang.String&nbsp;value)
+                                    throws java.io.IOException</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractStreamReader.html#isSpecialAttribute-java.lang.String-java.lang.String-java.lang.String-">AbstractStreamReader</a></code></span></div>
 <div class="block">Defines if the attribute represented with the parameters is a special attribute as 'xsi:type', 'xmi:id' or
  'xmi:idref'.</div>
@@ -269,6 +270,8 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractSt
 <dd><code>value</code> - the value of the attribute</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>true</code> if the given feature is a special feature</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code></dd>
 </dl>
 </li>
 </ul>

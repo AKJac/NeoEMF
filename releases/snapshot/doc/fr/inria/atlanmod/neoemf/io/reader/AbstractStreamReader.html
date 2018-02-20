@@ -405,8 +405,13 @@ public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicEle
 <ul class="blockList">
 <li class="blockList">
 <h4>readStartDocument</h4>
-<pre>protected final&nbsp;void&nbsp;readStartDocument()</pre>
+<pre>protected final&nbsp;void&nbsp;readStartDocument()
+                                throws java.io.IOException</pre>
 <div class="block">Reads the start of the document.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code></dd>
+</dl>
 </li>
 </ul>
 <a name="readStartElement-java.lang.String-java.lang.String-">
@@ -453,8 +458,13 @@ public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicEle
 <ul class="blockList">
 <li class="blockList">
 <h4>flushCurrentElement</h4>
-<pre>protected final&nbsp;void&nbsp;flushCurrentElement()</pre>
+<pre>protected final&nbsp;void&nbsp;flushCurrentElement()
+                                  throws java.io.IOException</pre>
 <div class="block">Finalizes the current element and sends all delayed notifications to handlers.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code></dd>
+</dl>
 </li>
 </ul>
 <a name="readAttribute-java.lang.String-java.lang.String-java.lang.String-">
@@ -466,13 +476,16 @@ public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicEle
 <pre>protected final&nbsp;void&nbsp;readAttribute(@Nullable
                                    java.lang.String&nbsp;prefix,
                                    java.lang.String&nbsp;name,
-                                   java.lang.String&nbsp;value)</pre>
+                                   java.lang.String&nbsp;value)
+                            throws java.io.IOException</pre>
 <div class="block">Reads a new attribute of the current element.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>prefix</code> - the prefix of the attribute</dd>
 <dd><code>name</code> - the name of the attribute</dd>
 <dd><code>value</code> - the value of the attribute</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code></dd>
 </dl>
 </li>
 </ul>
@@ -485,7 +498,8 @@ public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicEle
 <pre>protected abstract&nbsp;boolean&nbsp;isSpecialAttribute(@Nullable
                                               java.lang.String&nbsp;prefix,
                                               java.lang.String&nbsp;name,
-                                              java.lang.String&nbsp;value)</pre>
+                                              java.lang.String&nbsp;value)
+                                       throws java.io.IOException</pre>
 <div class="block">Defines if the attribute represented with the parameters is a special attribute as 'xsi:type', 'xmi:id' or
  'xmi:idref'.</div>
 <dl>
@@ -495,6 +509,8 @@ public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicEle
 <dd><code>value</code> - the value of the attribute</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>true</code> if the given feature is a special feature</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code></dd>
 </dl>
 </li>
 </ul>
@@ -504,11 +520,14 @@ public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicEle
 <ul class="blockList">
 <li class="blockList">
 <h4>readCharacters</h4>
-<pre>protected final&nbsp;void&nbsp;readCharacters(java.lang.String&nbsp;characters)</pre>
+<pre>protected final&nbsp;void&nbsp;readCharacters(java.lang.String&nbsp;characters)
+                             throws java.io.IOException</pre>
 <div class="block">Reads characters.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>characters</code> - a set of characters, as <code>String</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code></dd>
 </dl>
 </li>
 </ul>
@@ -534,8 +553,13 @@ public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicEle
 <ul class="blockList">
 <li class="blockList">
 <h4>readEndElement</h4>
-<pre>protected final&nbsp;void&nbsp;readEndElement()</pre>
+<pre>protected final&nbsp;void&nbsp;readEndElement()
+                             throws java.io.IOException</pre>
 <div class="block">Reads the end of an element.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code></dd>
+</dl>
 </li>
 </ul>
 <a name="readEndDocument--">
@@ -544,8 +568,13 @@ public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicEle
 <ul class="blockListLast">
 <li class="blockList">
 <h4>readEndDocument</h4>
-<pre>protected final&nbsp;void&nbsp;readEndDocument()</pre>
+<pre>protected final&nbsp;void&nbsp;readEndDocument()
+                              throws java.io.IOException</pre>
 <div class="block">Reads the end of the current document.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code></dd>
+</dl>
 </li>
 </ul>
 </li>

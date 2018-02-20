@@ -302,7 +302,8 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractWr
 <ul class="blockList">
 <li class="blockList">
 <h4>onStartElement</h4>
-<pre>public&nbsp;void&nbsp;onStartElement(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>&nbsp;element)</pre>
+<pre>public&nbsp;void&nbsp;onStartElement(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>&nbsp;element)
+                    throws java.io.IOException</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">Handler</a></code></span></div>
 <div class="block">Handles the start of an element.</div>
 <dl>
@@ -312,6 +313,8 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractWr
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractWriter.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">onStartElement</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractWriter.html" title="class in fr.inria.atlanmod.neoemf.io.writer">AbstractWriter</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>element</code> - the element of the new element</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onEndElement--"><code>Handler.onEndElement()</code></a>, 
 <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-"><code>Notifier.notifyStartElement(BasicElement)</code></a></dd>
