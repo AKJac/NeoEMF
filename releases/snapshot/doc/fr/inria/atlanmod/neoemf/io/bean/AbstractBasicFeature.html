@@ -214,15 +214,15 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/AbstractName
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/AbstractBasicFeature.html#stringValue--">stringValue</a></span>()</code>
-<div class="block">Returns the string representation of the value of this feature.</div>
+<td class="colFirst"><code>&lt;U&gt;&nbsp;U</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/AbstractBasicFeature.html#rawValue--">rawValue</a></span>()</code>
+<div class="block">Returns the raw value of this feature, as she was read.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/AbstractBasicFeature.html" title="type parameter in AbstractBasicFeature">T</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/AbstractBasicFeature.html#stringValue-java.lang.String-">stringValue</a></span>(java.lang.String&nbsp;rawValue)</code>
-<div class="block">Defines the string representation of the value of this feature.</div>
+<td class="colFirst"><code>&lt;U&gt;&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/AbstractBasicFeature.html" title="type parameter in AbstractBasicFeature">T</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/AbstractBasicFeature.html#rawValue-U-">rawValue</a></span>(U&nbsp;rawValue)</code>
+<div class="block">Defines the raw value of this feature, as she was read.</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
@@ -405,31 +405,33 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/AbstractName
 </dl>
 </li>
 </ul>
-<a name="stringValue--">
+<a name="rawValue--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>stringValue</h4>
-<pre>public&nbsp;java.lang.String&nbsp;stringValue()</pre>
-<div class="block">Returns the string representation of the value of this feature.</div>
+<h4>rawValue</h4>
+<pre>public&nbsp;&lt;U&gt;&nbsp;U&nbsp;rawValue()</pre>
+<div class="block">Returns the raw value of this feature, as she was read.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the string representation of the value of this feature</dd>
+<dd>the raw value</dd>
 </dl>
 </li>
 </ul>
-<a name="stringValue-java.lang.String-">
+<a name="rawValue-java.lang.Object-">
+<!--   -->
+</a><a name="rawValue-U-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>stringValue</h4>
-<pre>public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/AbstractBasicFeature.html" title="type parameter in AbstractBasicFeature">T</a>&nbsp;stringValue(java.lang.String&nbsp;rawValue)</pre>
-<div class="block">Defines the string representation of the value of this feature.</div>
+<h4>rawValue</h4>
+<pre>public&nbsp;&lt;U&gt;&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/AbstractBasicFeature.html" title="type parameter in AbstractBasicFeature">T</a>&nbsp;rawValue(U&nbsp;rawValue)</pre>
+<div class="block">Defines the raw value of this feature, as she was read.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>rawValue</code> - the string representation of the value of this feature</dd>
+<dd><code>rawValue</code> - the raw value</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this instance (for chaining)</dd>
 </dl>
