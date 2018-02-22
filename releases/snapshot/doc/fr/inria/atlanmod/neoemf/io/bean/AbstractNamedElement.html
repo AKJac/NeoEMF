@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/AbstractBasicFeature.html" title="class in fr.inria.atlanmod.neoemf.io.bean"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicAttribute.html" title="class in fr.inria.atlanmod.neoemf.io.bean"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/Basic.html" title="interface in fr.inria.atlanmod.neoemf.io.bean"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/inria/atlanmod/neoemf/io/bean/AbstractNamedElement.html" target="_top">Frames</a></li>
@@ -109,7 +109,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/AbstractBasicFeature.html" title="class in fr.inria.atlanmod.neoemf.io.bean">AbstractBasicFeature</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicMetaclass.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicMetaclass</a></dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/AbstractBasicFeature.html" title="class in fr.inria.atlanmod.neoemf.io.bean">AbstractBasicFeature</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicClass.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicClass</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a></dd>
 </dl>
 <hr>
 <br>
@@ -157,24 +157,24 @@ extends java.lang.Object</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/AbstractNamedElement.html#equals-java.lang.Object-">equals</a></span>(java.lang.Object&nbsp;o)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/AbstractNamedElement.html#getName--">getName</a></span>()</code>
+<div class="block">Returns the name of this element.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/AbstractNamedElement.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/AbstractNamedElement.html" title="type parameter in AbstractNamedElement">T</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/AbstractNamedElement.html#me--">me</a></span>()</code>
 <div class="block">Returns this instance, casted as a <code>T</code>.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/AbstractNamedElement.html#name--">name</a></span>()</code>
-<div class="block">Returns the name of this element.</div>
-</td>
-</tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/AbstractNamedElement.html" title="type parameter in AbstractNamedElement">T</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/AbstractNamedElement.html#name-java.lang.String-">name</a></span>(java.lang.String&nbsp;name)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/AbstractNamedElement.html#setName-java.lang.String-">setName</a></span>(java.lang.String&nbsp;name)</code>
 <div class="block">Defines the name of this element.</div>
 </td>
 </tr>
@@ -236,13 +236,13 @@ protected final&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean
 </dl>
 </li>
 </ul>
-<a name="name--">
+<a name="getName--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>name</h4>
-<pre>public&nbsp;java.lang.String&nbsp;name()</pre>
+<h4>getName</h4>
+<pre>public&nbsp;java.lang.String&nbsp;getName()</pre>
 <div class="block">Returns the name of this element.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -250,13 +250,13 @@ protected final&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean
 </dl>
 </li>
 </ul>
-<a name="name-java.lang.String-">
+<a name="setName-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>name</h4>
-<pre>public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/AbstractNamedElement.html" title="type parameter in AbstractNamedElement">T</a>&nbsp;name(java.lang.String&nbsp;name)</pre>
+<h4>setName</h4>
+<pre>public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/AbstractNamedElement.html" title="type parameter in AbstractNamedElement">T</a>&nbsp;setName(java.lang.String&nbsp;name)</pre>
 <div class="block">Defines the name of this element.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -335,7 +335,7 @@ protected final&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/AbstractBasicFeature.html" title="class in fr.inria.atlanmod.neoemf.io.bean"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicAttribute.html" title="class in fr.inria.atlanmod.neoemf.io.bean"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/Basic.html" title="interface in fr.inria.atlanmod.neoemf.io.bean"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/inria/atlanmod/neoemf/io/bean/AbstractNamedElement.html" target="_top">Frames</a></li>

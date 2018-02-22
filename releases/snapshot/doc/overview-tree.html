@@ -233,7 +233,7 @@
 </li>
 <li type="circle">fr.inria.atlanmod.neoemf.data.mapping.<a href="fr/inria/atlanmod/neoemf/data/mapping/AbstractMapperDecorator.html" title="class in fr.inria.atlanmod.neoemf.data.mapping"><span class="typeNameLink">AbstractMapperDecorator</span></a>&lt;M&gt;
 <ul>
-<li type="circle">fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/AbstractStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">AbstractStore</span></a> (implements fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>)
+<li type="circle">fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/AbstractStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">AbstractStore</span></a> (implements java.lang.Comparable&lt;T&gt;, fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>)
 <ul>
 <li type="circle">fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/AbstractCachingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">AbstractCachingStore</span></a>&lt;K,V&gt;
 <ul>
@@ -243,19 +243,22 @@
 <li type="circle">fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/SizeCachingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">SizeCachingStore</span></a></li>
 </ul>
 </li>
-<li type="circle">fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/AbstractListeningStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">AbstractListeningStore</span></a> (implements fr.inria.atlanmod.neoemf.data.store.listener.<a href="fr/inria/atlanmod/neoemf/data/store/listener/StoreListener.html" title="interface in fr.inria.atlanmod.neoemf.data.store.listener">StoreListener</a>)
-<ul>
-<li type="circle">fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/LoggingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">LoggingStore</span></a> (implements fr.inria.atlanmod.neoemf.data.store.listener.<a href="fr/inria/atlanmod/neoemf/data/store/listener/StoreListener.html" title="interface in fr.inria.atlanmod.neoemf.data.store.listener">StoreListener</a>)</li>
-<li type="circle">fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/StatsRecorderStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">StatsRecorderStore</span></a> (implements fr.inria.atlanmod.neoemf.data.store.listener.<a href="fr/inria/atlanmod/neoemf/data/store/listener/StoreListener.html" title="interface in fr.inria.atlanmod.neoemf.data.store.listener">StoreListener</a>)</li>
-</ul>
-</li>
 <li type="circle">fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/AutoSavingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">AutoSavingStore</span></a></li>
+<li type="circle">fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/ListeningStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">ListeningStore</span></a></li>
 <li type="circle">fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/ReadOnlyStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">ReadOnlyStore</span></a></li>
 </ul>
 </li>
 <li type="circle">fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/NoopStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">NoopStore</span></a> (implements fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>)</li>
 </ul>
 </li>
+</ul>
+</li>
+<li type="circle">fr.inria.atlanmod.neoemf.io.listener.<a href="fr/inria/atlanmod/neoemf/io/listener/AbstractEventListener.html" title="class in fr.inria.atlanmod.neoemf.io.listener"><span class="typeNameLink">AbstractEventListener</span></a> (implements fr.inria.atlanmod.neoemf.io.listener.<a href="fr/inria/atlanmod/neoemf/io/listener/EventListener.html" title="interface in fr.inria.atlanmod.neoemf.io.listener">EventListener</a>)
+<ul>
+<li type="circle">fr.inria.atlanmod.neoemf.io.listener.<a href="fr/inria/atlanmod/neoemf/io/listener/CountingEventListener.html" title="class in fr.inria.atlanmod.neoemf.io.listener"><span class="typeNameLink">CountingEventListener</span></a></li>
+<li type="circle">fr.inria.atlanmod.neoemf.io.listener.<a href="fr/inria/atlanmod/neoemf/io/listener/LoggingEventListener.html" title="class in fr.inria.atlanmod.neoemf.io.listener"><span class="typeNameLink">LoggingEventListener</span></a></li>
+<li type="circle">fr.inria.atlanmod.neoemf.io.listener.<a href="fr/inria/atlanmod/neoemf/io/listener/ProgressEventListener.html" title="class in fr.inria.atlanmod.neoemf.io.listener"><span class="typeNameLink">ProgressEventListener</span></a></li>
+<li type="circle">fr.inria.atlanmod.neoemf.io.listener.<a href="fr/inria/atlanmod/neoemf/io/listener/TimerEventListener.html" title="class in fr.inria.atlanmod.neoemf.io.listener"><span class="typeNameLink">TimerEventListener</span></a></li>
 </ul>
 </li>
 <li type="circle">fr.inria.atlanmod.neoemf.data.bean.<a href="fr/inria/atlanmod/neoemf/data/bean/AbstractFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean"><span class="typeNameLink">AbstractFeatureBean</span></a> (implements fr.inria.atlanmod.neoemf.data.bean.<a href="fr/inria/atlanmod/neoemf/data/bean/FeatureBean.html" title="interface in fr.inria.atlanmod.neoemf.data.bean">FeatureBean</a>)
@@ -270,14 +273,6 @@
 </ul>
 </li>
 <li type="circle">fr.inria.atlanmod.neoemf.data.im.<a href="fr/inria/atlanmod/neoemf/data/im/AbstractInMemoryBackend.Sizes.html" title="class in fr.inria.atlanmod.neoemf.data.im"><span class="typeNameLink">AbstractInMemoryBackend.Sizes</span></a></li>
-<li type="circle">fr.inria.atlanmod.neoemf.io.listener.<a href="fr/inria/atlanmod/neoemf/io/listener/AbstractListener.html" title="class in fr.inria.atlanmod.neoemf.io.listener"><span class="typeNameLink">AbstractListener</span></a> (implements fr.inria.atlanmod.neoemf.io.listener.<a href="fr/inria/atlanmod/neoemf/io/listener/Listener.html" title="interface in fr.inria.atlanmod.neoemf.io.listener">Listener</a>)
-<ul>
-<li type="circle">fr.inria.atlanmod.neoemf.io.listener.<a href="fr/inria/atlanmod/neoemf/io/listener/CountingListener.html" title="class in fr.inria.atlanmod.neoemf.io.listener"><span class="typeNameLink">CountingListener</span></a></li>
-<li type="circle">fr.inria.atlanmod.neoemf.io.listener.<a href="fr/inria/atlanmod/neoemf/io/listener/LoggingListener.html" title="class in fr.inria.atlanmod.neoemf.io.listener"><span class="typeNameLink">LoggingListener</span></a></li>
-<li type="circle">fr.inria.atlanmod.neoemf.io.listener.<a href="fr/inria/atlanmod/neoemf/io/listener/ProgressListener.html" title="class in fr.inria.atlanmod.neoemf.io.listener"><span class="typeNameLink">ProgressListener</span></a></li>
-<li type="circle">fr.inria.atlanmod.neoemf.io.listener.<a href="fr/inria/atlanmod/neoemf/io/listener/TimerListener.html" title="class in fr.inria.atlanmod.neoemf.io.listener"><span class="typeNameLink">TimerListener</span></a></li>
-</ul>
-</li>
 <li type="circle">fr.inria.atlanmod.neoemf.data.mapping.<a href="fr/inria/atlanmod/neoemf/data/mapping/AbstractMapperFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapping"><span class="typeNameLink">AbstractMapperFactory</span></a>
 <ul>
 <li type="circle">fr.inria.atlanmod.neoemf.data.<a href="fr/inria/atlanmod/neoemf/data/AbstractBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data"><span class="typeNameLink">AbstractBackendFactory</span></a>&lt;C&gt; (implements fr.inria.atlanmod.neoemf.data.<a href="fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a>)
@@ -289,22 +284,21 @@
 <li type="circle">fr.inria.atlanmod.neoemf.data.mapdb.<a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><span class="typeNameLink">MapDbBackendFactory</span></a></li>
 </ul>
 </li>
-<li type="circle">fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/StoreFactory.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">StoreFactory</span></a></li>
 </ul>
 </li>
 <li type="circle">fr.inria.atlanmod.neoemf.io.bean.<a href="fr/inria/atlanmod/neoemf/io/bean/AbstractNamedElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean"><span class="typeNameLink">AbstractNamedElement</span></a>&lt;T&gt;
 <ul>
-<li type="circle">fr.inria.atlanmod.neoemf.io.bean.<a href="fr/inria/atlanmod/neoemf/io/bean/AbstractBasicFeature.html" title="class in fr.inria.atlanmod.neoemf.io.bean"><span class="typeNameLink">AbstractBasicFeature</span></a>&lt;T,F,V&gt;
+<li type="circle">fr.inria.atlanmod.neoemf.io.bean.<a href="fr/inria/atlanmod/neoemf/io/bean/AbstractBasicFeature.html" title="class in fr.inria.atlanmod.neoemf.io.bean"><span class="typeNameLink">AbstractBasicFeature</span></a>&lt;T,R,V&gt; (implements fr.inria.atlanmod.neoemf.io.bean.<a href="fr/inria/atlanmod/neoemf/io/bean/Basic.html" title="interface in fr.inria.atlanmod.neoemf.io.bean">Basic</a>&lt;T,R&gt;)
 <ul>
 <li type="circle">fr.inria.atlanmod.neoemf.io.bean.<a href="fr/inria/atlanmod/neoemf/io/bean/BasicAttribute.html" title="class in fr.inria.atlanmod.neoemf.io.bean"><span class="typeNameLink">BasicAttribute</span></a></li>
 <li type="circle">fr.inria.atlanmod.neoemf.io.bean.<a href="fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean"><span class="typeNameLink">BasicReference</span></a></li>
 </ul>
 </li>
+<li type="circle">fr.inria.atlanmod.neoemf.io.bean.<a href="fr/inria/atlanmod/neoemf/io/bean/BasicClass.html" title="class in fr.inria.atlanmod.neoemf.io.bean"><span class="typeNameLink">BasicClass</span></a> (implements fr.inria.atlanmod.neoemf.io.bean.<a href="fr/inria/atlanmod/neoemf/io/bean/Basic.html" title="interface in fr.inria.atlanmod.neoemf.io.bean">Basic</a>&lt;T,R&gt;)</li>
 <li type="circle">fr.inria.atlanmod.neoemf.io.bean.<a href="fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean"><span class="typeNameLink">BasicElement</span></a></li>
-<li type="circle">fr.inria.atlanmod.neoemf.io.bean.<a href="fr/inria/atlanmod/neoemf/io/bean/BasicMetaclass.html" title="class in fr.inria.atlanmod.neoemf.io.bean"><span class="typeNameLink">BasicMetaclass</span></a></li>
 </ul>
 </li>
-<li type="circle">fr.inria.atlanmod.neoemf.io.<a href="fr/inria/atlanmod/neoemf/io/AbstractNotifier.html" title="class in fr.inria.atlanmod.neoemf.io"><span class="typeNameLink">AbstractNotifier</span></a>&lt;H&gt; (implements fr.inria.atlanmod.neoemf.io.<a href="fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io">Notifier</a>&lt;H&gt;)
+<li type="circle">fr.inria.atlanmod.neoemf.io.<a href="fr/inria/atlanmod/neoemf/io/AbstractNotifier.html" title="class in fr.inria.atlanmod.neoemf.io"><span class="typeNameLink">AbstractNotifier</span></a>&lt;H&gt; (implements fr.inria.atlanmod.neoemf.io.<a href="fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io">Notifier</a>)
 <ul>
 <li type="circle">fr.inria.atlanmod.neoemf.io.processor.<a href="fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor"><span class="typeNameLink">AbstractProcessor</span></a> (implements fr.inria.atlanmod.neoemf.io.processor.<a href="fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>)
 <ul>
@@ -390,7 +384,7 @@
 </li>
 </ul>
 </li>
-<li type="circle">fr.inria.atlanmod.neoemf.io.bean.<a href="fr/inria/atlanmod/neoemf/io/bean/BasicNamespace.html" title="class in fr.inria.atlanmod.neoemf.io.bean"><span class="typeNameLink">BasicNamespace</span></a></li>
+<li type="circle">fr.inria.atlanmod.neoemf.io.bean.<a href="fr/inria/atlanmod/neoemf/io/bean/BasicNamespace.html" title="class in fr.inria.atlanmod.neoemf.io.bean"><span class="typeNameLink">BasicNamespace</span></a> (implements fr.inria.atlanmod.neoemf.io.bean.<a href="fr/inria/atlanmod/neoemf/io/bean/Basic.html" title="interface in fr.inria.atlanmod.neoemf.io.bean">Basic</a>&lt;T,R&gt;)</li>
 <li type="circle">fr.inria.atlanmod.neoemf.io.bean.<a href="fr/inria/atlanmod/neoemf/io/bean/BasicNamespace.Registry.html" title="class in fr.inria.atlanmod.neoemf.io.bean"><span class="typeNameLink">BasicNamespace.Registry</span></a></li>
 <li type="circle">org.eclipse.emf.common.notify.impl.<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/impl/BasicNotifierImpl.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify.impl"><span class="typeNameLink">BasicNotifierImpl</span></a> (implements org.eclipse.emf.common.notify.<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Notifier.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Notifier</a>)
 <ul>
@@ -435,8 +429,8 @@
 <li type="circle">fr.inria.atlanmod.neoemf.bind.<a href="fr/inria/atlanmod/neoemf/bind/BundleContextCollector.html" title="class in fr.inria.atlanmod.neoemf.bind"><span class="typeNameLink">BundleContextCollector</span></a> (implements fr.inria.atlanmod.neoemf.bind.<a href="fr/inria/atlanmod/neoemf/bind/URLCollector.html" title="interface in fr.inria.atlanmod.neoemf.bind">URLCollector</a>)</li>
 <li type="circle">fr.inria.atlanmod.neoemf.data.bean.<a href="fr/inria/atlanmod/neoemf/data/bean/ClassBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean"><span class="typeNameLink">ClassBean</span></a> (implements java.io.Serializable)</li>
 <li type="circle">fr.inria.atlanmod.neoemf.bind.<a href="fr/inria/atlanmod/neoemf/bind/ClasspathCollector.html" title="class in fr.inria.atlanmod.neoemf.bind"><span class="typeNameLink">ClasspathCollector</span></a> (implements fr.inria.atlanmod.neoemf.bind.<a href="fr/inria/atlanmod/neoemf/bind/URLCollector.html" title="interface in fr.inria.atlanmod.neoemf.bind">URLCollector</a>)</li>
-<li type="circle">fr.inria.atlanmod.neoemf.config.<a href="fr/inria/atlanmod/neoemf/config/ConfigType.html" title="class in fr.inria.atlanmod.neoemf.config"><span class="typeNameLink">ConfigType</span></a>&lt;T&gt; (implements java.lang.Comparable&lt;T&gt;)</li>
 <li type="circle">fr.inria.atlanmod.neoemf.core.internal.<a href="fr/inria/atlanmod/neoemf/core/internal/ContentsCopier.html" title="class in fr.inria.atlanmod.neoemf.core.internal"><span class="typeNameLink">ContentsCopier</span></a> (implements fr.inria.atlanmod.commons.function.Copier&lt;T&gt;)</li>
+<li type="circle">fr.inria.atlanmod.neoemf.io.bean.<a href="fr/inria/atlanmod/neoemf/io/bean/Data.html" title="class in fr.inria.atlanmod.neoemf.io.bean"><span class="typeNameLink">Data</span></a>&lt;V&gt;</li>
 <li type="circle">org.eclipse.emf.compare.match.DefaultEqualityHelperFactory (implements org.eclipse.emf.compare.match.IEqualityHelperFactory)
 <ul>
 <li type="circle">fr.inria.atlanmod.neoemf.util.compare.<a href="fr/inria/atlanmod/neoemf/util/compare/LazyEqualityHelperFactory.html" title="class in fr.inria.atlanmod.neoemf.util.compare"><span class="typeNameLink">LazyEqualityHelperFactory</span></a></li>
@@ -467,6 +461,7 @@
 <li type="circle">fr.inria.atlanmod.neoemf.core.internal.<a href="fr/inria/atlanmod/neoemf/core/internal/NonResolvingLazyIterator.html" title="class in fr.inria.atlanmod.neoemf.core.internal"><span class="typeNameLink">NonResolvingLazyIterator</span></a>&lt;L,E&gt;</li>
 </ul>
 </li>
+<li type="circle">fr.inria.atlanmod.neoemf.data.store.listener.<a href="fr/inria/atlanmod/neoemf/data/store/listener/LoggingStoreListener.html" title="class in fr.inria.atlanmod.neoemf.data.store.listener"><span class="typeNameLink">LoggingStoreListener</span></a> (implements fr.inria.atlanmod.neoemf.data.store.listener.<a href="fr/inria/atlanmod/neoemf/data/store/listener/StoreListener.html" title="interface in fr.inria.atlanmod.neoemf.data.store.listener">StoreListener</a>)</li>
 <li type="circle">org.eclipse.emf.compare.match.impl.MatchEngineFactoryImpl (implements org.eclipse.emf.compare.match.IMatchEngine.Factory)
 <ul>
 <li type="circle">fr.inria.atlanmod.neoemf.util.compare.<a href="fr/inria/atlanmod/neoemf/util/compare/LazyMatchEngineFactory.html" title="class in fr.inria.atlanmod.neoemf.util.compare"><span class="typeNameLink">LazyMatchEngineFactory</span></a></li>
@@ -475,6 +470,7 @@
 <li type="circle">fr.inria.atlanmod.neoemf.io.<a href="fr/inria/atlanmod/neoemf/io/Migrator.html" title="class in fr.inria.atlanmod.neoemf.io"><span class="typeNameLink">Migrator</span></a>&lt;T&gt;</li>
 <li type="circle">fr.inria.atlanmod.neoemf.resource.<a href="fr/inria/atlanmod/neoemf/resource/PersistentResourceDecorator.html" title="class in fr.inria.atlanmod.neoemf.resource"><span class="typeNameLink">PersistentResourceDecorator</span></a> (implements fr.inria.atlanmod.neoemf.resource.<a href="fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource">PersistentResource</a>)</li>
 <li type="circle">fr.inria.atlanmod.neoemf.resource.<a href="fr/inria/atlanmod/neoemf/resource/PersistentResourceFactory.html" title="class in fr.inria.atlanmod.neoemf.resource"><span class="typeNameLink">PersistentResourceFactory</span></a> (implements org.eclipse.emf.ecore.resource.<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.Factory.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource">Resource.Factory</a>)</li>
+<li type="circle">fr.inria.atlanmod.neoemf.data.store.listener.<a href="fr/inria/atlanmod/neoemf/data/store/listener/RecordingStoreListener.html" title="class in fr.inria.atlanmod.neoemf.data.store.listener"><span class="typeNameLink">RecordingStoreListener</span></a> (implements fr.inria.atlanmod.neoemf.data.store.listener.<a href="fr/inria/atlanmod/neoemf/data/store/listener/StoreListener.html" title="interface in fr.inria.atlanmod.neoemf.data.store.listener">StoreListener</a>)</li>
 <li type="circle">fr.inria.atlanmod.neoemf.data.store.adapter.<a href="fr/inria/atlanmod/neoemf/data/store/adapter/ReferenceConverter.html" title="class in fr.inria.atlanmod.neoemf.data.store.adapter"><span class="typeNameLink">ReferenceConverter</span></a> (implements fr.inria.atlanmod.commons.function.Converter&lt;T,R&gt;)</li>
 <li type="circle">fr.inria.atlanmod.commons.io.serializer.SerializerFactory
 <ul>
@@ -482,7 +478,8 @@
 </ul>
 </li>
 <li type="circle">fr.inria.atlanmod.neoemf.bind.<a href="fr/inria/atlanmod/neoemf/bind/SimpleCollector.html" title="class in fr.inria.atlanmod.neoemf.bind"><span class="typeNameLink">SimpleCollector</span></a> (implements fr.inria.atlanmod.neoemf.bind.<a href="fr/inria/atlanmod/neoemf/bind/URLCollector.html" title="interface in fr.inria.atlanmod.neoemf.bind">URLCollector</a>)</li>
-<li type="circle">fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/StoreStats.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">StoreStats</span></a></li>
+<li type="circle">fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/StoreFactory.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">StoreFactory</span></a></li>
+<li type="circle">fr.inria.atlanmod.neoemf.data.store.listener.<a href="fr/inria/atlanmod/neoemf/data/store/listener/StoreStats.html" title="class in fr.inria.atlanmod.neoemf.data.store.listener"><span class="typeNameLink">StoreStats</span></a></li>
 <li type="circle">java.lang.Throwable (implements java.io.Serializable)
 <ul>
 <li type="circle">java.lang.Exception
@@ -668,6 +665,7 @@
 </ul>
 </li>
 <li type="circle">fr.inria.atlanmod.neoemf.data.<a href="fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><span class="typeNameLink">BackendFactory</span></a></li>
+<li type="circle">fr.inria.atlanmod.neoemf.io.bean.<a href="fr/inria/atlanmod/neoemf/io/bean/Basic.html" title="interface in fr.inria.atlanmod.neoemf.io.bean"><span class="typeNameLink">Basic</span></a>&lt;T,R&gt;</li>
 <li type="circle">fr.inria.atlanmod.neoemf.data.mapping.<a href="fr/inria/atlanmod/neoemf/data/mapping/ClassMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping"><span class="typeNameLink">ClassMapper</span></a>
 <ul>
 <li type="circle">fr.inria.atlanmod.neoemf.data.<a href="fr/inria/atlanmod/neoemf/data/Backend.html" title="interface in fr.inria.atlanmod.neoemf.data"><span class="typeNameLink">Backend</span></a>
@@ -791,7 +789,7 @@
 </li>
 <li type="circle">fr.inria.atlanmod.neoemf.io.<a href="fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><span class="typeNameLink">Handler</span></a>
 <ul>
-<li type="circle">fr.inria.atlanmod.neoemf.io.listener.<a href="fr/inria/atlanmod/neoemf/io/listener/Listener.html" title="interface in fr.inria.atlanmod.neoemf.io.listener"><span class="typeNameLink">Listener</span></a></li>
+<li type="circle">fr.inria.atlanmod.neoemf.io.listener.<a href="fr/inria/atlanmod/neoemf/io/listener/EventListener.html" title="interface in fr.inria.atlanmod.neoemf.io.listener"><span class="typeNameLink">EventListener</span></a></li>
 <li type="circle">fr.inria.atlanmod.neoemf.io.processor.<a href="fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><span class="typeNameLink">Processor</span></a></li>
 <li type="circle">fr.inria.atlanmod.neoemf.io.writer.<a href="fr/inria/atlanmod/neoemf/io/writer/Writer.html" title="interface in fr.inria.atlanmod.neoemf.io.writer"><span class="typeNameLink">Writer</span></a></li>
 </ul>
@@ -849,7 +847,7 @@
 </li>
 </ul>
 </li>
-<li type="circle">fr.inria.atlanmod.neoemf.io.<a href="fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io"><span class="typeNameLink">Notifier</span></a>&lt;H&gt;
+<li type="circle">fr.inria.atlanmod.neoemf.io.<a href="fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io"><span class="typeNameLink">Notifier</span></a>
 <ul>
 <li type="circle">fr.inria.atlanmod.neoemf.io.reader.<a href="fr/inria/atlanmod/neoemf/io/reader/Reader.html" title="interface in fr.inria.atlanmod.neoemf.io.reader"><span class="typeNameLink">Reader</span></a>&lt;T&gt;</li>
 </ul>

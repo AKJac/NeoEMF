@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":9};
+var methods = {"i0":10,"i1":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/StoreStats.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/inria/atlanmod/neoemf/data/store/StoreFactory.html" target="_top">Frames</a></li>
@@ -100,12 +100,7 @@ var activeTableTab = "activeTableTab";
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/AbstractMapperFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapping">fr.inria.atlanmod.neoemf.data.mapping.AbstractMapperFactory</a></li>
-<li>
-<ul class="inheritance">
 <li>fr.inria.atlanmod.neoemf.data.store.StoreFactory</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -116,7 +111,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>@ParametersAreNonnullByDefault
 public final class <span class="typeNameLabel">StoreFactory</span>
-extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/AbstractMapperFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapping">AbstractMapperFactory</a></pre>
+extends java.lang.Object</pre>
 <div class="block">A factory that creates instances of <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>Store</code></a>.</div>
 </li>
 </ul>
@@ -137,32 +132,19 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/Abstrac
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/StoreFactory.html#createDefaultStore-fr.inria.atlanmod.neoemf.data.Backend-">createDefaultStore</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/Backend.html" title="interface in fr.inria.atlanmod.neoemf.data">Backend</a>&nbsp;backend)</code>
-<div class="block">Creates the default store in front of the <code>backend</code>.</div>
-</td>
-</tr>
-<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/StoreFactory.html#createStore-fr.inria.atlanmod.neoemf.data.Backend-fr.inria.atlanmod.neoemf.config.ImmutableConfig-">createStore</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/Backend.html" title="interface in fr.inria.atlanmod.neoemf.data">Backend</a>&nbsp;backend,
            <a href="../../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html" title="interface in fr.inria.atlanmod.neoemf.config">ImmutableConfig</a>&nbsp;baseConfig)</code>
 <div class="block">Creates a new <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>Store</code></a> in front of the <code>backend</code> according to the specified <code>baseConfig</code>.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/StoreFactory.html" title="class in fr.inria.atlanmod.neoemf.data.store">StoreFactory</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/StoreFactory.html#getInstance--">getInstance</a></span>()</code>
 <div class="block">Returns the instance of this class.</div>
 </td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.neoemf.data.mapping.AbstractMapperFactory">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;fr.inria.atlanmod.neoemf.data.mapping.<a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/AbstractMapperFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapping">AbstractMapperFactory</a></h3>
-<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/AbstractMapperFactory.html#createMapper-java.lang.Class-java.lang.Object...-">createMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/AbstractMapperFactory.html#createMapper-java.lang.String-java.lang.Object...-">createMapper</a></code></li>
-</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -202,7 +184,7 @@ public static&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/stor
 <a name="createStore-fr.inria.atlanmod.neoemf.data.Backend-fr.inria.atlanmod.neoemf.config.ImmutableConfig-">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>createStore</h4>
 <pre>@Nonnull
@@ -220,23 +202,6 @@ public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.NullPointerException</code> - if the <code>store</code> or the <code>baseConfig</code> are <code>null</code></dd>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/InvalidStoreException.html" title="class in fr.inria.atlanmod.neoemf.data.store">InvalidStoreException</a></code> - if an error occurs during the creation of the store</dd>
-</dl>
-</li>
-</ul>
-<a name="createDefaultStore-fr.inria.atlanmod.neoemf.data.Backend-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>createDefaultStore</h4>
-<pre>@Nonnull
-protected&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>&nbsp;createDefaultStore(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/Backend.html" title="interface in fr.inria.atlanmod.neoemf.data">Backend</a>&nbsp;backend)</pre>
-<div class="block">Creates the default store in front of the <code>backend</code>.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>backend</code> - the back-end where to store data</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the default store</dd>
 </dl>
 </li>
 </ul>
@@ -269,7 +234,7 @@ protected&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/St
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/StoreStats.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/inria/atlanmod/neoemf/data/store/StoreFactory.html" target="_top">Frames</a></li>

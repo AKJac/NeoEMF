@@ -256,8 +256,8 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/bean/AbstractFe
  as a simple representation of a feature of an object.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>owner</code> - the identifier of the <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a> using the feature</dd>
-<dd><code>id</code> - the identifier of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EStructuralFeature</code></a> of the <code>owner</code></dd>
+<dd><code>owner</code> - the identifier of the object using the feature</dd>
+<dd><code>id</code> - the identifier of the feature of the <code>owner</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.NullPointerException</code> - if any argument is <code>null</code></dd>
 </dl>
@@ -285,8 +285,8 @@ public static&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/bean
  This method behaves like: <code>from(PersistentEObject.from(owner), feature)</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>owner</code> - the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>InternalEObject</code></a> that will be adapted as <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a></dd>
-<dd><code>feature</code> - the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EStructuralFeature</code></a> of the <code>owner</code></dd>
+<dd><code>owner</code> - the object that will be adapted to retrieve its identifier</dd>
+<dd><code>feature</code> - the feature of the <code>owner</code> from which the name will be extracted</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new <code>SingleFeatureBean</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -312,8 +312,8 @@ public static&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/bean
  This method behaves like: <code>of(owner.id(), feature.getName())</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>owner</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a></dd>
-<dd><code>feature</code> - the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EStructuralFeature</code></a> of the <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a></dd>
+<dd><code>owner</code> - the object from which the identifier will be extracted</dd>
+<dd><code>feature</code> - the feature of the <code>owner</code> from which the name will be extracted</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new <code>SingleFeatureBean</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -338,8 +338,8 @@ public static&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/bean
  a simple representation of a feature of an object.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>owner</code> - the identifier of the <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a> using the feature</dd>
-<dd><code>id</code> - the identifier of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EStructuralFeature</code></a> of the <code>owner</code></dd>
+<dd><code>owner</code> - the identifier of the object</dd>
+<dd><code>id</code> - the identifier of the feature of the <code>owner</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new <code>SingleFeatureBean</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>

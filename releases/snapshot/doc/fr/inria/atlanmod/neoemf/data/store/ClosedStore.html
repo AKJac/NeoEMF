@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10};
+var methods = {"i0":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -183,12 +183,6 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.
 <div class="block">Returns the back-end where data are stored.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/StoreStats.html" title="class in fr.inria.atlanmod.neoemf.data.store">StoreStats</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/ClosedStore.html#stats--">stats</a></span>()</code>
-<div class="block">Returns a current snapshot of this store chain's cumulative statistics.</div>
-</td>
-</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.neoemf.data.mapping.InvalidDataMapper">
@@ -295,7 +289,7 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.
 <a name="backend--">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>backend</h4>
 <pre>@Nonnull
@@ -307,27 +301,6 @@ public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/Backend.htm
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html#backend--">backend</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the back-end</dd>
-</dl>
-</li>
-</ul>
-<a name="stats--">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>stats</h4>
-<pre>@Nonnull
-public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/StoreStats.html" title="class in fr.inria.atlanmod.neoemf.data.store">StoreStats</a>&nbsp;stats()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html#stats--">Store</a></code></span></div>
-<div class="block">Returns a current snapshot of this store chain's cumulative statistics. All statistics are initialized to zero,
- and are monotonically increasing over the lifetime of the store chain.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html#stats--">stats</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the current snapshot of the statistics of this store chain</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/config/Config.html#recordStats--"><code>Config.recordStats()</code></a></dd>
 </dl>
 </li>
 </ul>

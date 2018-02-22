@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractListeningStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractCachingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AutoSavingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -119,18 +119,18 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd>fr.inria.atlanmod.commons.Copiable&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>&gt;, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ClassMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ClassMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ContainerMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ContainerMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ManyReferenceMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ManyReferenceMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ManyValueMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ManyValueMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ReferenceMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ReferenceMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ValueMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ValueMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/Savable.html" title="interface in fr.inria.atlanmod.neoemf.data">Savable</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>, java.io.Closeable, java.lang.AutoCloseable</dd>
+<dd>fr.inria.atlanmod.commons.Copiable&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>&gt;, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ClassMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ClassMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ContainerMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ContainerMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ManyReferenceMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ManyReferenceMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ManyValueMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ManyValueMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ReferenceMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ReferenceMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ValueMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ValueMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/Savable.html" title="interface in fr.inria.atlanmod.neoemf.data">Savable</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>, java.io.Closeable, java.lang.AutoCloseable, java.lang.Comparable&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractStore</a>&gt;</dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractCachingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractCachingStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractListeningStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractListeningStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AutoSavingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AutoSavingStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/ReadOnlyStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">ReadOnlyStore</a></dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractCachingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractCachingStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AutoSavingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AutoSavingStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/ListeningStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">ListeningStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/ReadOnlyStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">ReadOnlyStore</a></dd>
 </dl>
 <hr>
 <br>
 <pre>@ParametersAreNonnullByDefault
 public abstract class <span class="typeNameLabel">AbstractStore</span>
 extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/AbstractMapperDecorator.html" title="class in fr.inria.atlanmod.neoemf.data.mapping">AbstractMapperDecorator</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>&gt;
-implements <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a></pre>
+implements <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>, java.lang.Comparable&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractStore</a>&gt;</pre>
 <div class="block">An abstract <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>Store</code></a> wrapper that delegates method calls to an internal <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>Store</code></a>.</div>
 </li>
 </ul>
@@ -152,8 +152,8 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html#AbstractStore-fr.inria.atlanmod.neoemf.data.store.Store-">AbstractStore</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>&nbsp;store)</code>
-<div class="block">Constructs a new <code>AbstractStore</code> on the given <code>store</code>.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html#AbstractStore-int-">AbstractStore</a></span>(int&nbsp;order)</code>
+<div class="block">Constructs a new <code>AbstractStore</code> with the given <code>order</code>.</div>
 </td>
 </tr>
 </table>
@@ -178,10 +178,26 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/StoreStats.html" title="class in fr.inria.atlanmod.neoemf.data.store">StoreStats</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html#stats--">stats</a></span>()</code>
-<div class="block">Returns a current snapshot of this store chain's cumulative statistics.</div>
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html#compareTo-fr.inria.atlanmod.neoemf.data.store.AbstractStore-">compareTo</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractStore</a>&nbsp;o)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html#equals-java.lang.Object-">equals</a></span>(java.lang.Object&nbsp;o)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html#next-fr.inria.atlanmod.neoemf.data.store.Store-">next</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>&nbsp;next)</code>
+<div class="block">Defines the next mapper to notify.</div>
 </td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -196,7 +212,7 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+<code>clone, finalize, getClass, notify, notifyAll, wait, wait, wait</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.neoemf.data.Savable">
@@ -268,17 +284,19 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="AbstractStore-fr.inria.atlanmod.neoemf.data.store.Store-">
+<a name="AbstractStore-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AbstractStore</h4>
-<pre>protected&nbsp;AbstractStore(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>&nbsp;store)</pre>
-<div class="block">Constructs a new <code>AbstractStore</code> on the given <code>store</code>.</div>
+<pre>protected&nbsp;AbstractStore(int&nbsp;order)</pre>
+<div class="block">Constructs a new <code>AbstractStore</code> with the given <code>order</code>.
+ <p>
+ The smaller the order, the sooner this store will be visited.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>store</code> - the inner store</dd>
+<dd><code>order</code> - the order of this store in the chain</dd>
 </dl>
 </li>
 </ul>
@@ -290,6 +308,23 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="next-fr.inria.atlanmod.neoemf.data.store.Store-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>next</h4>
+<pre>protected&nbsp;void&nbsp;next(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>&nbsp;next)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/AbstractMapperDecorator.html#next-M-">AbstractMapperDecorator</a></code></span></div>
+<div class="block">Defines the next mapper to notify.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/AbstractMapperDecorator.html#next-M-">next</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/AbstractMapperDecorator.html" title="class in fr.inria.atlanmod.neoemf.data.mapping">AbstractMapperDecorator</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>next</code> - the next mapper</dd>
+</dl>
+</li>
+</ul>
 <a name="backend--">
 <!--   -->
 </a>
@@ -308,24 +343,56 @@ public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/Backend.htm
 </dl>
 </li>
 </ul>
-<a name="stats--">
+<a name="compareTo-fr.inria.atlanmod.neoemf.data.store.AbstractStore-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>compareTo</h4>
+<pre>public&nbsp;int&nbsp;compareTo(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractStore</a>&nbsp;o)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>compareTo</code>&nbsp;in interface&nbsp;<code>java.lang.Comparable&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractStore</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="hashCode--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>hashCode</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+</dl>
+</li>
+</ul>
+<a name="equals-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(@Nullable
+                      java.lang.Object&nbsp;o)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>equals</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+</dl>
+</li>
+</ul>
+<a name="toString--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>stats</h4>
-<pre>@Nonnull
-public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/StoreStats.html" title="class in fr.inria.atlanmod.neoemf.data.store">StoreStats</a>&nbsp;stats()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html#stats--">Store</a></code></span></div>
-<div class="block">Returns a current snapshot of this store chain's cumulative statistics. All statistics are initialized to zero,
- and are monotonically increasing over the lifetime of the store chain.</div>
+<h4>toString</h4>
+<pre>public&nbsp;java.lang.String&nbsp;toString()</pre>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html#stats--">stats</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the current snapshot of the statistics of this store chain</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/config/Config.html#recordStats--"><code>Config.recordStats()</code></a></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>toString</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
 </dl>
 </li>
 </ul>
@@ -357,7 +424,7 @@ public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractListeningStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractCachingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AutoSavingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

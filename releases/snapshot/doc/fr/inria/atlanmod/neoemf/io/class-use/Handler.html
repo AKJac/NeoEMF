@@ -126,25 +126,6 @@
 <div class="block">An abstract <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Notifier</code></a> that provides overall behavior for the management of handlers.</div>
 </td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code>interface&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io">Notifier</a>&lt;H extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</span></code>
-<div class="block">An object that notifies registered <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a>s of events during an I/O process.</div>
-</td>
-</tr>
-</tbody>
-</table>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
-<caption><span>Constructors in <a href="../../../../../../fr/inria/atlanmod/neoemf/io/package-summary.html">fr.inria.atlanmod.neoemf.io</a> with parameters of type <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colOne" scope="col">Constructor and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html#AbstractNotifier-H...-">AbstractNotifier</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html" title="type parameter in AbstractNotifier">H</a>...&nbsp;handlers)</code>
-<div class="block">Constructs a new <code>AbstractNotifier</code> with the given <code>handlers</code>.</div>
-</td>
-</tr>
 </tbody>
 </table>
 </li>
@@ -161,7 +142,7 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/listener/Listener.html" title="interface in fr.inria.atlanmod.neoemf.io.listener">Listener</a></span></code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/listener/EventListener.html" title="interface in fr.inria.atlanmod.neoemf.io.listener">EventListener</a></span></code>
 <div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> that simply listen events.</div>
 </td>
 </tr>
@@ -176,32 +157,32 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/listener/AbstractListener.html" title="class in fr.inria.atlanmod.neoemf.io.listener">AbstractListener</a></span></code>
-<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/listener/Listener.html" title="interface in fr.inria.atlanmod.neoemf.io.listener"><code>Listener</code></a> that does nothing.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/listener/AbstractEventListener.html" title="class in fr.inria.atlanmod.neoemf.io.listener">AbstractEventListener</a></span></code>
+<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/listener/EventListener.html" title="interface in fr.inria.atlanmod.neoemf.io.listener"><code>EventListener</code></a> that does nothing.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/listener/CountingListener.html" title="class in fr.inria.atlanmod.neoemf.io.listener">CountingListener</a></span></code>
-<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/listener/Listener.html" title="interface in fr.inria.atlanmod.neoemf.io.listener"><code>Listener</code></a> that counts the number of different element.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/listener/CountingEventListener.html" title="class in fr.inria.atlanmod.neoemf.io.listener">CountingEventListener</a></span></code>
+<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/listener/EventListener.html" title="interface in fr.inria.atlanmod.neoemf.io.listener"><code>EventListener</code></a> that counts the number of different element.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/listener/LoggingListener.html" title="class in fr.inria.atlanmod.neoemf.io.listener">LoggingListener</a></span></code>
-<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/listener/Listener.html" title="interface in fr.inria.atlanmod.neoemf.io.listener"><code>Listener</code></a> that logs every events.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/listener/LoggingEventListener.html" title="class in fr.inria.atlanmod.neoemf.io.listener">LoggingEventListener</a></span></code>
+<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/listener/EventListener.html" title="interface in fr.inria.atlanmod.neoemf.io.listener"><code>EventListener</code></a> that logs every events.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/listener/ProgressListener.html" title="class in fr.inria.atlanmod.neoemf.io.listener">ProgressListener</a></span></code>
-<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/listener/Listener.html" title="interface in fr.inria.atlanmod.neoemf.io.listener"><code>Listener</code></a> that logs the progress of a migration.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/listener/ProgressEventListener.html" title="class in fr.inria.atlanmod.neoemf.io.listener">ProgressEventListener</a></span></code>
+<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/listener/EventListener.html" title="interface in fr.inria.atlanmod.neoemf.io.listener"><code>EventListener</code></a> that logs the progress of a migration.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/listener/TimerListener.html" title="class in fr.inria.atlanmod.neoemf.io.listener">TimerListener</a></span></code>
-<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/listener/Listener.html" title="interface in fr.inria.atlanmod.neoemf.io.listener"><code>Listener</code></a> that measures elapsed time between the start and the end of an I/O process.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/listener/TimerEventListener.html" title="class in fr.inria.atlanmod.neoemf.io.listener">TimerEventListener</a></span></code>
+<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/listener/EventListener.html" title="interface in fr.inria.atlanmod.neoemf.io.listener"><code>EventListener</code></a> that measures elapsed time between the start and the end of an I/O process.</div>
 </td>
 </tr>
 </tbody>
@@ -262,13 +243,13 @@
 </tbody>
 </table>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
-<caption><span>Constructors in <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/package-summary.html">fr.inria.atlanmod.neoemf.io.processor</a> with parameters of type <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a></span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>Constructor parameters in <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/package-summary.html">fr.inria.atlanmod.neoemf.io.processor</a> with type arguments of type <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/NoopProcessor.html#NoopProcessor-fr.inria.atlanmod.neoemf.io.Handler...-">NoopProcessor</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>...&nbsp;handlers)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/NoopProcessor.html#NoopProcessor-java.util.Collection-">NoopProcessor</a></span>(java.util.Collection&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;&nbsp;handlers)</code>
 <div class="block">Constructs a new <code>NoopProcessor</code> with the given <code>handlers</code>.</div>
 </td>
 </tr>

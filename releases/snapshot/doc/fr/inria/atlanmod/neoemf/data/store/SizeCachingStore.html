@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/ReadOnlyStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/StatsRecorderStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Storable.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/inria/atlanmod/neoemf/data/store/SizeCachingStore.html" target="_top">Frames</a></li>
@@ -129,7 +129,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd>fr.inria.atlanmod.commons.Copiable&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>&gt;, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ClassMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ClassMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ContainerMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ContainerMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ManyReferenceMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ManyReferenceMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ManyValueMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ManyValueMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ReferenceMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ReferenceMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ValueMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ValueMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/Savable.html" title="interface in fr.inria.atlanmod.neoemf.data">Savable</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>, java.io.Closeable, java.lang.AutoCloseable</dd>
+<dd>fr.inria.atlanmod.commons.Copiable&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>&gt;, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ClassMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ClassMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ContainerMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ContainerMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ManyReferenceMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ManyReferenceMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ManyValueMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ManyValueMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ReferenceMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ReferenceMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ValueMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ValueMapper</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/Savable.html" title="interface in fr.inria.atlanmod.neoemf.data">Savable</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>, java.io.Closeable, java.lang.AutoCloseable, java.lang.Comparable&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractStore</a>&gt;</dd>
 </dl>
 <hr>
 <br>
@@ -170,9 +170,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractC
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/SizeCachingStore.html#SizeCachingStore-fr.inria.atlanmod.neoemf.data.store.Store-">SizeCachingStore</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>&nbsp;store)</code>
-<div class="block">Constructs a new <code>SizeCachingStore</code>.</div>
-</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/SizeCachingStore.html#SizeCachingStore--">SizeCachingStore</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -306,7 +304,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractC
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;fr.inria.atlanmod.neoemf.data.store.<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractStore</a></h3>
-<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html#backend--">backend</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html#stats--">stats</a></code></li>
+<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html#backend--">backend</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html#compareTo-fr.inria.atlanmod.neoemf.data.store.AbstractStore-">compareTo</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html#equals-java.lang.Object-">equals</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html#hashCode--">hashCode</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html#next-fr.inria.atlanmod.neoemf.data.store.Store-">next</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html#toString--">toString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.neoemf.data.mapping.AbstractMapperDecorator">
@@ -320,7 +318,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractC
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+<code>clone, finalize, getClass, notify, notifyAll, wait, wait, wait</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.neoemf.data.Savable">
@@ -392,18 +390,13 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractC
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SizeCachingStore-fr.inria.atlanmod.neoemf.data.store.Store-">
+<a name="SizeCachingStore--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SizeCachingStore</h4>
-<pre>public&nbsp;SizeCachingStore(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>&nbsp;store)</pre>
-<div class="block">Constructs a new <code>SizeCachingStore</code>.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>store</code> - the inner store</dd>
-</dl>
+<pre>public&nbsp;SizeCachingStore()</pre>
 </li>
 </ul>
 </li>
@@ -816,7 +809,7 @@ public&nbsp;java.util.Optional&lt;java.lang.Integer&gt;&nbsp;sizeOfReference(<a 
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/ReadOnlyStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/StatsRecorderStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Storable.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/inria/atlanmod/neoemf/data/store/SizeCachingStore.html" target="_top">Frames</a></li>

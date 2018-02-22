@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":18,"i3":6,"i4":18,"i5":6,"i6":6,"i7":18,"i8":18,"i9":18,"i10":6,"i11":6};
+var methods = {"i0":6,"i1":6,"i2":18,"i3":6,"i4":18,"i5":6,"i6":6,"i7":18,"i8":18,"i9":6,"i10":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../fr/inria/atlanmod/neoemf/config/ConfigType.html" title="class in fr.inria.atlanmod.neoemf.config"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../fr/inria/atlanmod/neoemf/config/InvalidConfigException.html" title="class in fr.inria.atlanmod.neoemf.config"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -161,9 +161,9 @@ public interface <span class="typeNameLabel">ImmutableConfig</span></pre>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>java.util.Set&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/config/ConfigType.html" title="class in fr.inria.atlanmod.neoemf.config">ConfigType</a>&lt;? extends <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>&gt;&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#getStoreTypes--">getStoreTypes</a></span>()</code>
-<div class="block">Returns a set of all defined <a href="../../../../../fr/inria/atlanmod/neoemf/config/ConfigType.html" title="class in fr.inria.atlanmod.neoemf.config"><code>ConfigType</code></a>.</div>
+<td class="colFirst"><code>java.util.Set&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#getStores--">getStores</a></span>()</code>
+<div class="block">Returns a set of all defined <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>Store</code></a>.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
@@ -180,23 +180,17 @@ public interface <span class="typeNameLabel">ImmutableConfig</span></pre>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>default boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#hasStoreType-fr.inria.atlanmod.neoemf.config.ConfigType-">hasStoreType</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/config/ConfigType.html" title="class in fr.inria.atlanmod.neoemf.config">ConfigType</a>&lt;? extends <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>&gt;&nbsp;storeType)</code>
-<div class="block">Checks that the <code>storeType</code> is defined in this configuration.</div>
-</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>default boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#isReadOnly--">isReadOnly</a></span>()</code>
 <div class="block">Returns <code>true</code> if the "read-only" mode is defined.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#save-java.nio.file.Path-">save</a></span>(java.nio.file.Path&nbsp;directory)</code>
 <div class="block">Saves this configuration in the <code>directory</code>.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.util.Map&lt;java.lang.String,?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#toMap--">toMap</a></span>()</code>
 <div class="block">Returns a immutable map view of this configuration.</div>
@@ -365,31 +359,15 @@ java.util.Map&lt;java.lang.String,?&gt;&nbsp;getOptions()</pre>
 </dl>
 </li>
 </ul>
-<a name="hasStoreType-fr.inria.atlanmod.neoemf.config.ConfigType-">
+<a name="getStores--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>hasStoreType</h4>
-<pre>default&nbsp;boolean&nbsp;hasStoreType(<a href="../../../../../fr/inria/atlanmod/neoemf/config/ConfigType.html" title="class in fr.inria.atlanmod.neoemf.config">ConfigType</a>&lt;? extends <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>&gt;&nbsp;storeType)</pre>
-<div class="block">Checks that the <code>storeType</code> is defined in this configuration.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>storeType</code> - the store declaration to check the presence</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd><code>true</code> if the <code>storeType</code> is defined</dd>
-</dl>
-</li>
-</ul>
-<a name="getStoreTypes--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getStoreTypes</h4>
+<h4>getStores</h4>
 <pre>@Nonnull
-java.util.Set&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/config/ConfigType.html" title="class in fr.inria.atlanmod.neoemf.config">ConfigType</a>&lt;? extends <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>&gt;&gt;&nbsp;getStoreTypes()</pre>
-<div class="block">Returns a set of all defined <a href="../../../../../fr/inria/atlanmod/neoemf/config/ConfigType.html" title="class in fr.inria.atlanmod.neoemf.config"><code>ConfigType</code></a>.</div>
+java.util.Set&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>&gt;&nbsp;getStores()</pre>
+<div class="block">Returns a set of all defined <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>Store</code></a>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>an immutable collection of stores declaration</dd>
@@ -438,7 +416,7 @@ java.util.Set&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/config/ConfigT
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../fr/inria/atlanmod/neoemf/config/ConfigType.html" title="class in fr.inria.atlanmod.neoemf.config"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../fr/inria/atlanmod/neoemf/config/InvalidConfigException.html" title="class in fr.inria.atlanmod.neoemf.config"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

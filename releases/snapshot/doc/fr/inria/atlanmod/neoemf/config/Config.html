@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":17,"i9":17,"i10":17,"i11":17,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":17,"i10":17,"i11":17,"i12":17,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../fr/inria/atlanmod/neoemf/config/BaseConfig.html" title="class in fr.inria.atlanmod.neoemf.config"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../fr/inria/atlanmod/neoemf/config/ConfigType.html" title="class in fr.inria.atlanmod.neoemf.config"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html" title="interface in fr.inria.atlanmod.neoemf.config"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?fr/inria/atlanmod/neoemf/config/Config.html" target="_top">Frames</a></li>
@@ -140,61 +140,67 @@ extends <a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html#addListener-fr.inria.atlanmod.neoemf.data.store.listener.StoreListener-">addListener</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/data/store/listener/StoreListener.html" title="interface in fr.inria.atlanmod.neoemf.data.store.listener">StoreListener</a>&nbsp;listener)</code>
+<div class="block">Adds a store listener in this configuration.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>&lt;V&gt;&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html#addOption-java.lang.String-V-">addOption</a></span>(java.lang.String&nbsp;key,
          V&nbsp;value)</code>
 <div class="block">Adds a key/value in this configuration.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html#addStoreType-fr.inria.atlanmod.neoemf.config.ConfigType-">addStoreType</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/config/ConfigType.html" title="class in fr.inria.atlanmod.neoemf.config">ConfigType</a>&lt;? extends <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>&gt;&nbsp;storeType)</code>
-<div class="block">Adds a feature defined by the given <code>storeType</code> in this configuration.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html#addStore-fr.inria.atlanmod.neoemf.data.store.Store-">addStore</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>&nbsp;store)</code>
+<div class="block">Adds a feature defined by the given <code>store</code> in this configuration.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html#autoSave--">autoSave</a></span>()</code>
 <div class="block">Adds the <code>autoSave</code> feature in this configuration.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html#autoSave-long-">autoSave</a></span>(long&nbsp;chunk)</code>
 <div class="block">Adds the <code>autoSave</code> feature, with a defined <code>chunk</code>, in this configuration.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html#cacheContainers--">cacheContainers</a></span>()</code>
 <div class="block">Adds the <code>cache-containers</code> feature in this configuration.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html#cacheFeatures--">cacheFeatures</a></span>()</code>
 <div class="block">Adds the <code>cache-features</code> feature in this configuration.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html#cacheMetaClasses--">cacheMetaClasses</a></span>()</code>
 <div class="block">Adds the <code>cache-metaclasses</code> feature in this configuration.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html#cacheSizes--">cacheSizes</a></span>()</code>
 <div class="block">Adds the <code>cache-sizes</code> feature in this configuration.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html#exists-java.nio.file.Path-">exists</a></span>(java.nio.file.Path&nbsp;directory)</code>
 <div class="block">Checks that a configuration file exists in the <code>directory</code>.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static &lt;C extends <a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a>&gt;<br>C</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html#forName-java.lang.String-java.lang.String-">forName</a></span>(java.lang.String&nbsp;name,
        java.lang.String&nbsp;variant)</code>
@@ -202,56 +208,56 @@ extends <a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.
  wearing the specified <code>name</code>.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static &lt;C extends <a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a>&gt;<br>C</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html#forScheme-java.lang.String-">forScheme</a></span>(java.lang.String&nbsp;scheme)</code>
 <div class="block">Retrieves the instance of <code>Config</code> that is associated to a <a href="../../../../../fr/inria/atlanmod/neoemf/util/UriBuilder.html" title="interface in fr.inria.atlanmod.neoemf.util"><code>UriBuilder</code></a>
  which use the specified <code>scheme</code>.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static &lt;C extends <a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a>&gt;<br>java.util.Optional&lt;C&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html#load-java.nio.file.Path-">load</a></span>(java.nio.file.Path&nbsp;directory)</code>
 <div class="block">Loads a configuration from the <code>directory</code>.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html#log--">log</a></span>()</code>
 <div class="block">Adds the <code>log</code> feature in this configuration.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html#log-fr.inria.atlanmod.commons.log.Level-">log</a></span>(fr.inria.atlanmod.commons.log.Level&nbsp;level)</code>
 <div class="block">Adds the <code>log</code> feature, with a defined <code>level</code>, in this configuration.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html#merge-fr.inria.atlanmod.neoemf.config.ImmutableConfig-">merge</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html" title="interface in fr.inria.atlanmod.neoemf.config">ImmutableConfig</a>&nbsp;config)</code>
 <div class="block">Merges the given <code>config</code> in this configuration.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html#merge-java.util.Map-">merge</a></span>(java.util.Map&lt;java.lang.String,?&gt;&nbsp;map)</code>
 <div class="block">Merges the given <code>map</code> in this configuration.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html#readOnly--">readOnly</a></span>()</code>
 <div class="block">Adds the <code>read-only</code> feature in this configuration.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html#recordStats--">recordStats</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html#recordStats-fr.inria.atlanmod.neoemf.data.store.listener.StoreStats-">recordStats</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/data/store/listener/StoreStats.html" title="class in fr.inria.atlanmod.neoemf.data.store.listener">StoreStats</a>&nbsp;stats)</code>
 <div class="block">Adds the <code>stats</code> feature in this configuration.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html#setMapping-java.lang.String-">setMapping</a></span>(java.lang.String&nbsp;mapping)</code>
 <div class="block">Defines the mapping to use for the created <a href="../../../../../fr/inria/atlanmod/neoemf/data/Backend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>Backend</code></a>.</div>
@@ -263,7 +269,7 @@ extends <a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;fr.inria.atlanmod.neoemf.config.<a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html" title="interface in fr.inria.atlanmod.neoemf.config">ImmutableConfig</a></h3>
-<code><a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#getMapping--">getMapping</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#getName--">getName</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#getOption-java.lang.String-">getOption</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#getOptions--">getOptions</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#getOptions-java.util.function.Predicate-">getOptions</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#getStoreTypes--">getStoreTypes</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#getVariant--">getVariant</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#hasOption-java.lang.String-">hasOption</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#hasStoreType-fr.inria.atlanmod.neoemf.config.ConfigType-">hasStoreType</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#isReadOnly--">isReadOnly</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#save-java.nio.file.Path-">save</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#toMap--">toMap</a></code></li>
+<code><a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#getMapping--">getMapping</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#getName--">getName</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#getOption-java.lang.String-">getOption</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#getOptions--">getOptions</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#getOptions-java.util.function.Predicate-">getOptions</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#getStores--">getStores</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#getVariant--">getVariant</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#hasOption-java.lang.String-">hasOption</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#isReadOnly--">isReadOnly</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#save-java.nio.file.Path-">save</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html#toMap--">toMap</a></code></li>
 </ul>
 </li>
 </ul>
@@ -448,18 +454,18 @@ static&nbsp;&lt;C extends <a href="../../../../../fr/inria/atlanmod/neoemf/confi
 </dl>
 </li>
 </ul>
-<a name="addStoreType-fr.inria.atlanmod.neoemf.config.ConfigType-">
+<a name="addStore-fr.inria.atlanmod.neoemf.data.store.Store-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>addStoreType</h4>
+<h4>addStore</h4>
 <pre>@Nonnull
-<a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a>&nbsp;addStoreType(<a href="../../../../../fr/inria/atlanmod/neoemf/config/ConfigType.html" title="class in fr.inria.atlanmod.neoemf.config">ConfigType</a>&lt;? extends <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>&gt;&nbsp;storeType)</pre>
-<div class="block">Adds a feature defined by the given <code>storeType</code> in this configuration.</div>
+<a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a>&nbsp;addStore(<a href="../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store">Store</a>&nbsp;store)</pre>
+<div class="block">Adds a feature defined by the given <code>store</code> in this configuration.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>storeType</code> - the store declaration to add</dd>
+<dd><code>store</code> - the store declaration to add</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this configuration (for chaining)</dd>
 </dl>
@@ -577,6 +583,23 @@ static&nbsp;&lt;C extends <a href="../../../../../fr/inria/atlanmod/neoemf/confi
 </dl>
 </li>
 </ul>
+<a name="addListener-fr.inria.atlanmod.neoemf.data.store.listener.StoreListener-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addListener</h4>
+<pre>@Nonnull
+<a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a>&nbsp;addListener(<a href="../../../../../fr/inria/atlanmod/neoemf/data/store/listener/StoreListener.html" title="interface in fr.inria.atlanmod.neoemf.data.store.listener">StoreListener</a>&nbsp;listener)</pre>
+<div class="block">Adds a store listener in this configuration.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>listener</code> - the sotre listener to add</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>this configuration (for chaining)</dd>
+</dl>
+</li>
+</ul>
 <a name="log--">
 <!--   -->
 </a>
@@ -611,16 +634,18 @@ static&nbsp;&lt;C extends <a href="../../../../../fr/inria/atlanmod/neoemf/confi
 </dl>
 </li>
 </ul>
-<a name="recordStats--">
+<a name="recordStats-fr.inria.atlanmod.neoemf.data.store.listener.StoreStats-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>recordStats</h4>
 <pre>@Nonnull
-<a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a>&nbsp;recordStats()</pre>
+<a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a>&nbsp;recordStats(<a href="../../../../../fr/inria/atlanmod/neoemf/data/store/listener/StoreStats.html" title="class in fr.inria.atlanmod.neoemf.data.store.listener">StoreStats</a>&nbsp;stats)</pre>
 <div class="block">Adds the <code>stats</code> feature in this configuration.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>stats</code> - the stats that will be updated</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this configuration (for chaining)</dd>
 </dl>
@@ -655,7 +680,7 @@ static&nbsp;&lt;C extends <a href="../../../../../fr/inria/atlanmod/neoemf/confi
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../fr/inria/atlanmod/neoemf/config/BaseConfig.html" title="class in fr.inria.atlanmod.neoemf.config"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../fr/inria/atlanmod/neoemf/config/ConfigType.html" title="class in fr.inria.atlanmod.neoemf.config"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../fr/inria/atlanmod/neoemf/config/ImmutableConfig.html" title="interface in fr.inria.atlanmod.neoemf.config"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?fr/inria/atlanmod/neoemf/config/Config.html" target="_top">Frames</a></li>

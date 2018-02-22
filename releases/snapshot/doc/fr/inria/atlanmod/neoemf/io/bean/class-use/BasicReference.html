@@ -127,12 +127,16 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>default void</code></td>
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">Notifier.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">notifyReference</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;reference)</code>
 <div class="block">Notifies all registered handlers of a new reference.</div>
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractNotifier.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html#notifyReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">notifyReference</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;reference)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">Handler.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">onReference</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;reference)</code>
 <div class="block">Handles a reference from the current element to another.</div>
@@ -153,13 +157,34 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BasicReference.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html#eFeature-org.eclipse.emf.ecore.EReference-">eFeature</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a>&nbsp;eFeature)</code>&nbsp;</td>
+<td class="colFirst"><code>static <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a></code></td>
+<td class="colLast"><span class="typeNameLabel">BasicReference.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html#copy-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">copy</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;base)</code>
+<div class="block">Creates a new <code>BasicReference</code> from another, without its values.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a></code></td>
 <td class="colLast"><span class="typeNameLabel">BasicReference.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html#isContainment-boolean-">isContainment</a></span>(boolean&nbsp;isContainment)</code>
 <div class="block">Defines whether this reference is a containment.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a></code></td>
+<td class="colLast"><span class="typeNameLabel">BasicReference.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html#setReal-org.eclipse.emf.ecore.EReference-">setReal</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a>&nbsp;eReference)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/package-summary.html">fr.inria.atlanmod.neoemf.io.bean</a> with parameters of type <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a></code></td>
+<td class="colLast"><span class="typeNameLabel">BasicReference.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html#copy-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">copy</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;base)</code>
+<div class="block">Creates a new <code>BasicReference</code> from another, without its values.</div>
 </td>
 </tr>
 </tbody>
@@ -178,15 +203,15 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">CountingListener.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/listener/CountingListener.html#onReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">onReference</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;reference)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">CountingEventListener.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/listener/CountingEventListener.html#onReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">onReference</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;reference)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">LoggingListener.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/listener/LoggingListener.html#onReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">onReference</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;reference)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">LoggingEventListener.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/listener/LoggingEventListener.html#onReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">onReference</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;reference)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractListener.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/listener/AbstractListener.html#onReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">onReference</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;reference)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">AbstractEventListener.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/listener/AbstractEventListener.html#onReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">onReference</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;reference)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -208,15 +233,15 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractProcessor.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#onReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">onReference</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;reference)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">EcoreMapper.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/EcoreMapper.html#onReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">onReference</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;reference)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">EcoreMapper.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/EcoreMapper.html#onReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">onReference</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;reference)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">NoopProcessor.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/NoopProcessor.html#onReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">onReference</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;reference)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">NoopProcessor.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/NoopProcessor.html#onReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">onReference</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;reference)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">AbstractProcessor.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#onReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">onReference</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;reference)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>

@@ -325,8 +325,8 @@ protected final&nbsp;int position</pre>
 <div class="block">Constructs a new <code>AbstractFeatureBean</code> with the given <code>owner</code> and the given <code>id</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>owner</code> - the identifier of the <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a> using the feature</dd>
-<dd><code>id</code> - the identifier of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EStructuralFeature</code></a> of the <code>owner</code></dd>
+<dd><code>owner</code> - the identifier of the object using the feature</dd>
+<dd><code>id</code> - the identifier of the feature of the <code>owner</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.NullPointerException</code> - if any argument is <code>null</code></dd>
 </dl>
@@ -346,9 +346,9 @@ protected final&nbsp;int position</pre>
  <code>position</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>owner</code> - the identifier of the <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a> using the feature</dd>
-<dd><code>id</code> - the identifier of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EStructuralFeature</code></a> of the <code>owner</code></dd>
-<dd><code>position</code> - the position of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EStructuralFeature</code></a> in the <code>owner</code></dd>
+<dd><code>owner</code> - the identifier of the object using the feature</dd>
+<dd><code>id</code> - the identifier of the feature of the <code>owner</code></dd>
+<dd><code>position</code> - the position of the feature</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.NullPointerException</code> - if any argument is <code>null</code></dd>
 <dd><code>java.lang.IllegalArgumentException</code> - if the <code>position</code> is negative when <code>isMany() == true</code></dd>
@@ -429,7 +429,7 @@ public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/bean/ManyFe
  <code>FeatureBean</code>, and adding the given <code>position</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>position</code> - the position of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EStructuralFeature</code></a></dd>
+<dd><code>position</code> - the position of the feature</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new <a href="../../../../../../fr/inria/atlanmod/neoemf/data/bean/ManyFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean"><code>ManyFeatureBean</code></a></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>

@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":18,"i2":18,"i3":18,"i4":18,"i5":18,"i6":18};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -93,16 +93,12 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">fr.inria.atlanmod.neoemf.io</div>
-<h2 title="Interface Notifier" class="title">Interface Notifier&lt;H extends <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</h2>
+<h2 title="Interface Notifier" class="title">Interface Notifier</h2>
 </div>
 <div class="contentContainer">
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>H</code> - the type of handlers</dd>
-</dl>
 <dl>
 <dt>All Known Subinterfaces:</dt>
 <dd><a href="../../../../../fr/inria/atlanmod/neoemf/io/reader/Reader.html" title="interface in fr.inria.atlanmod.neoemf.io.reader">Reader</a>&lt;T&gt;</dd>
@@ -114,7 +110,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>@ParametersAreNonnullByDefault
-public interface <span class="typeNameLabel">Notifier&lt;H extends <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</span></pre>
+public interface <span class="typeNameLabel">Notifier</span></pre>
 <div class="block">An object that notifies registered <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a>s of events during an I/O process.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -133,49 +129,43 @@ public interface <span class="typeNameLabel">Notifier&lt;H extends <a href="../.
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>java.lang.Iterable&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="type parameter in Notifier">H</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#next--">next</a></span>()</code>
-<div class="block">Returns the <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a>s that will be notified by this <code>Notifier</code>.</div>
-</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>default void</code></td>
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyAttribute-fr.inria.atlanmod.neoemf.io.bean.BasicAttribute-">notifyAttribute</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicAttribute.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicAttribute</a>&nbsp;attribute)</code>
 <div class="block">Notifies all registered handlers of a new attribute.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>default void</code></td>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyComplete--">notifyComplete</a></span>()</code>
 <div class="block">Notifies all registered handlers of the end of the current task.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>default void</code></td>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyEndElement--">notifyEndElement</a></span>()</code>
 <div class="block">Notifies all registered handlers of the end of the current element.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>default void</code></td>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyInitialize--">notifyInitialize</a></span>()</code>
 <div class="block">Notifies all registered handlers of the start of a task.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>default void</code></td>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyReference-fr.inria.atlanmod.neoemf.io.bean.BasicReference-">notifyReference</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;reference)</code>
 <div class="block">Notifies all registered handlers of a new reference.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>default void</code></td>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">notifyStartElement</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>&nbsp;element)</code>
 <div class="block">Notifies all registered handlers of the start of a new element.</div>
 </td>
@@ -195,29 +185,14 @@ public interface <span class="typeNameLabel">Notifier&lt;H extends <a href="../.
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="next--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>next</h4>
-<pre>@Nonnull
-java.lang.Iterable&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="type parameter in Notifier">H</a>&gt;&nbsp;next()</pre>
-<div class="block">Returns the <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a>s that will be notified by this <code>Notifier</code>.</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the handler to notify</dd>
-</dl>
-</li>
-</ul>
 <a name="notifyInitialize--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>notifyInitialize</h4>
-<pre>default&nbsp;void&nbsp;notifyInitialize()
-                       throws java.io.IOException</pre>
+<pre>void&nbsp;notifyInitialize()
+               throws java.io.IOException</pre>
 <div class="block">Notifies all registered handlers of the start of a task.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -234,8 +209,8 @@ java.lang.Iterable&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifi
 <ul class="blockList">
 <li class="blockList">
 <h4>notifyStartElement</h4>
-<pre>default&nbsp;void&nbsp;notifyStartElement(<a href="../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>&nbsp;element)
-                         throws java.io.IOException</pre>
+<pre>void&nbsp;notifyStartElement(<a href="../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>&nbsp;element)
+                 throws java.io.IOException</pre>
 <div class="block">Notifies all registered handlers of the start of a new element.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -254,8 +229,8 @@ java.lang.Iterable&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifi
 <ul class="blockList">
 <li class="blockList">
 <h4>notifyAttribute</h4>
-<pre>default&nbsp;void&nbsp;notifyAttribute(<a href="../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicAttribute.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicAttribute</a>&nbsp;attribute)
-                      throws java.io.IOException</pre>
+<pre>void&nbsp;notifyAttribute(<a href="../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicAttribute.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicAttribute</a>&nbsp;attribute)
+              throws java.io.IOException</pre>
 <div class="block">Notifies all registered handlers of a new attribute.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -273,8 +248,8 @@ java.lang.Iterable&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifi
 <ul class="blockList">
 <li class="blockList">
 <h4>notifyReference</h4>
-<pre>default&nbsp;void&nbsp;notifyReference(<a href="../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;reference)
-                      throws java.io.IOException</pre>
+<pre>void&nbsp;notifyReference(<a href="../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicReference.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicReference</a>&nbsp;reference)
+              throws java.io.IOException</pre>
 <div class="block">Notifies all registered handlers of a new reference.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -292,8 +267,8 @@ java.lang.Iterable&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifi
 <ul class="blockList">
 <li class="blockList">
 <h4>notifyEndElement</h4>
-<pre>default&nbsp;void&nbsp;notifyEndElement()
-                       throws java.io.IOException</pre>
+<pre>void&nbsp;notifyEndElement()
+               throws java.io.IOException</pre>
 <div class="block">Notifies all registered handlers of the end of the current element.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -310,8 +285,8 @@ java.lang.Iterable&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifi
 <ul class="blockListLast">
 <li class="blockList">
 <h4>notifyComplete</h4>
-<pre>default&nbsp;void&nbsp;notifyComplete()
-                     throws java.io.IOException</pre>
+<pre>void&nbsp;notifyComplete()
+             throws java.io.IOException</pre>
 <div class="block">Notifies all registered handlers of the end of the current task.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>

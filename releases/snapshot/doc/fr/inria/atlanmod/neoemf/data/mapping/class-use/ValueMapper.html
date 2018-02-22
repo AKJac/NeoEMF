@@ -439,75 +439,63 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractListeningStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractListeningStore</a></span></code>
-<div class="block">An abstract <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>Store</code></a> that listen and intercept calls made on this store chain.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractStore</a></span></code>
 <div class="block">An abstract <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>Store</code></a> wrapper that delegates method calls to an internal <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>Store</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AutoSavingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AutoSavingStore</a></span></code>
 <div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>Store</code></a> wrapper that automatically saves modifications as calls are made.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/ClassCachingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">ClassCachingStore</a></span></code>
 <div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>Store</code></a> wrapper that caches <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/ClassBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean"><code>ClassBean</code></a>s.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/ClosedStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">ClosedStore</a></span></code>
 <div class="block">A closed <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>Store</code></a>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/ContainerCachingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">ContainerCachingStore</a></span></code>
 <div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>Store</code></a> wrapper that caches containers.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/FeatureCachingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">FeatureCachingStore</a></span></code>
 <div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>Store</code></a> wrapper that caches <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EStructuralFeature</code></a> values.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/LoggingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">LoggingStore</a></span></code>
-<div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>Store</code></a> wrapper that logs every calls in the <code>Log</code>.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/ListeningStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">ListeningStore</a></span></code>
+<div class="block">An <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>Store</code></a> that listen calls made on this store chain and notify defined <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/listener/StoreListener.html" title="interface in fr.inria.atlanmod.neoemf.data.store.listener"><code>StoreListener</code></a>s.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/NoopStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">NoopStore</a></span></code>
 <div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>Store</code></a> that simply notifies its associated <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/Backend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>Backend</code></a>, without any
  additional operation.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/ReadOnlyStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">ReadOnlyStore</a></span></code>
 <div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>Store</code></a> wrapper that only allows read operations on the underlying database.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/SizeCachingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">SizeCachingStore</a></span></code>
 <div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>Store</code></a> wrapper that caches the size data.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/StatsRecorderStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">StatsRecorderStore</a></span></code>
-<div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>Store</code></a> wrapper that records every calls to build usage statistics.</div>
 </td>
 </tr>
 </tbody>

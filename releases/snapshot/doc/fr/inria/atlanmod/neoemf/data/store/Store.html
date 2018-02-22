@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6};
+var methods = {"i0":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -105,7 +105,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractCachingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractCachingStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractListeningStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractListeningStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AutoSavingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AutoSavingStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/ClassCachingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">ClassCachingStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/ClosedStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">ClosedStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/ContainerCachingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">ContainerCachingStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/FeatureCachingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">FeatureCachingStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/LoggingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">LoggingStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/NoopStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">NoopStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/ReadOnlyStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">ReadOnlyStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/SizeCachingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">SizeCachingStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/StatsRecorderStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">StatsRecorderStore</a></dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractCachingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractCachingStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AutoSavingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AutoSavingStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/ClassCachingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">ClassCachingStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/ClosedStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">ClosedStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/ContainerCachingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">ContainerCachingStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/FeatureCachingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">FeatureCachingStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/ListeningStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">ListeningStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/NoopStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">NoopStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/ReadOnlyStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">ReadOnlyStore</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/SizeCachingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">SizeCachingStore</a></dd>
 </dl>
 <hr>
 <br>
@@ -136,12 +136,6 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMap
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/Backend.html" title="interface in fr.inria.atlanmod.neoemf.data">Backend</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html#backend--">backend</a></span>()</code>
 <div class="block">Returns the back-end where data are stored.</div>
-</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/StoreStats.html" title="class in fr.inria.atlanmod.neoemf.data.store">StoreStats</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html#stats--">stats</a></span>()</code>
-<div class="block">Returns a current snapshot of this store chain's cumulative statistics.</div>
 </td>
 </tr>
 </table>
@@ -218,7 +212,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMap
 <a name="backend--">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>backend</h4>
 <pre>@Nonnull
@@ -227,24 +221,6 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMap
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the back-end</dd>
-</dl>
-</li>
-</ul>
-<a name="stats--">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>stats</h4>
-<pre>@Nonnull
-<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/StoreStats.html" title="class in fr.inria.atlanmod.neoemf.data.store">StoreStats</a>&nbsp;stats()</pre>
-<div class="block">Returns a current snapshot of this store chain's cumulative statistics. All statistics are initialized to zero,
- and are monotonically increasing over the lifetime of the store chain.</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the current snapshot of the statistics of this store chain</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/config/Config.html#recordStats--"><code>Config.recordStats()</code></a></dd>
 </dl>
 </li>
 </ul>

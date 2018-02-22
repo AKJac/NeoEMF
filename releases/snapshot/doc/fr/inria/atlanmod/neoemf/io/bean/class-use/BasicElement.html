@@ -133,12 +133,16 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>default void</code></td>
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">Notifier.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">notifyStartElement</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>&nbsp;element)</code>
 <div class="block">Notifies all registered handlers of the start of a new element.</div>
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractNotifier.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html#notifyStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">notifyStartElement</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>&nbsp;element)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">Handler.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">onStartElement</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>&nbsp;element)</code>
 <div class="block">Handles the start of an element.</div>
@@ -160,26 +164,20 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BasicElement.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html#id-fr.inria.atlanmod.neoemf.core.Id-">id</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>
+<td class="colLast"><span class="typeNameLabel">BasicElement.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html#setId-fr.inria.atlanmod.neoemf.io.bean.Data-">setId</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/Data.html" title="class in fr.inria.atlanmod.neoemf.io.bean">Data</a>&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&gt;&nbsp;id)</code>
 <div class="block">Defines the identifier of this element.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BasicElement.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html#isRoot-boolean-">isRoot</a></span>(boolean&nbsp;isRoot)</code>
-<div class="block">Defines whether this element is the root of a structure.</div>
+<td class="colLast"><span class="typeNameLabel">BasicElement.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html#setMetaClass-fr.inria.atlanmod.neoemf.io.bean.BasicClass-">setMetaClass</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicClass.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicClass</a>&nbsp;metaClass)</code>
+<div class="block">Defines the meta-class of this element.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BasicElement.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html#metaClass-fr.inria.atlanmod.neoemf.io.bean.BasicMetaclass-">metaClass</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicMetaclass.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicMetaclass</a>&nbsp;metaClass)</code>
-<div class="block">Defines the meta-class of this element.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BasicElement.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html#rawId-java.lang.String-">rawId</a></span>(java.lang.String&nbsp;rawId)</code>
-<div class="block">Defines the string representation of the identifier.</div>
+<td class="colLast"><span class="typeNameLabel">BasicElement.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html#setRoot-boolean-">setRoot</a></span>(boolean&nbsp;isRoot)</code>
+<div class="block">Defines whether this element is the root of a structure.</div>
 </td>
 </tr>
 </tbody>
@@ -198,15 +196,15 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">CountingListener.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/listener/CountingListener.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">onStartElement</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>&nbsp;element)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">CountingEventListener.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/listener/CountingEventListener.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">onStartElement</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>&nbsp;element)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">LoggingListener.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/listener/LoggingListener.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">onStartElement</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>&nbsp;element)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">LoggingEventListener.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/listener/LoggingEventListener.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">onStartElement</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>&nbsp;element)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractListener.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/listener/AbstractListener.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">onStartElement</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>&nbsp;element)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">AbstractEventListener.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/listener/AbstractEventListener.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">onStartElement</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>&nbsp;element)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -228,15 +226,15 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractProcessor.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">onStartElement</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>&nbsp;element)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">EcoreMapper.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/EcoreMapper.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">onStartElement</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>&nbsp;element)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">EcoreMapper.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/EcoreMapper.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">onStartElement</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>&nbsp;element)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">NoopProcessor.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/NoopProcessor.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">onStartElement</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>&nbsp;element)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">NoopProcessor.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/NoopProcessor.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">onStartElement</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>&nbsp;element)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">AbstractProcessor.</span><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#onStartElement-fr.inria.atlanmod.neoemf.io.bean.BasicElement-">onStartElement</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean">BasicElement</a>&nbsp;element)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
