@@ -612,11 +612,11 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/store/SizeCachingStore.html#appendValue-fr.inria.atlanmod.neoemf.data.bean.SingleFeatureBean-V-">appendValue(SingleFeatureBean, V)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/SizeCachingStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">SizeCachingStore</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/EObjects.html#asAttribute-org.eclipse.emf.ecore.EStructuralFeature-">asAttribute(EStructuralFeature)</a></span> - Static method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/EObjects.html" title="class in fr.inria.atlanmod.neoemf.util">EObjects</a></dt>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/EFeatures.html#asAttribute-org.eclipse.emf.ecore.EStructuralFeature-">asAttribute(EStructuralFeature)</a></span> - Static method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/EFeatures.html" title="class in fr.inria.atlanmod.neoemf.util">EFeatures</a></dt>
 <dd>
 <div class="block">Casts the <code>feature</code> as an attribute.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/EObjects.html#asReference-org.eclipse.emf.ecore.EStructuralFeature-">asReference(EStructuralFeature)</a></span> - Static method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/EObjects.html" title="class in fr.inria.atlanmod.neoemf.util">EObjects</a></dt>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/EFeatures.html#asReference-org.eclipse.emf.ecore.EStructuralFeature-">asReference(EStructuralFeature)</a></span> - Static method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/EFeatures.html" title="class in fr.inria.atlanmod.neoemf.util">EFeatures</a></dt>
 <dd>
 <div class="block">Casts the <code>feature</code> as a reference.</div>
 </dd>
@@ -747,6 +747,8 @@
 <dd>
 <div class="block">Constructs a new <code>BasicClass</code> with the given <code>ns</code> and <code>name</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/core/PersistenceFactory.html#basicCreate-org.eclipse.emf.ecore.EClass-">basicCreate(EClass)</a></span> - Method in class fr.inria.atlanmod.neoemf.core.<a href="fr/inria/atlanmod/neoemf/core/PersistenceFactory.html" title="class in fr.inria.atlanmod.neoemf.core">PersistenceFactory</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/io/bean/BasicElement.html" title="class in fr.inria.atlanmod.neoemf.io.bean"><span class="typeNameLink">BasicElement</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/io/bean/package-summary.html">fr.inria.atlanmod.neoemf.io.bean</a></dt>
 <dd>
 <div class="block">A simple representation of a <a href="fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a>.</div>
@@ -1173,12 +1175,6 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/listener/CountingEventListener.html#CountingEventListener--">CountingEventListener()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.io.listener.<a href="fr/inria/atlanmod/neoemf/io/listener/CountingEventListener.html" title="class in fr.inria.atlanmod.neoemf.io.listener">CountingEventListener</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/core/PersistenceFactory.html#create-org.eclipse.emf.ecore.EClass-">create(EClass)</a></span> - Method in class fr.inria.atlanmod.neoemf.core.<a href="fr/inria/atlanmod/neoemf/core/PersistenceFactory.html" title="class in fr.inria.atlanmod.neoemf.core">PersistenceFactory</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/core/PersistenceFactory.html#create-org.eclipse.emf.ecore.EClass-fr.inria.atlanmod.neoemf.core.Id-">create(EClass, Id)</a></span> - Method in class fr.inria.atlanmod.neoemf.core.<a href="fr/inria/atlanmod/neoemf/core/PersistenceFactory.html" title="class in fr.inria.atlanmod.neoemf.core">PersistenceFactory</a></dt>
-<dd>
-<div class="block">Creates a new instance of the class and returns it.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/graph/ClassVertex.html#create-fr.inria.atlanmod.neoemf.data.blueprints.graph.ModelGraph-fr.inria.atlanmod.neoemf.data.bean.ClassBean-">create(ModelGraph, ClassBean)</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.blueprints.graph.<a href="fr/inria/atlanmod/neoemf/data/blueprints/graph/ClassVertex.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.graph">ClassVertex</a></dt>
 <dd>
 <div class="block">Creates a new <code>ClassVertex</code> on the <code>graph</code>.</div>
@@ -1577,6 +1573,14 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html#dynamicGet-int-">dynamicGet(int)</a></span> - Method in class fr.inria.atlanmod.neoemf.core.<a href="fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html" title="class in fr.inria.atlanmod.neoemf.core">DefaultPersistentEObject</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="fr/inria/atlanmod/neoemf/core/DynamicPersistentEObject.html" title="class in fr.inria.atlanmod.neoemf.core"><span class="typeNameLink">DynamicPersistentEObject</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/core/package-summary.html">fr.inria.atlanmod.neoemf.core</a></dt>
+<dd>
+<div class="block">A dynamic <a href="fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/core/DynamicPersistentEObject.html#DynamicPersistentEObject-org.eclipse.emf.ecore.EClass-">DynamicPersistentEObject(EClass)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.core.<a href="fr/inria/atlanmod/neoemf/core/DynamicPersistentEObject.html" title="class in fr.inria.atlanmod.neoemf.core">DynamicPersistentEObject</a></dt>
+<dd>
+<div class="block">Constructs a new <code>DynamicPersistentEObject</code> that is an instance of the specified <code>eClass</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html#dynamicSet-int-java.lang.Object-">dynamicSet(int, Object)</a></span> - Method in class fr.inria.atlanmod.neoemf.core.<a href="fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html" title="class in fr.inria.atlanmod.neoemf.core">DefaultPersistentEObject</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html#dynamicUnset-int-">dynamicUnset(int)</a></span> - Method in class fr.inria.atlanmod.neoemf.core.<a href="fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html" title="class in fr.inria.atlanmod.neoemf.core">DefaultPersistentEObject</a></dt>
@@ -1616,6 +1620,10 @@
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/graph/wrapper/AbstractIdQuery.html#edges-java.util.function.BiFunction-">edges(BiFunction&lt;Edge, G, E&gt;)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.blueprints.graph.wrapper.<a href="fr/inria/atlanmod/neoemf/data/blueprints/graph/wrapper/AbstractIdQuery.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.graph.wrapper">AbstractIdQuery</a></dt>
 <dd>
 <div class="block">Execute the query and return the matching edges.</div>
+</dd>
+<dt><a href="fr/inria/atlanmod/neoemf/util/EFeatures.html" title="class in fr.inria.atlanmod.neoemf.util"><span class="typeNameLink">EFeatures</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/util/package-summary.html">fr.inria.atlanmod.neoemf.util</a></dt>
+<dd>
+<div class="block">Static utility methods related to <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EStructuralFeature</code></a>s.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html#eInternalContainer--">eInternalContainer()</a></span> - Method in class fr.inria.atlanmod.neoemf.core.<a href="fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html" title="class in fr.inria.atlanmod.neoemf.core">DefaultPersistentEObject</a></dt>
 <dd>&nbsp;</dd>
@@ -1673,10 +1681,6 @@
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/store/adapter/FeatureMapConverter.html#ENTRY_FORMAT">ENTRY_FORMAT</a></span> - Static variable in class fr.inria.atlanmod.neoemf.data.store.adapter.<a href="fr/inria/atlanmod/neoemf/data/store/adapter/FeatureMapConverter.html" title="class in fr.inria.atlanmod.neoemf.data.store.adapter">FeatureMapConverter</a></dt>
 <dd>
 <div class="block">The pattern used to store feature map entries.</div>
-</dd>
-<dt><a href="fr/inria/atlanmod/neoemf/util/EObjects.html" title="class in fr.inria.atlanmod.neoemf.util"><span class="typeNameLink">EObjects</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/util/package-summary.html">fr.inria.atlanmod.neoemf.util</a></dt>
-<dd>
-<div class="block">Static utility methods related to <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a>s.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class fr.inria.atlanmod.neoemf.core.<a href="fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html" title="class in fr.inria.atlanmod.neoemf.core">DefaultPersistentEObject</a></dt>
 <dd>&nbsp;</dd>
@@ -2319,10 +2323,6 @@
 <div class="block">Returns the instance of this class.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/core/LongIdProvider.html#getInstance--">getInstance()</a></span> - Static method in class fr.inria.atlanmod.neoemf.core.<a href="fr/inria/atlanmod/neoemf/core/LongIdProvider.html" title="class in fr.inria.atlanmod.neoemf.core">LongIdProvider</a></dt>
-<dd>
-<div class="block">Returns the instance of this class.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/core/PersistenceFactory.html#getInstance--">getInstance()</a></span> - Static method in class fr.inria.atlanmod.neoemf.core.<a href="fr/inria/atlanmod/neoemf/core/PersistenceFactory.html" title="class in fr.inria.atlanmod.neoemf.core">PersistenceFactory</a></dt>
 <dd>
 <div class="block">Returns the instance of this class.</div>
 </dd>
@@ -3005,7 +3005,7 @@
 <dd>
 <div class="block">Returns whether this <code>ClassBean</code> represents an abstract class.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/EObjects.html#isAttribute-org.eclipse.emf.ecore.EStructuralFeature-">isAttribute(EStructuralFeature)</a></span> - Static method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/EObjects.html" title="class in fr.inria.atlanmod.neoemf.util">EObjects</a></dt>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/EFeatures.html#isAttribute-org.eclipse.emf.ecore.EStructuralFeature-">isAttribute(EStructuralFeature)</a></span> - Static method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/EFeatures.html" title="class in fr.inria.atlanmod.neoemf.util">EFeatures</a></dt>
 <dd>
 <div class="block">Checks whether the <code>feature</code> represents an attribute.</div>
 </dd>
@@ -3116,7 +3116,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/config/BlueprintsTinkerConfig.html#isReadOnlyKey--">isReadOnlyKey()</a></span> - Method in class fr.inria.atlanmod.neoemf.data.blueprints.config.<a href="fr/inria/atlanmod/neoemf/data/blueprints/config/BlueprintsTinkerConfig.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.config">BlueprintsTinkerConfig</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/EObjects.html#isReference-org.eclipse.emf.ecore.EStructuralFeature-">isReference(EStructuralFeature)</a></span> - Static method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/EObjects.html" title="class in fr.inria.atlanmod.neoemf.util">EObjects</a></dt>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/EFeatures.html#isReference-org.eclipse.emf.ecore.EStructuralFeature-">isReference(EStructuralFeature)</a></span> - Static method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/EFeatures.html" title="class in fr.inria.atlanmod.neoemf.util">EFeatures</a></dt>
 <dd>
 <div class="block">Checks whether the <code>feature</code> represents a reference.</div>
 </dd>
@@ -3563,6 +3563,10 @@
 <dd>
 <div class="block">Constructs a new <code>MapDbConfig</code> instance with default settings.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/core/PersistenceFactory.html#newInstance-org.eclipse.emf.ecore.EClass-fr.inria.atlanmod.neoemf.core.Id-">newInstance(EClass, Id)</a></span> - Static method in class fr.inria.atlanmod.neoemf.core.<a href="fr/inria/atlanmod/neoemf/core/PersistenceFactory.html" title="class in fr.inria.atlanmod.neoemf.core">PersistenceFactory</a></dt>
+<dd>
+<div class="block">Creates a new instance of the <code>eClass</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/core/internal/ContentsList.html#newList-fr.inria.atlanmod.neoemf.core.PersistentEObject-">newList(PersistentEObject)</a></span> - Static method in class fr.inria.atlanmod.neoemf.core.internal.<a href="fr/inria/atlanmod/neoemf/core/internal/ContentsList.html" title="class in fr.inria.atlanmod.neoemf.core.internal">ContentsList</a></dt>
 <dd>
 <div class="block">Creates a new <code>ContentsList</code> with the given <code>owner</code>.</div>
@@ -3885,6 +3889,14 @@
 <dt><a href="fr/inria/atlanmod/neoemf/core/PersistenceFactory.html" title="class in fr.inria.atlanmod.neoemf.core"><span class="typeNameLink">PersistenceFactory</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/core/package-summary.html">fr.inria.atlanmod.neoemf.core</a></dt>
 <dd>
 <div class="block">The factory that creates <a href="fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a> instances from <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a>es.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/core/PersistenceFactory.html#PersistenceFactory--">PersistenceFactory()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.core.<a href="fr/inria/atlanmod/neoemf/core/PersistenceFactory.html" title="class in fr.inria.atlanmod.neoemf.core">PersistenceFactory</a></dt>
+<dd>
+<div class="block">Constructs a new <code>PersistenceFactory</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/core/PersistenceFactory.html#PersistenceFactory-org.eclipse.emf.ecore.EPackage-">PersistenceFactory(EPackage)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.core.<a href="fr/inria/atlanmod/neoemf/core/PersistenceFactory.html" title="class in fr.inria.atlanmod.neoemf.core">PersistenceFactory</a></dt>
+<dd>
+<div class="block">Constructs a new <code>PersistenceFactory</code> for the given <code>ePackage</code>.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><span class="typeNameLink">PersistentEObject</span></a> - Interface in <a href="fr/inria/atlanmod/neoemf/core/package-summary.html">fr.inria.atlanmod.neoemf.core</a></dt>
 <dd>
@@ -4987,6 +4999,10 @@
 <dd>
 <div class="block">Creates or updates the containment link between <code>object</code> and <code>container</code>, and deletes any previous
  link to <code>object</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/core/PersistenceFactory.html#updateIfDynamic-org.eclipse.emf.ecore.EPackage-">updateIfDynamic(EPackage)</a></span> - Static method in class fr.inria.atlanmod.neoemf.core.<a href="fr/inria/atlanmod/neoemf/core/PersistenceFactory.html" title="class in fr.inria.atlanmod.neoemf.core">PersistenceFactory</a></dt>
+<dd>
+<div class="block">Updates the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EFactory.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EFactory</code></a> of the specified <code>ePackage</code> if it's a <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EPackageImpl.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.impl"><code>EPackageImpl</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/graph/ModelGraph.html#updateIndex-fr.inria.atlanmod.neoemf.data.blueprints.graph.ClassVertex-">updateIndex(ClassVertex)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.blueprints.graph.<a href="fr/inria/atlanmod/neoemf/data/blueprints/graph/ModelGraph.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.graph">ModelGraph</a></dt>
 <dd>
