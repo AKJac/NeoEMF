@@ -431,7 +431,7 @@ public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicEle
  attributes.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>uri</code> - the URI of the element</dd>
+<dd><code>uri</code> - the namespace's URI of the element</dd>
 <dd><code>name</code> - the name of the element</dd>
 </dl>
 </li>
@@ -450,7 +450,7 @@ public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicEle
 <div class="block">Reads a new simple element, as <code>&lt;name&gt;value&lt;/name&gt;</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>uri</code> - the URI of the element</dd>
+<dd><code>uri</code> - the namespace's URI of the element</dd>
 <dd><code>name</code> - the name of the element</dd>
 <dd><code>value</code> - the literal value of the element</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -469,8 +469,8 @@ public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicEle
 <div class="block">Reads a <a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicNamespace.html" title="class in fr.inria.atlanmod.neoemf.io.bean"><code>BasicNamespace</code></a> declaration.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>prefix</code> - the prefix</dd>
-<dd><code>uri</code> - the URI associated with the <code>prefix</code></dd>
+<dd><code>prefix</code> - the prefix of the namespace</dd>
+<dd><code>uri</code> - the URI of the namespace</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><code>BasicNamespace.Registry#register(String, String)</code></dd>
 </dl>
@@ -505,7 +505,7 @@ public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicEle
 <div class="block">Reads a new attribute of the current element.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>prefix</code> - the prefix of the attribute</dd>
+<dd><code>prefix</code> - the namespace's prefix of the attribute</dd>
 <dd><code>name</code> - the name of the attribute</dd>
 <dd><code>value</code> - the value of the attribute</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -574,7 +574,7 @@ public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/bean/BasicEle
  'xmi:idref'.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>prefix</code> - the prefix of the attribute</dd>
+<dd><code>prefix</code> - the namespace's prefix of the attribute</dd>
 <dd><code>name</code> - the name of the attribute</dd>
 <dd><code>value</code> - the value of the attribute</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
