@@ -100,7 +100,7 @@ var activeTableTab = "activeTableTab";
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li>fr.inria.atlanmod.commons.io.serializer.SerializerFactory</li>
+<li>fr.inria.atlanmod.commons.io.serializer.BinarySerializerFactory</li>
 <li>
 <ul class="inheritance">
 <li>fr.inria.atlanmod.neoemf.data.bean.serializer.BeanSerializerFactory</li>
@@ -116,8 +116,8 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>@ParametersAreNonnullByDefault
 public class <span class="typeNameLabel">BeanSerializerFactory</span>
-extends fr.inria.atlanmod.commons.io.serializer.SerializerFactory</pre>
-<div class="block">The factory that creates <code>Serializer</code> instances.</div>
+extends fr.inria.atlanmod.commons.io.serializer.BinarySerializerFactory</pre>
+<div class="block">The factory that creates <code>BinarySerializer</code> instances.</div>
 </li>
 </ul>
 </div>
@@ -137,27 +137,27 @@ extends fr.inria.atlanmod.commons.io.serializer.SerializerFactory</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>fr.inria.atlanmod.commons.io.serializer.Serializer&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/ClassBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean">ClassBean</a>&gt;</code></td>
+<td class="colFirst"><code>fr.inria.atlanmod.commons.io.serializer.BinarySerializer&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/ClassBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean">ClassBean</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/serializer/BeanSerializerFactory.html#forClass--">forClass</a></span>()</code>
-<div class="block">Gets the <code>Serializer</code> for <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/ClassBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean"><code>ClassBean</code></a>s.</div>
+<div class="block">Gets the <code>BinarySerializer</code> for <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/ClassBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean"><code>ClassBean</code></a>s.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>fr.inria.atlanmod.commons.io.serializer.Serializer&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&gt;</code></td>
+<td class="colFirst"><code>fr.inria.atlanmod.commons.io.serializer.BinarySerializer&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/serializer/BeanSerializerFactory.html#forId--">forId</a></span>()</code>
-<div class="block">Gets the <code>Serializer</code> for <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>s.</div>
+<div class="block">Gets the <code>BinarySerializer</code> for <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>s.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>fr.inria.atlanmod.commons.io.serializer.Serializer&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/ManyFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean">ManyFeatureBean</a>&gt;</code></td>
+<td class="colFirst"><code>fr.inria.atlanmod.commons.io.serializer.BinarySerializer&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/ManyFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean">ManyFeatureBean</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/serializer/BeanSerializerFactory.html#forManyFeature--">forManyFeature</a></span>()</code>
-<div class="block">Gets the <code>Serializer</code> for <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/ManyFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean"><code>ManyFeatureBean</code></a>s.</div>
+<div class="block">Gets the <code>BinarySerializer</code> for <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/ManyFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean"><code>ManyFeatureBean</code></a>s.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>fr.inria.atlanmod.commons.io.serializer.Serializer&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/SingleFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean">SingleFeatureBean</a>&gt;</code></td>
+<td class="colFirst"><code>fr.inria.atlanmod.commons.io.serializer.BinarySerializer&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/SingleFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean">SingleFeatureBean</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/serializer/BeanSerializerFactory.html#forSingleFeature--">forSingleFeature</a></span>()</code>
-<div class="block">Gets the <code>Serializer</code> for <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/SingleFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean"><code>SingleFeatureBean</code></a>s.</div>
+<div class="block">Gets the <code>BinarySerializer</code> for <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/SingleFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean"><code>SingleFeatureBean</code></a>s.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
@@ -168,10 +168,10 @@ extends fr.inria.atlanmod.commons.io.serializer.SerializerFactory</pre>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.commons.io.serializer.SerializerFactory">
+<li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.commons.io.serializer.BinarySerializerFactory">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;fr.inria.atlanmod.commons.io.serializer.SerializerFactory</h3>
+<h3>Methods inherited from class&nbsp;fr.inria.atlanmod.commons.io.serializer.BinarySerializerFactory</h3>
 <code>forAny</code></li>
 </ul>
 <ul class="blockList">
@@ -217,8 +217,8 @@ public static&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/b
 <li class="blockList">
 <h4>forId</h4>
 <pre>@Nonnull
-public&nbsp;fr.inria.atlanmod.commons.io.serializer.Serializer&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&gt;&nbsp;forId()</pre>
-<div class="block">Gets the <code>Serializer</code> for <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>s.</div>
+public&nbsp;fr.inria.atlanmod.commons.io.serializer.BinarySerializer&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&gt;&nbsp;forId()</pre>
+<div class="block">Gets the <code>BinarySerializer</code> for <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>s.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a serializer</dd>
@@ -232,8 +232,8 @@ public&nbsp;fr.inria.atlanmod.commons.io.serializer.Serializer&lt;<a href="../..
 <li class="blockList">
 <h4>forClass</h4>
 <pre>@Nonnull
-public&nbsp;fr.inria.atlanmod.commons.io.serializer.Serializer&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/ClassBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean">ClassBean</a>&gt;&nbsp;forClass()</pre>
-<div class="block">Gets the <code>Serializer</code> for <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/ClassBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean"><code>ClassBean</code></a>s.</div>
+public&nbsp;fr.inria.atlanmod.commons.io.serializer.BinarySerializer&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/ClassBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean">ClassBean</a>&gt;&nbsp;forClass()</pre>
+<div class="block">Gets the <code>BinarySerializer</code> for <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/ClassBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean"><code>ClassBean</code></a>s.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a serializer</dd>
@@ -247,8 +247,8 @@ public&nbsp;fr.inria.atlanmod.commons.io.serializer.Serializer&lt;<a href="../..
 <li class="blockList">
 <h4>forSingleFeature</h4>
 <pre>@Nonnull
-public&nbsp;fr.inria.atlanmod.commons.io.serializer.Serializer&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/SingleFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean">SingleFeatureBean</a>&gt;&nbsp;forSingleFeature()</pre>
-<div class="block">Gets the <code>Serializer</code> for <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/SingleFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean"><code>SingleFeatureBean</code></a>s.</div>
+public&nbsp;fr.inria.atlanmod.commons.io.serializer.BinarySerializer&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/SingleFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean">SingleFeatureBean</a>&gt;&nbsp;forSingleFeature()</pre>
+<div class="block">Gets the <code>BinarySerializer</code> for <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/SingleFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean"><code>SingleFeatureBean</code></a>s.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a serializer</dd>
@@ -262,8 +262,8 @@ public&nbsp;fr.inria.atlanmod.commons.io.serializer.Serializer&lt;<a href="../..
 <li class="blockList">
 <h4>forManyFeature</h4>
 <pre>@Nonnull
-public&nbsp;fr.inria.atlanmod.commons.io.serializer.Serializer&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/ManyFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean">ManyFeatureBean</a>&gt;&nbsp;forManyFeature()</pre>
-<div class="block">Gets the <code>Serializer</code> for <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/ManyFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean"><code>ManyFeatureBean</code></a>s.</div>
+public&nbsp;fr.inria.atlanmod.commons.io.serializer.BinarySerializer&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/ManyFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean">ManyFeatureBean</a>&gt;&nbsp;forManyFeature()</pre>
+<div class="block">Gets the <code>BinarySerializer</code> for <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/bean/ManyFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean"><code>ManyFeatureBean</code></a>s.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a serializer</dd>

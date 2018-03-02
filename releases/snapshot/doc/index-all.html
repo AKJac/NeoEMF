@@ -787,7 +787,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/bean/serializer/BeanSerializerFactory.html" title="class in fr.inria.atlanmod.neoemf.data.bean.serializer"><span class="typeNameLink">BeanSerializerFactory</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/bean/serializer/package-summary.html">fr.inria.atlanmod.neoemf.data.bean.serializer</a></dt>
 <dd>
-<div class="block">The factory that creates <code>Serializer</code> instances.</div>
+<div class="block">The factory that creates <code>BinarySerializer</code> instances.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbBackend.html" title="interface in fr.inria.atlanmod.neoemf.data.berkeleydb"><span class="typeNameLink">BerkeleyDbBackend</span></a> - Interface in <a href="fr/inria/atlanmod/neoemf/data/berkeleydb/package-summary.html">fr.inria.atlanmod.neoemf.data.berkeleydb</a></dt>
 <dd>
@@ -1800,15 +1800,15 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/bean/serializer/BeanSerializerFactory.html#forClass--">forClass()</a></span> - Method in class fr.inria.atlanmod.neoemf.data.bean.serializer.<a href="fr/inria/atlanmod/neoemf/data/bean/serializer/BeanSerializerFactory.html" title="class in fr.inria.atlanmod.neoemf.data.bean.serializer">BeanSerializerFactory</a></dt>
 <dd>
-<div class="block">Gets the <code>Serializer</code> for <a href="fr/inria/atlanmod/neoemf/data/bean/ClassBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean"><code>ClassBean</code></a>s.</div>
+<div class="block">Gets the <code>BinarySerializer</code> for <a href="fr/inria/atlanmod/neoemf/data/bean/ClassBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean"><code>ClassBean</code></a>s.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/bean/serializer/BeanSerializerFactory.html#forId--">forId()</a></span> - Method in class fr.inria.atlanmod.neoemf.data.bean.serializer.<a href="fr/inria/atlanmod/neoemf/data/bean/serializer/BeanSerializerFactory.html" title="class in fr.inria.atlanmod.neoemf.data.bean.serializer">BeanSerializerFactory</a></dt>
 <dd>
-<div class="block">Gets the <code>Serializer</code> for <a href="fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>s.</div>
+<div class="block">Gets the <code>BinarySerializer</code> for <a href="fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>s.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/bean/serializer/BeanSerializerFactory.html#forManyFeature--">forManyFeature()</a></span> - Method in class fr.inria.atlanmod.neoemf.data.bean.serializer.<a href="fr/inria/atlanmod/neoemf/data/bean/serializer/BeanSerializerFactory.html" title="class in fr.inria.atlanmod.neoemf.data.bean.serializer">BeanSerializerFactory</a></dt>
 <dd>
-<div class="block">Gets the <code>Serializer</code> for <a href="fr/inria/atlanmod/neoemf/data/bean/ManyFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean"><code>ManyFeatureBean</code></a>s.</div>
+<div class="block">Gets the <code>BinarySerializer</code> for <a href="fr/inria/atlanmod/neoemf/data/bean/ManyFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean"><code>ManyFeatureBean</code></a>s.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/util/XmiConstants.html#format-java.lang.String-java.lang.String-">format(String, String)</a></span> - Static method in class fr.inria.atlanmod.neoemf.io.util.<a href="fr/inria/atlanmod/neoemf/io/util/XmiConstants.html" title="class in fr.inria.atlanmod.neoemf.io.util">XmiConstants</a></dt>
 <dd>
@@ -1835,7 +1835,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/bean/serializer/BeanSerializerFactory.html#forSingleFeature--">forSingleFeature()</a></span> - Method in class fr.inria.atlanmod.neoemf.data.bean.serializer.<a href="fr/inria/atlanmod/neoemf/data/bean/serializer/BeanSerializerFactory.html" title="class in fr.inria.atlanmod.neoemf.data.bean.serializer">BeanSerializerFactory</a></dt>
 <dd>
-<div class="block">Gets the <code>Serializer</code> for <a href="fr/inria/atlanmod/neoemf/data/bean/SingleFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean"><code>SingleFeatureBean</code></a>s.</div>
+<div class="block">Gets the <code>BinarySerializer</code> for <a href="fr/inria/atlanmod/neoemf/data/bean/SingleFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean"><code>SingleFeatureBean</code></a>s.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/package-summary.html">fr.inria.atlanmod.neoemf</a> - package fr.inria.atlanmod.neoemf</dt>
 <dd>
@@ -4543,7 +4543,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/im/AbstractInMemoryBackend.html#SERIALIZER_FACTORY">SERIALIZER_FACTORY</a></span> - Static variable in class fr.inria.atlanmod.neoemf.data.im.<a href="fr/inria/atlanmod/neoemf/data/im/AbstractInMemoryBackend.html" title="class in fr.inria.atlanmod.neoemf.data.im">AbstractInMemoryBackend</a></dt>
 <dd>
-<div class="block">The <a href="fr/inria/atlanmod/neoemf/data/bean/serializer/BeanSerializerFactory.html" title="class in fr.inria.atlanmod.neoemf.data.bean.serializer"><code>BeanSerializerFactory</code></a> to use for creating the <code>Serializer</code> instances.</div>
+<div class="block">The <a href="fr/inria/atlanmod/neoemf/data/bean/serializer/BeanSerializerFactory.html" title="class in fr.inria.atlanmod.neoemf.data.bean.serializer"><code>BeanSerializerFactory</code></a> to use for creating the <code>BinarySerializer</code> instances.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/core/internal/LazyListIterator.html#set-E-">set(E)</a></span> - Method in class fr.inria.atlanmod.neoemf.core.internal.<a href="fr/inria/atlanmod/neoemf/core/internal/LazyListIterator.html" title="class in fr.inria.atlanmod.neoemf.core.internal">LazyListIterator</a></dt>
 <dd>&nbsp;</dd>
