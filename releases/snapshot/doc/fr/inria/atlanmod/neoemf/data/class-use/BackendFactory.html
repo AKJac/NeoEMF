@@ -134,36 +134,6 @@
 </a>
 <h3>Uses of <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a> in <a href="../../../../../../fr/inria/atlanmod/neoemf/bind/package-summary.html">fr.inria.atlanmod.neoemf.bind</a></h3>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../../fr/inria/atlanmod/neoemf/bind/package-summary.html">fr.inria.atlanmod.neoemf.bind</a> that return <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BindingEngine.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/bind/BindingEngine.html#factoryFor-java.lang.Class-">factoryFor</a></span>(java.lang.Class&lt;?&gt;&nbsp;type)</code>
-<div class="block">Retrieves the <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>BackendFactory</code></a> associated to the <code>type</code>.</div>
-</td>
-</tr>
-</tbody>
-</table>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../../fr/inria/atlanmod/neoemf/bind/package-summary.html">fr.inria.atlanmod.neoemf.bind</a> that return types with arguments of type <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code>static java.util.Set&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">BindingEngine.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/bind/BindingEngine.html#allFactories--">allFactories</a></span>()</code>
-<div class="block">Returns all <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>BackendFactory</code></a> instances that are visible in the classpath.</div>
-</td>
-</tr>
-</tbody>
-</table>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
 <caption><span>Methods in <a href="../../../../../../fr/inria/atlanmod/neoemf/bind/package-summary.html">fr.inria.atlanmod.neoemf.bind</a> with parameters of type <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
@@ -172,7 +142,7 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
-<td class="colLast"><span class="typeNameLabel">BindingEngine.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/bind/BindingEngine.html#schemeOf-fr.inria.atlanmod.neoemf.data.BackendFactory-">schemeOf</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a>&nbsp;factory)</code>
+<td class="colLast"><span class="typeNameLabel">Bindings.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/bind/Bindings.html#schemeOf-fr.inria.atlanmod.neoemf.data.BackendFactory-">schemeOf</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a>&nbsp;factory)</code>
 <div class="block">Retrieves the URI scheme for the specified <code>factory</code>.</div>
 </td>
 </tr>
@@ -187,12 +157,12 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
-<td class="colLast"><span class="typeNameLabel">BindingEngine.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/bind/BindingEngine.html#findBy-java.lang.Class-java.util.function.Function-java.lang.String-java.lang.String-">findBy</a></span>(java.lang.Class&lt;? super T&gt;&nbsp;type,
-      java.util.function.Function&lt;java.lang.Class&lt;? extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a>&gt;,java.lang.String&gt;&nbsp;valueMapping,
-      java.lang.String&nbsp;value,
-      java.lang.String&nbsp;variant)</code>
-<div class="block">Retrieves the instance of the <code>type</code> that is bound to a <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>BackendFactory</code></a>
- with the given <code>value</code>, by using the speficied <code>valueMapping</code>.</div>
+<td class="colLast"><span class="typeNameLabel">Bindings.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/bind/Bindings.html#find-java.lang.Class-java.util.function.Function-java.lang.String-java.lang.String-">find</a></span>(java.lang.Class&lt;? super T&gt;&nbsp;type,
+    java.util.function.Function&lt;java.lang.Class&lt;? extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a>&gt;,java.lang.String&gt;&nbsp;valueMapping,
+    java.lang.String&nbsp;value,
+    java.lang.String&nbsp;variant)</code>
+<div class="block">Retrieves the instance of the <code>type</code> that is bound to a <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>BackendFactory</code></a> with the given <code>value</code>,
+ by using the speficied <code>valueMapping</code>.</div>
 </td>
 </tr>
 </tbody>
@@ -233,21 +203,6 @@
 </tbody>
 </table>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../../fr/inria/atlanmod/neoemf/data/package-summary.html">fr.inria.atlanmod.neoemf.data</a> that return types with arguments of type <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code>java.util.Map&lt;java.lang.String,<a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">BackendFactoryRegistry.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactoryRegistry.html#getFactories--">getFactories</a></span>()</code>
-<div class="block">Returns all registered URI schemes with their <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>BackendFactory</code></a>.</div>
-</td>
-</tr>
-</tbody>
-</table>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
 <caption><span>Methods in <a href="../../../../../../fr/inria/atlanmod/neoemf/data/package-summary.html">fr.inria.atlanmod.neoemf.data</a> with parameters of type <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
@@ -283,21 +238,6 @@
 </tr>
 </tbody>
 </table>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/package-summary.html">fr.inria.atlanmod.neoemf.data.berkeleydb</a> that return <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BerkeleyDbBackendFactory.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbBackendFactory.html#getInstance--">getInstance</a></span>()</code>
-<div class="block">Returns the instance of this class.</div>
-</td>
-</tr>
-</tbody>
-</table>
 </li>
 <li class="blockList"><a name="fr.inria.atlanmod.neoemf.data.blueprints">
 <!--   -->
@@ -318,21 +258,6 @@
 </tr>
 </tbody>
 </table>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/package-summary.html">fr.inria.atlanmod.neoemf.data.blueprints</a> that return <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BlueprintsBackendFactory.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsBackendFactory.html#getInstance--">getInstance</a></span>()</code>
-<div class="block">Returns the instance of this class.</div>
-</td>
-</tr>
-</tbody>
-</table>
 </li>
 <li class="blockList"><a name="fr.inria.atlanmod.neoemf.data.hbase">
 <!--   -->
@@ -349,21 +274,6 @@
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBaseBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.hbase">HBaseBackendFactory</a></span></code>
 <div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>BackendFactory</code></a> that creates <a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBaseBackend.html" title="interface in fr.inria.atlanmod.neoemf.data.hbase"><code>HBaseBackend</code></a> instances.</div>
-</td>
-</tr>
-</tbody>
-</table>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/package-summary.html">fr.inria.atlanmod.neoemf.data.hbase</a> that return <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a></code></td>
-<td class="colLast"><span class="typeNameLabel">HBaseBackendFactory.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBaseBackendFactory.html#getInstance--">getInstance</a></span>()</code>
-<div class="block">Returns the instance of this class.</div>
 </td>
 </tr>
 </tbody>
@@ -389,21 +299,6 @@
 </tr>
 </tbody>
 </table>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../../fr/inria/atlanmod/neoemf/data/im/package-summary.html">fr.inria.atlanmod.neoemf.data.im</a> that return <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a></code></td>
-<td class="colLast"><span class="typeNameLabel">InMemoryBackendFactory.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/im/InMemoryBackendFactory.html#getInstance--">getInstance</a></span>()</code>
-<div class="block">Returns the instance of this class.</div>
-</td>
-</tr>
-</tbody>
-</table>
 </li>
 <li class="blockList"><a name="fr.inria.atlanmod.neoemf.data.mapdb">
 <!--   -->
@@ -420,21 +315,6 @@
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbBackendFactory</a></span></code>
 <div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>BackendFactory</code></a> that creates <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbBackend.html" title="interface in fr.inria.atlanmod.neoemf.data.mapdb"><code>MapDbBackend</code></a> instances.</div>
-</td>
-</tr>
-</tbody>
-</table>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb</a> that return <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="../../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a></code></td>
-<td class="colLast"><span class="typeNameLabel">MapDbBackendFactory.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbBackendFactory.html#getInstance--">getInstance</a></span>()</code>
-<div class="block">Returns the instance of this class.</div>
 </td>
 </tr>
 </tbody>
@@ -491,6 +371,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.atlanmod.org">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>

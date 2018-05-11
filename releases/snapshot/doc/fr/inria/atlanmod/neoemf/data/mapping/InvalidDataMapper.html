@@ -183,15 +183,15 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/Data
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/InvalidDataMapper.html#addAllReferences-fr.inria.atlanmod.neoemf.data.bean.ManyFeatureBean-java.util.List-">addAllReferences</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/bean/ManyFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean">ManyFeatureBean</a>&nbsp;feature,
-                java.util.List&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&gt;&nbsp;references)</code>
-<div class="block">Adds all the <code>references</code> to the specified <code>feature</code> from the position of the <code>feature</code>.</div>
+                java.util.List&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&gt;&nbsp;collection)</code>
+<div class="block">Adds all the <code>collection</code> to the specified <code>feature</code> from the position of the <code>feature</code>.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>&lt;V&gt;&nbsp;void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/InvalidDataMapper.html#addAllValues-fr.inria.atlanmod.neoemf.data.bean.ManyFeatureBean-java.util.List-">addAllValues</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/bean/ManyFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean">ManyFeatureBean</a>&nbsp;feature,
-            java.util.List&lt;? extends V&gt;&nbsp;values)</code>
-<div class="block">Adds all the <code>values</code> to the specified <code>feature</code> from the position of the <code>feature</code>.</div>
+            java.util.List&lt;? extends V&gt;&nbsp;collection)</code>
+<div class="block">Adds all the <code>collection</code> to the specified <code>feature</code> from the position of the <code>feature</code>.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -236,15 +236,15 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/Data
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/InvalidDataMapper.html#appendAllReferences-fr.inria.atlanmod.neoemf.data.bean.SingleFeatureBean-java.util.List-">appendAllReferences</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/bean/SingleFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean">SingleFeatureBean</a>&nbsp;feature,
-                   java.util.List&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&gt;&nbsp;references)</code>
-<div class="block">Adds all the <code>references</code> to the specified <code>feature</code> from the last position.</div>
+                   java.util.List&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&gt;&nbsp;collection)</code>
+<div class="block">Adds all the <code>collection</code> to the specified <code>feature</code> from the last position.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>&lt;V&gt;&nbsp;int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/InvalidDataMapper.html#appendAllValues-fr.inria.atlanmod.neoemf.data.bean.SingleFeatureBean-java.util.List-">appendAllValues</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/bean/SingleFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean">SingleFeatureBean</a>&nbsp;feature,
-               java.util.List&lt;? extends V&gt;&nbsp;values)</code>
-<div class="block">Adds all the <code>values</code> to the specified <code>feature</code> from the last position.</div>
+               java.util.List&lt;? extends V&gt;&nbsp;collection)</code>
+<div class="block">Adds all the <code>collection</code> to the specified <code>feature</code> from the last position.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
@@ -280,7 +280,9 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/Data
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/InvalidDataMapper.html#copyTo-fr.inria.atlanmod.neoemf.data.mapping.DataMapper-">copyTo</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>&nbsp;target)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/InvalidDataMapper.html#copyTo-fr.inria.atlanmod.neoemf.data.mapping.DataMapper-">copyTo</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>&nbsp;target)</code>
+<div class="block">Copies all the contents from this object to the <code>target</code>.</div>
+</td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
@@ -477,9 +479,13 @@ protected final&nbsp;java.util.function.Supplier&lt;java.lang.RuntimeException&g
 <li class="blockList">
 <h4>copyTo</h4>
 <pre>public&nbsp;void&nbsp;copyTo(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>&nbsp;target)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code>fr.inria.atlanmod.commons.Copiable</code></span></div>
+<div class="block">Copies all the contents from this object to the <code>target</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code>copyTo</code>&nbsp;in interface&nbsp;<code>fr.inria.atlanmod.commons.Copiable&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>target</code> - the object where to store the copied content</dd>
 </dl>
 </li>
 </ul>
@@ -894,9 +900,9 @@ public&nbsp;&lt;V&gt;&nbsp;java.util.Optional&lt;V&gt;&nbsp;valueFor(<a href="..
 <li class="blockList">
 <h4>addAllValues</h4>
 <pre>public&nbsp;&lt;V&gt;&nbsp;void&nbsp;addAllValues(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/bean/ManyFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean">ManyFeatureBean</a>&nbsp;feature,
-                             java.util.List&lt;? extends V&gt;&nbsp;values)</pre>
+                             java.util.List&lt;? extends V&gt;&nbsp;collection)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ManyValueMapper.html#addAllValues-fr.inria.atlanmod.neoemf.data.bean.ManyFeatureBean-java.util.List-">ManyValueMapper</a></code></span></div>
-<div class="block">Adds all the <code>values</code> to the specified <code>feature</code> from the position of the <code>feature</code>.</div>
+<div class="block">Adds all the <code>collection</code> to the specified <code>feature</code> from the position of the <code>feature</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ManyValueMapper.html#addAllValues-fr.inria.atlanmod.neoemf.data.bean.ManyFeatureBean-java.util.List-">addAllValues</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ManyValueMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ManyValueMapper</a></code></dd>
@@ -904,7 +910,7 @@ public&nbsp;&lt;V&gt;&nbsp;java.util.Optional&lt;V&gt;&nbsp;valueFor(<a href="..
 <dd><code>V</code> - the type of value</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>feature</code> - the bean identifying the multi-valued attribute</dd>
-<dd><code>values</code> - the values to add</dd>
+<dd><code>collection</code> - the values to add</dd>
 </dl>
 </li>
 </ul>
@@ -942,9 +948,9 @@ public&nbsp;&lt;V&gt;&nbsp;java.util.Optional&lt;V&gt;&nbsp;valueFor(<a href="..
 <li class="blockList">
 <h4>appendAllValues</h4>
 <pre>public&nbsp;&lt;V&gt;&nbsp;int&nbsp;appendAllValues(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/bean/SingleFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean">SingleFeatureBean</a>&nbsp;feature,
-                               java.util.List&lt;? extends V&gt;&nbsp;values)</pre>
+                               java.util.List&lt;? extends V&gt;&nbsp;collection)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ManyValueMapper.html#appendAllValues-fr.inria.atlanmod.neoemf.data.bean.SingleFeatureBean-java.util.List-">ManyValueMapper</a></code></span></div>
-<div class="block">Adds all the <code>values</code> to the specified <code>feature</code> from the last position.</div>
+<div class="block">Adds all the <code>collection</code> to the specified <code>feature</code> from the last position.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ManyValueMapper.html#appendAllValues-fr.inria.atlanmod.neoemf.data.bean.SingleFeatureBean-java.util.List-">appendAllValues</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ManyValueMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ManyValueMapper</a></code></dd>
@@ -952,7 +958,7 @@ public&nbsp;&lt;V&gt;&nbsp;java.util.Optional&lt;V&gt;&nbsp;valueFor(<a href="..
 <dd><code>V</code> - the type of values</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>feature</code> - the bean identifying the multi-valued attribute</dd>
-<dd><code>values</code> - the values to add</dd>
+<dd><code>collection</code> - the values to add</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the position to which the first value was added</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -1115,15 +1121,15 @@ public&nbsp;java.util.Optional&lt;<a href="../../../../../../fr/inria/atlanmod/n
 <li class="blockList">
 <h4>addAllReferences</h4>
 <pre>public&nbsp;void&nbsp;addAllReferences(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/bean/ManyFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean">ManyFeatureBean</a>&nbsp;feature,
-                             java.util.List&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&gt;&nbsp;references)</pre>
+                             java.util.List&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&gt;&nbsp;collection)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ManyReferenceMapper.html#addAllReferences-fr.inria.atlanmod.neoemf.data.bean.ManyFeatureBean-java.util.List-">ManyReferenceMapper</a></code></span></div>
-<div class="block">Adds all the <code>references</code> to the specified <code>feature</code> from the position of the <code>feature</code>.</div>
+<div class="block">Adds all the <code>collection</code> to the specified <code>feature</code> from the position of the <code>feature</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ManyReferenceMapper.html#addAllReferences-fr.inria.atlanmod.neoemf.data.bean.ManyFeatureBean-java.util.List-">addAllReferences</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ManyReferenceMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ManyReferenceMapper</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>feature</code> - the bean identifying the multi-valued attribute</dd>
-<dd><code>references</code> - the values to add</dd>
+<dd><code>collection</code> - the values to add</dd>
 </dl>
 </li>
 </ul>
@@ -1157,15 +1163,15 @@ public&nbsp;java.util.Optional&lt;<a href="../../../../../../fr/inria/atlanmod/n
 <li class="blockList">
 <h4>appendAllReferences</h4>
 <pre>public&nbsp;int&nbsp;appendAllReferences(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/bean/SingleFeatureBean.html" title="class in fr.inria.atlanmod.neoemf.data.bean">SingleFeatureBean</a>&nbsp;feature,
-                               java.util.List&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&gt;&nbsp;references)</pre>
+                               java.util.List&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&gt;&nbsp;collection)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ManyReferenceMapper.html#appendAllReferences-fr.inria.atlanmod.neoemf.data.bean.SingleFeatureBean-java.util.List-">ManyReferenceMapper</a></code></span></div>
-<div class="block">Adds all the <code>references</code> to the specified <code>feature</code> from the last position.</div>
+<div class="block">Adds all the <code>collection</code> to the specified <code>feature</code> from the last position.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ManyReferenceMapper.html#appendAllReferences-fr.inria.atlanmod.neoemf.data.bean.SingleFeatureBean-java.util.List-">appendAllReferences</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapping/ManyReferenceMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">ManyReferenceMapper</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>feature</code> - the bean identifying the multi-valued reference</dd>
-<dd><code>references</code> - the references to add</dd>
+<dd><code>collection</code> - the references to add</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the position to which the first reference was added</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -1301,6 +1307,6 @@ public&nbsp;java.util.Optional&lt;java.lang.Integer&gt;&nbsp;sizeOfReference(<a 
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.atlanmod.org">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>

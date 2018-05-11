@@ -2,6 +2,7 @@ fr.inria.atlanmod.neoemf.bind
 fr.inria.atlanmod.neoemf.config
 fr.inria.atlanmod.neoemf.core
 fr.inria.atlanmod.neoemf.core.internal
+fr.inria.atlanmod.neoemf.core.internal.collect
 fr.inria.atlanmod.neoemf.data
 fr.inria.atlanmod.neoemf.data.bean
 fr.inria.atlanmod.neoemf.data.bean.serializer
@@ -26,8 +27,8 @@ fr.inria.atlanmod.neoemf.io.util
 fr.inria.atlanmod.neoemf.io.writer
 fr.inria.atlanmod.neoemf.data.blueprints
 fr.inria.atlanmod.neoemf.data.blueprints.config
-fr.inria.atlanmod.neoemf.data.blueprints.graph
-fr.inria.atlanmod.neoemf.data.blueprints.graph.wrapper
+fr.inria.atlanmod.neoemf.data.blueprints.internal.graph
+fr.inria.atlanmod.neoemf.data.blueprints.internal.graph.wrapper
 fr.inria.atlanmod.neoemf.data.blueprints.util
 fr.inria.atlanmod.neoemf.data.blueprints.neo4j.config
 fr.inria.atlanmod.neoemf.data.blueprints.neo4j

@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":9,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":9,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":9,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -165,13 +165,11 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" 
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
 <caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
-<th class="colFirst" scope="col">Modifier</th>
-<th class="colLast" scope="col">Constructor and Description</th>
+<th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/BaseConfig.html#BaseConfig--">BaseConfig</a></span>()</code>
-<div class="block">Constructs a new <code>BaseConfig</code>.</div>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/BaseConfig.html#BaseConfig--">BaseConfig</a></span>()</code>
+<div class="block">Constructs a new <code>BaseConfig</code> with default settings.</div>
 </td>
 </tr>
 </table>
@@ -318,43 +316,37 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" 
 </td>
 </tr>
 <tr id="i21" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/BaseConfig.html#newConfig--">newConfig</a></span>()</code>
-<div class="block">Constructs a new <code>BaseConfig</code> instance.</div>
-</td>
-</tr>
-<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/config/BaseConfig.html" title="type parameter in BaseConfig">C</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/BaseConfig.html#readOnly--">readOnly</a></span>()</code>
 <div class="block">Adds the <code>read-only</code> feature in this configuration.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/config/BaseConfig.html" title="type parameter in BaseConfig">C</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/BaseConfig.html#recordStats-fr.inria.atlanmod.neoemf.data.store.listener.StoreStats-">recordStats</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/data/store/listener/StoreStats.html" title="class in fr.inria.atlanmod.neoemf.data.store.listener">StoreStats</a>&nbsp;stats)</code>
 <div class="block">Adds the <code>stats</code> feature in this configuration.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/BaseConfig.html#save-java.nio.file.Path-">save</a></span>(java.nio.file.Path&nbsp;directory)</code>
 <div class="block">Saves this configuration in the <code>directory</code>.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/config/BaseConfig.html" title="type parameter in BaseConfig">C</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/BaseConfig.html#setMapping-java.lang.String-">setMapping</a></span>(java.lang.String&nbsp;mappingType)</code>
 <div class="block">Defines the mapping to use for the created <a href="../../../../../fr/inria/atlanmod/neoemf/data/Backend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>Backend</code></a>.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../../fr/inria/atlanmod/neoemf/config/BaseConfig.html" title="type parameter in BaseConfig">C</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/BaseConfig.html#setMappingWithCheck-java.lang.String-boolean-">setMappingWithCheck</a></span>(java.lang.String&nbsp;mappingType,
                    boolean&nbsp;checkConflict)</code>
 <div class="block">Defines the mapping to use for the created <a href="../../../../../fr/inria/atlanmod/neoemf/data/Backend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>Backend</code></a>.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>java.util.Map&lt;java.lang.String,?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/config/BaseConfig.html#toMap--">toMap</a></span>()</code>
 <div class="block">Returns a immutable map view of this configuration.</div>
@@ -424,8 +416,13 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" 
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BaseConfig</h4>
-<pre>protected&nbsp;BaseConfig()</pre>
-<div class="block">Constructs a new <code>BaseConfig</code>.</div>
+<pre>public&nbsp;BaseConfig()</pre>
+<div class="block">Constructs a new <code>BaseConfig</code> with default settings.
+ <p>
+ <b>NOTE:</b> This implementation is intended to configure a <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>Store</code></a>'
+ chain. The created configuration is not associated with any <a href="../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>BackendFactory</code></a>,
+ so it cannot be used to configure a <a href="../../../../../fr/inria/atlanmod/neoemf/data/Backend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>Backend</code></a>. Use the specific
+ implementation for this.</div>
 </li>
 </ul>
 </li>
@@ -436,26 +433,6 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" 
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="newConfig--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>newConfig</h4>
-<pre>@Nonnull
-public static&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config">Config</a>&nbsp;newConfig()</pre>
-<div class="block">Constructs a new <code>BaseConfig</code> instance.
- <p>
- <b>NOTE:</b> This implementation is intended to configure a <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/Store.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>Store</code></a>'
- chain. The created configuration is not associated with any <a href="../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>BackendFactory</code></a>,
- so it cannot be used to configure a <a href="../../../../../fr/inria/atlanmod/neoemf/data/Backend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>Backend</code></a>. Use the specific
- implementation for this.</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>a new configuration</dd>
-</dl>
-</li>
-</ul>
 <a name="createKey-java.lang.String...-">
 <!--   -->
 </a>
@@ -1054,6 +1031,6 @@ protected final&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/config/Bas
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.atlanmod.org">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>

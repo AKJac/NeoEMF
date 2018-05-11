@@ -88,6 +88,12 @@
 <div class="block">Provides the base classes that extends EMF API to enable lazy-loading of model elements.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#fr.inria.atlanmod.neoemf.core.internal">fr.inria.atlanmod.neoemf.core.internal</a></td>
+<td class="colLast">
+<div class="block">Provides helper classes for the base classes, such as lazy collections.</div>
+</td>
+</tr>
 </tbody>
 </table>
 </li>
@@ -110,10 +116,19 @@
 <div class="block">An abstract <a href="../../../../../../fr/inria/atlanmod/neoemf/core/IdProvider.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>IdProvider</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/core/LongIdProvider.html" title="class in fr.inria.atlanmod.neoemf.core">LongIdProvider</a></span></code>
-<div class="block">An <a href="../../../../../../fr/inria/atlanmod/neoemf/core/IdProvider.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>IdProvider</code></a> that provides <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a> with a long representation.</div>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing fields, and an explanation">
+<caption><span>Fields in <a href="../../../../../../fr/inria/atlanmod/neoemf/core/package-summary.html">fr.inria.atlanmod.neoemf.core</a> declared as <a href="../../../../../../fr/inria/atlanmod/neoemf/core/IdProvider.html" title="interface in fr.inria.atlanmod.neoemf.core">IdProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../fr/inria/atlanmod/neoemf/core/IdProvider.html" title="interface in fr.inria.atlanmod.neoemf.core">IdProvider</a></code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractIdConverter.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/core/AbstractIdConverter.html#provider">provider</a></span></code>
+<div class="block">The current provider of <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a> instances.</div>
 </td>
 </tr>
 </tbody>
@@ -127,14 +142,43 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../../fr/inria/atlanmod/neoemf/core/IdProvider.html" title="interface in fr.inria.atlanmod.neoemf.core">IdProvider</a></code></td>
-<td class="colLast"><span class="typeNameLabel">LongIdProvider.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/core/LongIdProvider.html#getInstance--">getInstance</a></span>()</code>
-<div class="block">Returns the instance of this class.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="../../../../../../fr/inria/atlanmod/neoemf/core/IdProvider.html" title="interface in fr.inria.atlanmod.neoemf.core">IdProvider</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Id.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html#getProvider--">getProvider</a></span>()</code>
 <div class="block">Returns the instance of the default <a href="../../../../../../fr/inria/atlanmod/neoemf/core/IdProvider.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>IdProvider</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="fr.inria.atlanmod.neoemf.core.internal">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../fr/inria/atlanmod/neoemf/core/IdProvider.html" title="interface in fr.inria.atlanmod.neoemf.core">IdProvider</a> in <a href="../../../../../../fr/inria/atlanmod/neoemf/core/internal/package-summary.html">fr.inria.atlanmod.neoemf.core.internal</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../../fr/inria/atlanmod/neoemf/core/internal/package-summary.html">fr.inria.atlanmod.neoemf.core.internal</a> that implement <a href="../../../../../../fr/inria/atlanmod/neoemf/core/IdProvider.html" title="interface in fr.inria.atlanmod.neoemf.core">IdProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/core/internal/LongIdProvider.html" title="class in fr.inria.atlanmod.neoemf.core.internal">LongIdProvider</a></span></code>
+<div class="block">An <a href="../../../../../../fr/inria/atlanmod/neoemf/core/IdProvider.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>IdProvider</code></a> that provides <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a> with a long representation.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../fr/inria/atlanmod/neoemf/core/internal/package-summary.html">fr.inria.atlanmod.neoemf.core.internal</a> that return <a href="../../../../../../fr/inria/atlanmod/neoemf/core/IdProvider.html" title="interface in fr.inria.atlanmod.neoemf.core">IdProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../fr/inria/atlanmod/neoemf/core/IdProvider.html" title="interface in fr.inria.atlanmod.neoemf.core">IdProvider</a></code></td>
+<td class="colLast"><span class="typeNameLabel">LongIdProvider.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/core/internal/LongIdProvider.html#getInstance--">getInstance</a></span>()</code>
+<div class="block">Returns the instance of this class.</div>
 </td>
 </tr>
 </tbody>
@@ -191,6 +235,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.atlanmod.org">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>

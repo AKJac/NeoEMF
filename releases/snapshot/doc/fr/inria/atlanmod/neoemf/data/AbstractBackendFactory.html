@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -147,7 +147,14 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/data/AbstractBackendFactory.html#AbstractBackendFactory--">AbstractBackendFactory</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/data/AbstractBackendFactory.html#AbstractBackendFactory-java.lang.String-">AbstractBackendFactory</a></span>(java.lang.String&nbsp;name)</code>
+<div class="block">Constructs a new <code>AbstractBackendFactory</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected </code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/data/AbstractBackendFactory.html#AbstractBackendFactory-java.lang.String-boolean-">AbstractBackendFactory</a></span>(java.lang.String&nbsp;name,
+                      boolean&nbsp;supportsTransient)</code>
 <div class="block">Constructs a new <code>AbstractBackendFactory</code>.</div>
 </td>
 </tr>
@@ -187,6 +194,18 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.
 <div class="block">Creates a new server-based <a href="../../../../../fr/inria/atlanmod/neoemf/data/Backend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>Backend</code></a>.</div>
 </td>
 </tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/data/AbstractBackendFactory.html#name--">name</a></span>()</code>
+<div class="block">Returns the literal description of the created <a href="../../../../../fr/inria/atlanmod/neoemf/data/Backend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>Backend</code></a>.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/data/AbstractBackendFactory.html#supportsTransient--">supportsTransient</a></span>()</code>
+<div class="block">Returns whether the <a href="../../../../../fr/inria/atlanmod/neoemf/data/Backend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>Backend</code></a>s created by this factory support the transient state.</div>
+</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.neoemf.data.mapping.AbstractMapperFactory">
@@ -202,13 +221,6 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.neoemf.data.BackendFactory">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;fr.inria.atlanmod.neoemf.data.<a href="../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a></h3>
-<code><a href="../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html#name--">name</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html#supportsTransient--">supportsTransient</a></code></li>
-</ul>
 </li>
 </ul>
 </li>
@@ -223,14 +235,34 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="AbstractBackendFactory--">
+<a name="AbstractBackendFactory-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AbstractBackendFactory</h4>
+<pre>protected&nbsp;AbstractBackendFactory(java.lang.String&nbsp;name)</pre>
+<div class="block">Constructs a new <code>AbstractBackendFactory</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the literal description of this factory</dd>
+</dl>
+</li>
+</ul>
+<a name="AbstractBackendFactory-java.lang.String-boolean-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AbstractBackendFactory</h4>
-<pre>protected&nbsp;AbstractBackendFactory()</pre>
+<pre>protected&nbsp;AbstractBackendFactory(java.lang.String&nbsp;name,
+                                 boolean&nbsp;supportsTransient)</pre>
 <div class="block">Constructs a new <code>AbstractBackendFactory</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the literal description of this factory</dd>
+<dd><code>supportsTransient</code> - <code>true</code> if the backends created by this factory support the transient state</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -241,6 +273,41 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="name--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>name</h4>
+<pre>public final&nbsp;java.lang.String&nbsp;name()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html#name--">BackendFactory</a></code></span></div>
+<div class="block">Returns the literal description of the created <a href="../../../../../fr/inria/atlanmod/neoemf/data/Backend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>Backend</code></a>.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html#name--">name</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the literal description of the created <a href="../../../../../fr/inria/atlanmod/neoemf/data/Backend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>Backend</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="supportsTransient--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>supportsTransient</h4>
+<pre>public&nbsp;boolean&nbsp;supportsTransient()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html#supportsTransient--">BackendFactory</a></code></span></div>
+<div class="block">Returns whether the <a href="../../../../../fr/inria/atlanmod/neoemf/data/Backend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>Backend</code></a>s created by this factory support the transient state.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html#supportsTransient--">supportsTransient</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">BackendFactory</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if the <a href="../../../../../fr/inria/atlanmod/neoemf/data/Backend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>Backend</code></a>s created by this factory support the transient state, <code>false</code>
+ otherwise</dd>
+</dl>
+</li>
+</ul>
 <a name="createBackend-org.eclipse.emf.common.util.URI-fr.inria.atlanmod.neoemf.config.ImmutableConfig-">
 <!--   -->
 </a>
@@ -384,6 +451,6 @@ protected&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/data/Backend.htm
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.atlanmod.org">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>

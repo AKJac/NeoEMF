@@ -43,8 +43,8 @@
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../fr/inria/atlanmod/neoemf/bind/ClasspathCollector.html" title="class in fr.inria.atlanmod.neoemf.bind"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../fr/inria/atlanmod/neoemf/bind/SimpleCollector.html" title="class in fr.inria.atlanmod.neoemf.bind"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../fr/inria/atlanmod/neoemf/bind/Bindings.html" title="class in fr.inria.atlanmod.neoemf.bind"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?fr/inria/atlanmod/neoemf/bind/FactoryBinding.html" target="_top">Frames</a></li>
@@ -159,9 +159,15 @@ public @interface <span class="memberNameLabel">FactoryBinding</span></pre>
 <th class="colLast" scope="col">Optional Element and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/bind/FactoryBinding.html#concrete--">concrete</a></span></code>
+<div class="block"><code>true</code> if the annotated class represents a concrete implementation, <code>false</code> if it's an abstract or a base class.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/bind/FactoryBinding.html#variant--">variant</a></span></code>
-<div class="block">The variant identifier of this binding; should be unique by <a href="../../../../../fr/inria/atlanmod/neoemf/bind/FactoryBinding.html#factory--"><code>factory()</code></a>.</div>
+<div class="block">The variant identifier of this binding; it should be unique for a given <a href="../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>BackendFactory</code></a>.</div>
 </td>
 </tr>
 </table>
@@ -220,12 +226,12 @@ public abstract&nbsp;java.lang.Class&lt;? extends <a href="../../../../../fr/inr
 <li class="blockList"><a name="variant--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>variant</h4>
 <pre>@Nonnull
 public abstract&nbsp;java.lang.String&nbsp;variant</pre>
-<div class="block">The variant identifier of this binding; should be unique by <a href="../../../../../fr/inria/atlanmod/neoemf/bind/FactoryBinding.html#factory--"><code>factory()</code></a>.</div>
+<div class="block">The variant identifier of this binding; it should be unique for a given <a href="../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>BackendFactory</code></a>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the variant identifier</dd>
@@ -233,6 +239,27 @@ public abstract&nbsp;java.lang.String&nbsp;variant</pre>
 <dl>
 <dt>Default:</dt>
 <dd>"default"</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="concrete--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>concrete</h4>
+<pre>public abstract&nbsp;boolean&nbsp;concrete</pre>
+<div class="block"><code>true</code> if the annotated class represents a concrete implementation, <code>false</code> if it's an abstract or a base class.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if the annotated class represents a reel instance</dd>
+</dl>
+<dl>
+<dt>Default:</dt>
+<dd>true</dd>
 </dl>
 </li>
 </ul>
@@ -264,8 +291,8 @@ public abstract&nbsp;java.lang.String&nbsp;variant</pre>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../fr/inria/atlanmod/neoemf/bind/ClasspathCollector.html" title="class in fr.inria.atlanmod.neoemf.bind"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../fr/inria/atlanmod/neoemf/bind/SimpleCollector.html" title="class in fr.inria.atlanmod.neoemf.bind"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../fr/inria/atlanmod/neoemf/bind/Bindings.html" title="class in fr.inria.atlanmod.neoemf.bind"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?fr/inria/atlanmod/neoemf/bind/FactoryBinding.html" target="_top">Frames</a></li>
@@ -303,6 +330,6 @@ public abstract&nbsp;java.lang.String&nbsp;variant</pre>
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.atlanmod.org">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>

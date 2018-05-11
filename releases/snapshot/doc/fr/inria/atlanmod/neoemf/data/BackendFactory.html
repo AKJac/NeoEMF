@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":18};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
+var methods = {"i0":6,"i1":6,"i2":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -110,10 +110,7 @@ public interface <span class="typeNameLabel">BackendFactory</span></pre>
 <div class="block">A factory that creates <a href="../../../../../fr/inria/atlanmod/neoemf/data/Backend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>Backend</code></a> instances.
  <p>
  The creation can be configured using <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#save-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource.save(java.util.Map)</code></a>
- and <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#load-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource.load(java.util.Map)</code></a> option maps.
- <p>
- For reflection reasons, each instance of <code>BackendFactory</code> <b>must</b> have a static field <code>NAME</code>,
- representing the name of the created <a href="../../../../../fr/inria/atlanmod/neoemf/data/Backend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>Backend</code></a> instances.</div>
+ and <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#load-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource.load(java.util.Map)</code></a> option maps.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config"><code>Config</code></a></dd>
@@ -131,7 +128,7 @@ public interface <span class="typeNameLabel">BackendFactory</span></pre>
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -150,7 +147,7 @@ public interface <span class="typeNameLabel">BackendFactory</span></pre>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>default boolean</code></td>
+<td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html#supportsTransient--">supportsTransient</a></span>()</code>
 <div class="block">Returns whether the <a href="../../../../../fr/inria/atlanmod/neoemf/data/Backend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>Backend</code></a>s created by this factory support the transient state.</div>
 </td>
@@ -191,7 +188,7 @@ java.lang.String&nbsp;name()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>supportsTransient</h4>
-<pre>default&nbsp;boolean&nbsp;supportsTransient()</pre>
+<pre>boolean&nbsp;supportsTransient()</pre>
 <div class="block">Returns whether the <a href="../../../../../fr/inria/atlanmod/neoemf/data/Backend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>Backend</code></a>s created by this factory support the transient state.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -290,6 +287,6 @@ java.lang.String&nbsp;name()</pre>
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.atlanmod.org">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>

@@ -109,16 +109,15 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd>fr.inria.atlanmod.commons.function.Copier&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>&gt;, java.util.function.BiConsumer&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>,<a href="../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>&gt;</dd>
+<dd>fr.inria.atlanmod.commons.function.Copier&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>&gt;, <a href="../../../../../fr/inria/atlanmod/neoemf/data/DataCopier.html" title="interface in fr.inria.atlanmod.neoemf.data">DataCopier</a>, java.util.function.BiConsumer&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>,<a href="../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>&gt;</dd>
 </dl>
 <hr>
 <br>
 <pre>@ParametersAreNonnullByDefault
 public final class <span class="typeNameLabel">DirectDataCopier</span>
 extends java.lang.Object
-implements fr.inria.atlanmod.commons.function.Copier&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>&gt;</pre>
-<div class="block">A <code>Copier</code> of <a href="../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping"><code>DataMapper</code></a>
- instances using the direct import/export.</div>
+implements <a href="../../../../../fr/inria/atlanmod/neoemf/data/DataCopier.html" title="interface in fr.inria.atlanmod.neoemf.data">DataCopier</a></pre>
+<div class="block">A <a href="../../../../../fr/inria/atlanmod/neoemf/data/DataCopier.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>DataCopier</code></a> using the direct import/export.</div>
 </li>
 </ul>
 </div>
@@ -157,7 +156,9 @@ implements fr.inria.atlanmod.commons.function.Copier&lt;<a href="../../../../../
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/DirectDataCopier.html#copy-fr.inria.atlanmod.neoemf.data.mapping.DataMapper-fr.inria.atlanmod.neoemf.data.mapping.DataMapper-">copy</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>&nbsp;source,
-    <a href="../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>&nbsp;target)</code>&nbsp;</td>
+    <a href="../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>&nbsp;target)</code>
+<div class="block">Copies all the contents from the <code>source</code> to the <code>target</code>.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -220,9 +221,14 @@ implements fr.inria.atlanmod.commons.function.Copier&lt;<a href="../../../../../
 <h4>copy</h4>
 <pre>public&nbsp;void&nbsp;copy(<a href="../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>&nbsp;source,
                  <a href="../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>&nbsp;target)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code>fr.inria.atlanmod.commons.function.Copier</code></span></div>
+<div class="block">Copies all the contents from the <code>source</code> to the <code>target</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code>copy</code>&nbsp;in interface&nbsp;<code>fr.inria.atlanmod.commons.function.Copier&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/data/mapping/DataMapper.html" title="interface in fr.inria.atlanmod.neoemf.data.mapping">DataMapper</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>source</code> - the object to copy</dd>
+<dd><code>target</code> - the object where to store the copied content</dd>
 </dl>
 </li>
 </ul>
@@ -295,6 +301,6 @@ implements fr.inria.atlanmod.commons.function.Copier&lt;<a href="../../../../../
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.atlanmod.org">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>

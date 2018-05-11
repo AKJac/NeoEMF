@@ -79,23 +79,6 @@
 <div class="contentContainer">
 <ul class="blockList">
 <li class="blockList">
-<table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Interface Summary table, listing interfaces, and an explanation">
-<caption><span>Interface Summary</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Interface</th>
-<th class="colLast" scope="col">Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/bind/URLCollector.html" title="interface in fr.inria.atlanmod.neoemf.bind">URLCollector</a></td>
-<td class="colLast">
-<div class="block">An object that analyzes, collects and supplies <code>URL</code>s.</div>
-</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li class="blockList">
 <table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Class Summary table, listing classes, and an explanation">
 <caption><span>Class Summary</span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
@@ -104,27 +87,9 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/bind/BindingEngine.html" title="class in fr.inria.atlanmod.neoemf.bind">BindingEngine</a></td>
+<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/bind/Bindings.html" title="class in fr.inria.atlanmod.neoemf.bind">Bindings</a></td>
 <td class="colLast">
-<div class="block">A static utility class for binding and reflection.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/bind/BundleContextCollector.html" title="class in fr.inria.atlanmod.neoemf.bind">BundleContextCollector</a></td>
-<td class="colLast">
-<div class="block">An <a href="../../../../../fr/inria/atlanmod/neoemf/bind/URLCollector.html" title="interface in fr.inria.atlanmod.neoemf.bind"><code>URLCollector</code></a> that analyzes a <code>BundleContext</code> to retrieve all <code>Bundle</code>s related to this one.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/bind/ClasspathCollector.html" title="class in fr.inria.atlanmod.neoemf.bind">ClasspathCollector</a></td>
-<td class="colLast">
-<div class="block">An <a href="../../../../../fr/inria/atlanmod/neoemf/bind/URLCollector.html" title="interface in fr.inria.atlanmod.neoemf.bind"><code>URLCollector</code></a> that analyzes a <code>URLClassLoader</code> to retrieve all modules related to this one.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/bind/SimpleCollector.html" title="class in fr.inria.atlanmod.neoemf.bind">SimpleCollector</a></td>
-<td class="colLast">
-<div class="block">An <a href="../../../../../fr/inria/atlanmod/neoemf/bind/URLCollector.html" title="interface in fr.inria.atlanmod.neoemf.bind"><code>URLCollector</code></a> that delegate its analysis.</div>
+<div class="block">A static utility class for binding.</div>
 </td>
 </tr>
 </tbody>
@@ -171,8 +136,8 @@
 <h2 title="Package fr.inria.atlanmod.neoemf.bind Description">Package fr.inria.atlanmod.neoemf.bind Description</h2>
 <div class="block">Provides classes related to the binding engine and classpath analysis.
  <p>
- The binding engine is centered on the <a href="../../../../../fr/inria/atlanmod/neoemf/bind/BindingEngine.html" title="class in fr.inria.atlanmod.neoemf.bind"><code>BindingEngine</code></a> class that allows to
- dynamically bind <a href="../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>BackendFactory</code></a>, <a href="../../../../../fr/inria/atlanmod/neoemf/util/UriBuilder.html" title="interface in fr.inria.atlanmod.neoemf.util"><code>UriBuilder</code></a>
+ The binding engine is centered on the <code>fr.inria.atlanmod.neoemf.bind.BindingEngine</code> class that allows to
+ dynamically bind <a href="../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>BackendFactory</code></a>, <a href="../../../../../fr/inria/atlanmod/neoemf/util/UriFactory.html" title="interface in fr.inria.atlanmod.neoemf.util"><code>UriFactory</code></a>
  and <a href="../../../../../fr/inria/atlanmod/neoemf/config/Config.html" title="interface in fr.inria.atlanmod.neoemf.config"><code>Config</code></a> instances at runtime, by analyzing elements annotated with the
  <a href="../../../../../fr/inria/atlanmod/neoemf/bind/FactoryBinding.html" title="annotation in fr.inria.atlanmod.neoemf.bind"><code>FactoryBinding</code></a> annotation on a limited view of a classpath.
  <p>
@@ -225,6 +190,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.atlanmod.org">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>

@@ -87,9 +87,9 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/util/BlueprintsUri.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.util">BlueprintsUri</a></td>
+<td class="colFirst"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/util/BlueprintsUriFactory.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.util">BlueprintsUriFactory</a></td>
 <td class="colLast">
-<div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/util/UriBuilder.html" title="interface in fr.inria.atlanmod.neoemf.util"><code>UriBuilder</code></a> that creates Blueprints specific resource URIs.</div>
+<div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/util/UriFactory.html" title="interface in fr.inria.atlanmod.neoemf.util"><code>UriFactory</code></a> that creates Blueprints specific resource URIs.</div>
 </td>
 </tr>
 </tbody>
@@ -102,19 +102,19 @@
 <h2 title="Package fr.inria.atlanmod.neoemf.data.blueprints.util Description">Package fr.inria.atlanmod.neoemf.data.blueprints.util Description</h2>
 <div class="block">Provides utility classes related to Blueprints.
  <p>
- This package defines the <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/util/BlueprintsUri.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.util"><code>BlueprintsUri</code></a> class, that extends
- <a href="../../../../../../../fr/inria/atlanmod/neoemf/util/UriBuilder.html" title="interface in fr.inria.atlanmod.neoemf.util"><code>UriBuilder</code></a> to create Blueprints specific URIs. <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/util/BlueprintsUri.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.util"><code>BlueprintsUri</code></a>s are convenience wrappers of EMF URIs that set a
+ This package defines the <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/util/BlueprintsUriFactory.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.util"><code>BlueprintsUriFactory</code></a> class, that
+ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/util/UriFactory.html" title="interface in fr.inria.atlanmod.neoemf.util"><code>UriFactory</code></a> to create Blueprints specific URIs. <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/util/BlueprintsUriFactory.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.util"><code>BlueprintsUriFactory</code></a>s are convenience wrappers of EMF URIs that set a
  dedicated protocol that is parsed by NeoEMF to create the appropriate database.
  <p>
- <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/util/BlueprintsUri.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.util"><code>BlueprintsUri</code></a>s are created using the following code:
+ <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/util/BlueprintsUriFactory.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.util"><code>BlueprintsUriFactory</code></a>s are created using the following code:
  <pre><code>
- URI blueprintsURI = BlueprintsUri.createFileURI(new File("model_path"));
+ URI uri = BlueprintsUriFactory.createLocalUri("model_path");
 
  // The created URI can be used as a regular EMF URI to create a NeoEMF resource
- Resource neoEMFResource = resourceSet.createResource(blueprintsURI);
+ Resource resource = resourceSet.createResource(uri);
 
  // And accessed as a regular EMF resource
- neoEMFResource.getContents() [...]
+ resource.getContents() [...]
  </code></pre></div>
 </div>
 <!-- ======= START OF BOTTOM NAVBAR ====== -->
@@ -164,6 +164,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2018 <a href="http://www.atlanmod.org">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>
