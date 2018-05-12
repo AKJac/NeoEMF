@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -190,14 +190,32 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/util/UriFactory.html
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/util/AbstractUriFactory.html#createRemoteUri-java.lang.String-int-java.lang.String...-">createRemoteUri</a></span>(java.lang.String&nbsp;host,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/util/AbstractUriFactory.html#createRemoteUri-java.net.InetAddress-int-java.lang.String-">createRemoteUri</a></span>(java.net.InetAddress&nbsp;host,
                int&nbsp;port,
-               java.lang.String...&nbsp;segments)</code>
+               java.lang.String&nbsp;model)</code>
 <div class="block">Creates a new URI from the <code>host</code>, <code>port</code>, and <code>model</code> by creating a hierarchical URI that
  references the distant model resource.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/util/AbstractUriFactory.html#createRemoteUri-java.net.InetAddress-int-org.eclipse.emf.common.util.URI-">createRemoteUri</a></span>(java.net.InetAddress&nbsp;host,
+               int&nbsp;port,
+               <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;model)</code>
+<div class="block">Creates a new URI from the <code>host</code>, <code>port</code>, and <code>model</code> by creating a hierarchical URI that
+ references the distant model resource.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/util/AbstractUriFactory.html#createRemoteUri-java.lang.String-int-java.lang.String-">createRemoteUri</a></span>(java.lang.String&nbsp;host,
+               int&nbsp;port,
+               java.lang.String&nbsp;model)</code>
+<div class="block">Creates a new URI from the <code>host</code>, <code>port</code>, and <code>model</code> by creating a hierarchical URI that
+ references the distant model resource.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/util/AbstractUriFactory.html#createRemoteUri-java.lang.String-int-org.eclipse.emf.common.util.URI-">createRemoteUri</a></span>(java.lang.String&nbsp;host,
                int&nbsp;port,
@@ -206,19 +224,19 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/util/UriFactory.html
  references the distant model resource.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/util/AbstractUriFactory.html#scheme--">scheme</a></span>()</code>
 <div class="block">Gets the scheme to identify the <a href="../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>BackendFactory</code></a> to use.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/util/AbstractUriFactory.html#supportsLocalUris--">supportsLocalUris</a></span>()</code>
 <div class="block">Checks that the <a href="../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>BackendFactory</code></a> associated to the created <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> supports file-based storage.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/util/AbstractUriFactory.html#supportsRemoteUris--">supportsRemoteUris</a></span>()</code>
 <div class="block">Checks that the <a href="../../../../../fr/inria/atlanmod/neoemf/data/BackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>BackendFactory</code></a> associated to the created <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> supports server-based storage.</div>
@@ -425,26 +443,76 @@ public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/o
 </dl>
 </li>
 </ul>
-<a name="createRemoteUri-java.lang.String-int-java.lang.String...-">
+<a name="createRemoteUri-java.lang.String-int-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createRemoteUri</h4>
+<pre>@Nonnull
+public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;createRemoteUri(java.lang.String&nbsp;host,
+                                    int&nbsp;port,
+                                    java.lang.String&nbsp;model)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/util/UriFactory.html#createRemoteUri-java.lang.String-int-java.lang.String-">UriFactory</a></code></span></div>
+<div class="block">Creates a new URI from the <code>host</code>, <code>port</code>, and <code>model</code> by creating a hierarchical URI that
+ references the distant model resource.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/util/UriFactory.html#createRemoteUri-java.lang.String-int-java.lang.String-">createRemoteUri</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/util/UriFactory.html" title="interface in fr.inria.atlanmod.neoemf.util">UriFactory</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>host</code> - the address of the server (use <code>"localhost"</code> if the server is running locally)</dd>
+<dd><code>port</code> - the port of the server</dd>
+<dd><code>model</code> - a string identifying the model in the database</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new URI</dd>
+</dl>
+</li>
+</ul>
+<a name="createRemoteUri-java.net.InetAddress-int-org.eclipse.emf.common.util.URI-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createRemoteUri</h4>
+<pre>@Nonnull
+public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;createRemoteUri(java.net.InetAddress&nbsp;host,
+                                    int&nbsp;port,
+                                    <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;model)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/util/UriFactory.html#createRemoteUri-java.net.InetAddress-int-org.eclipse.emf.common.util.URI-">UriFactory</a></code></span></div>
+<div class="block">Creates a new URI from the <code>host</code>, <code>port</code>, and <code>model</code> by creating a hierarchical URI that
+ references the distant model resource.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/util/UriFactory.html#createRemoteUri-java.net.InetAddress-int-org.eclipse.emf.common.util.URI-">createRemoteUri</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/util/UriFactory.html" title="interface in fr.inria.atlanmod.neoemf.util">UriFactory</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>host</code> - the address of the server (use <code>"localhost"</code> if the server is running locally)</dd>
+<dd><code>port</code> - the port of the server</dd>
+<dd><code>model</code> - a URI identifying the model in the database</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new URI</dd>
+</dl>
+</li>
+</ul>
+<a name="createRemoteUri-java.net.InetAddress-int-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>createRemoteUri</h4>
 <pre>@Nonnull
-public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;createRemoteUri(java.lang.String&nbsp;host,
+public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;createRemoteUri(java.net.InetAddress&nbsp;host,
                                     int&nbsp;port,
-                                    java.lang.String...&nbsp;segments)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/util/UriFactory.html#createRemoteUri-java.lang.String-int-java.lang.String...-">UriFactory</a></code></span></div>
+                                    java.lang.String&nbsp;model)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/util/UriFactory.html#createRemoteUri-java.net.InetAddress-int-java.lang.String-">UriFactory</a></code></span></div>
 <div class="block">Creates a new URI from the <code>host</code>, <code>port</code>, and <code>model</code> by creating a hierarchical URI that
  references the distant model resource.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/util/UriFactory.html#createRemoteUri-java.lang.String-int-java.lang.String...-">createRemoteUri</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/util/UriFactory.html" title="interface in fr.inria.atlanmod.neoemf.util">UriFactory</a></code></dd>
+<dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/util/UriFactory.html#createRemoteUri-java.net.InetAddress-int-java.lang.String-">createRemoteUri</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/util/UriFactory.html" title="interface in fr.inria.atlanmod.neoemf.util">UriFactory</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>host</code> - the address of the server (use <code>"localhost"</code> if the server is running locally)</dd>
 <dd><code>port</code> - the port of the server</dd>
-<dd><code>segments</code> - a string identifying the model in the database</dd>
+<dd><code>model</code> - a string identifying the model in the database</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new URI</dd>
 </dl>
